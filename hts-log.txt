@@ -1,0 +1,34 @@
+HTTrack3.49-2+htsswf+htsjava launched on Thu, 05 Sep 2024 11:27:48 at http://www.fpneuquen.com.ar/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" http://www.fpneuquen.com.ar/ -O1 "C:\Mis lugares Web\fp" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+12:16:18	Warning: 	file not stored in cache due to bogus state (broken size, expected 1998068 got 1493333): www.fpneuquen.com.ar/docs/102-18_02 Diseñador Web.pdf
+12:16:23	Warning: 	file not stored in cache due to bogus state (broken size, expected 3853422 got 1361093): www.fpneuquen.com.ar/docs/101-18_02 Carpintero de Banco y Operador de Máquinas Simples.pdf
+12:16:28	Warning: 	file not stored in cache due to bogus state (broken size, expected 2279640 got 1454357): www.fpneuquen.com.ar/docs/102-18_03 Auxiliar en Reparación y Mantenimiento de PC.pdf
+13:04:09	Warning: 	File not parsed, looks like binary: www.fpneuquen.com.ar/assets/vendor/bootstrap-icons/fonts/bootstrap-icons.woff2?8d200481aa7f02a2d63a331fc782cfaf
+13:04:09	Error: 	"Not Found" (404) at link www.fpneuquen.com.ar/assets/img/cta-bg.jpg (from www.fpneuquen.com.ar/assets/css/main.css)
+13:14:52	Error: 	"Not Found" (404) at link www.fpneuquen.com.ar/docs/https://drive.google.com/file/d/1JZkle2ruqlO9_0NsE7_sDU1RbP4mb1Lx/view?usp=sharing (from www.fpneuquen.com.ar/TrayectosFormativos.php)
+13:14:56	Warning: 	Retry after error -4 (Incorrect length (1493333 Bytes, 1998068 expected)) at link www.fpneuquen.com.ar/docs/102-18_02 Diseñador Web.pdf (from www.fpneuquen.com.ar/TrayectosFormativos.php)
+13:14:56	Warning: 	Retry after error -4 (Incorrect length (1454357 Bytes, 2279640 expected)) at link www.fpneuquen.com.ar/docs/102-18_03 Auxiliar en Reparación y Mantenimiento de PC.pdf (from www.fpneuquen.com.ar/TrayectosFormativos.php)
+13:14:56	Warning: 	Retry after error -4 (Incorrect length (1361093 Bytes, 3853422 expected)) at link www.fpneuquen.com.ar/docs/101-18_02 Carpintero de Banco y Operador de Máquinas Simples.pdf (from www.fpneuquen.com.ar/TrayectosFormativos.php)
+13:15:45	Warning: 	file not stored in cache due to bogus state (broken size, expected 3853422 got 1666965): www.fpneuquen.com.ar/docs/101-18_02 Carpintero de Banco y Operador de Máquinas Simples.pdf
+13:15:48	Warning: 	Retry after error -5 (Unable to get server's address: Host desconocido. ) at link https://polyfill.io/v3/polyfill.min.js?features=default (from www.fpneuquen.com.ar/centrosxzonas.php)
+13:15:48	Warning: 	file not stored in cache due to bogus state (broken size, expected 1998068 got 1814544): www.fpneuquen.com.ar/docs/102-18_02 Diseñador Web.pdf
+13:15:52	Warning: 	file not stored in cache due to bogus state (broken size, expected 439186 got 253063): www.fpneuquen.com.ar/docs/244-19_12 Manipulador de Alimentos.pdf
+13:15:55	Warning: 	file not stored in cache due to bogus state (broken size, expected 2279640 got 1842358): www.fpneuquen.com.ar/docs/102-18_03 Auxiliar en Reparación y Mantenimiento de PC.pdf
+13:16:23	Error: 	"Forbidden" (403) at link www.fpneuquen.com.ar/img/ (from www.fpneuquen.com.ar/SubSectores.php)
+13:16:26	Warning: 	Retry after error -4 (Incorrect length (1814544 Bytes, 1998068 expected)) at link www.fpneuquen.com.ar/docs/102-18_02 Diseñador Web.pdf (from www.fpneuquen.com.ar/TrayectosFormativos.php)
+13:16:26	Warning: 	Retry after error -4 (Incorrect length (1842358 Bytes, 2279640 expected)) at link www.fpneuquen.com.ar/docs/102-18_03 Auxiliar en Reparación y Mantenimiento de PC.pdf (from www.fpneuquen.com.ar/TrayectosFormativos.php)
+13:16:26	Warning: 	Retry after error -4 (Incorrect length (1666965 Bytes, 3853422 expected)) at link www.fpneuquen.com.ar/docs/101-18_02 Carpintero de Banco y Operador de Máquinas Simples.pdf (from www.fpneuquen.com.ar/TrayectosFormativos.php)
+13:16:26	Warning: 	Retry after error -4 (Incorrect length (253063 Bytes, 439186 expected)) at link www.fpneuquen.com.ar/docs/244-19_12 Manipulador de Alimentos.pdf (from www.fpneuquen.com.ar/TrayectosFormativosSector.php?id=Todos%20los%20sectores%20productivos)
+13:16:54	Error: 	"Forbidden" (403) at link www.fpneuquen.com.ar/docs/ (from www.fpneuquen.com.ar/TrayectosFormativosSector.php?id=Todos%20los%20sectores%20productivos)
+13:16:54	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://polyfill.io/v3/polyfill.min.js?features=default (from www.fpneuquen.com.ar/centrosxzonas.php)
+13:16:59	Error: 	"Not Found" (404) at link www.fpneuquen.com.ar/link (from www.fpneuquen.com.ar/NormaLegal.php?id=142)
+13:18:27	Error: 	"Unable to get server's address: unknown error" (-5) after 2 retries at link https://polyfill.io/v3/polyfill.min.js?features=default (from www.fpneuquen.com.ar/centrosxzonas.php)
+
+HTTrack Website Copier/3.49-2 mirror complete in 1 hours 50 minutes 39 seconds : 2418 links scanned, 2402 files written (189193261 bytes overall) [160053843 bytes received at 24108 bytes/sec], 39094667 bytes transferred using HTTP compression in 2047 files, ratio 22%, 7.2 requests per connection
+(6 errors, 17 warnings, 0 messages)
