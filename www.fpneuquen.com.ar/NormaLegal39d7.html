@@ -1,0 +1,376 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from www.fpneuquen.com.ar/NormaLegal.php?id=145 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 05 Sep 2024 16:16:21 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-D23TBS0BCN"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-D23TBS0BCN');
+    </script>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Web de consulta de Centros de Formacion Profesional" />
+    <meta name="author" content="Silvio Stenta" />
+    <title>Formacion Profesional WEB</title>
+    <link rel="icon" type="image/png" href="img/logofp.png">
+    <link href="../cdn.jsdelivr.net/npm/simple-datatables%40latest/dist/style.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="../use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+ <!--    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+ --></head>
+
+<body class="sb-nav-fixed">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+        <!-- Navbar Brand-->
+        <button class="btn btn-link btn-sm order-1 order-lg-1 me-4 me-lg-1" id="sidebarToggle" href="index-2.html">
+            <i class="fas fa-bars fa-lg "></i></button>
+        <a class="navbar-brand ps-3" href="index-2.html"><img src="img/logo%20fp%20288x271.png" class="img-fluid" alt="max-width: 30%;height: auto" width="20%"></a>
+        <!-- Sidebar Toggle-->
+
+        <!-- Navbar Search-->
+        <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
+            <div class="input-group">
+                <!-- <input class="form-control" type="text" placeholder="Search for..." aria-label="Search for..." aria-describedby="btnNavbarSearch" />
+                <button class="btn btn-primary" id="btnNavbarSearch" type="button"><i class="fas fa-search"></i></button> -->
+            </div>
+        </form>
+        <!-- Navbar User-->
+        <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="login.html">Login</a></li>
+                    <li><a class="dropdown-item" href="index-2.html">Settings</a></li>
+                    <li><a class="dropdown-item" href="#!">Activity Log</a></li>
+                    <li>
+                        <hr class="dropdown-divider" />
+                    </li>
+                    <li><a class="dropdown-item" href="index-2.html">Cerrar</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <!-- Navbar Lateral -->
+
+    <div id="layoutSidenav">
+        <div id="layoutSidenav_nav">
+            <nav class="sb-sidenav accordion sb-sidenav-primary" id="sidenavAccordion">
+                <div class="sb-sidenav-menu">
+                    <div class="nav">
+                        <div class="sb-sidenav-menu-heading"></div>
+                        <a class="nav-link" href="dashboard.html">
+                            <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                            Todas las Escuelas
+                        </a>
+                        <div class="collapse" id="collapsePages" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">
+                            <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
+                            </nav>
+                        </div>
+                        <!-- <div class="sb-sidenav-menu-heading">Addons</div> -->
+                        <!--                         <a class="nav-link" href="charts.php">
+                            <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
+                            Graficos
+                        </a> -->
+
+
+                        <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseCFP" aria-expanded="false" aria-controls="collapseCFP">
+                            <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                            Centros
+                            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                        </a>
+                        <div class="collapse" id="collapseCFP" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                            <nav class="sb-sidenav-menu-nested nav">
+                                <a class="nav-link" href="table.html"><i class="fa fa-book" aria-hidden="true"></i>Listado por Zona</a>
+                                <a class="nav-link" href="centrosxzonas.html"><i class="fas fa-map-pin" aria-hidden="true"></i>Ubicacion por Zona</a>
+                            </nav>
+                        </div>
+
+
+                        <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseTray" aria-expanded="false" aria-controls="collapseTray">
+                            <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                            Trayectos Formativos
+                            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                        </a>
+                        <div class="collapse" id="collapseTray" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                            <nav class="sb-sidenav-menu-nested nav">
+                                <a class="nav-link" href="Sectores.html">
+                                    <div class="sb-nav-link-icon"> <i class="fa-brands fa-bandcamp"></i></div>
+                                    Sectores Productivos
+                                </a>
+                                <a class="nav-link" href="SubSectores.html">
+                                    <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
+                                    Sub-Sectores
+                                </a>
+                                <a class="nav-link" href="TrayectosFormativos.html">
+                                    <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
+                                    Trayectos Formativos
+                                </a>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <div class="sb-sidenav-footer">
+                    <div class="small">Logged in as:</div>
+
+                    invitado                </div>
+            </nav>
+        </div>
+        <!-- Principal -->
+
+
+
+        <script src="../cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+        <script src="../cdn.datatables.net/buttons/2.2.3/js/buttons.html5.min.js"></script>
+        <script src="../cdn.datatables.net/buttons/2.2.3/js/buttons.print.min.js"></script>
+        <script src="../cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js" crossorigin="anonymous"></script>
+        <script src="../cdn.datatables.net/1.11.5/js/dataTables.bootstrap4.min.js" crossorigin="anonymous"></script>
+        <script src="../cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+        <script src="../cdn.datatables.net/buttons/2.2.3/js/dataTables.buttons.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" crossorigin="anonymous"></script>
+        <script src="js/datatables-simple-demo.js"></script>
+        <script src="js/scripts.js"></script>
+        <link rel="stylesheet" type="text/css" href="../cdn.datatables.net/v/dt/dt-1.11.5/datatables.min.css" />
+        <link rel="stylesheet" type="text/css" href="../cdn.datatables.net/v/dt/dt-1.11.5/fc-4.0.2/r-2.2.9/rr-1.2.8/sc-2.0.5/sl-1.3.4/datatables.min.css" />
+
+        <script type="text/javascript" src="../cdn.datatables.net/v/dt/dt-1.11.5/datatables.min.js"></script>
+        <script type="text/javascript" src="../cdn.datatables.net/v/dt/dt-1.11.5/fc-4.0.2/r-2.2.9/rr-1.2.8/sc-2.0.5/sl-1.3.4/datatables.min.js"></script>
+        <script type="text/javascript" src="../cdn.datatables.net/v/dt/dt-1.12.1/b-2.2.3/b-colvis-2.2.3/b-html5-2.2.3/b-print-2.2.3/datatables.min.js"></script>
+
+
+        <script src="../cdn.jsdelivr.net/npm/bootstrap%405.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+
+        <script src="../code.jquery.com/jquery-3.5.1.js"></script>
+        <script src="../code.jquery.com/jquery-3.5.1.js"></script>
+
+        <script src="../cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+        <script src="../cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+        <script src="../cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+
+        <div id="layoutSidenav_content">
+            <main>
+
+<div class="container-fluid px-4">
+    <h1 class="mt-4">Norma Legal</h1>
+    <ol class="breadcrumb mb-4">
+        <li class="breadcrumb-item"><a href="digesto.html">Digesto</a></li>
+        <li class="breadcrumb-item active">Tablas</li>
+    </ol>
+
+
+
+    <div class="col-md-12">
+
+        <div class="card">
+            <div class="card-header">
+            <h4 class="card-title">Datos del Trayecto</h4>
+            </div>
+
+
+
+            <form method="POST" enctype="multipart/form-data">
+
+                <div class="form-group">
+                    <label for="txtTipoNorma">Tipo Norma:</label>
+                    <input type="text" class="form-control" required readonly  name="txtTipoNorma" value="Resolucion" id="txtTipoNorma" placeholder="Tipo">
+                </div>
+
+                <div class="form-group">
+                    <label for="txtNorma">Norma Legal:</label>
+                    <input type="text" class="form-control" required readonly  name="txtNorma" value="311" id="txtNorma" placeholder="Norma Legal">
+                </div>
+
+                <div class="form-group">
+                    <label for="txtAnio">Año:</label>
+                    <input type="text" class="form-control" required  readonly name="txtAnio" value="2016" id="txtAnio" placeholder="Sector">
+                </div> 
+
+                <div class="form-group">
+                    <label for="txtFecha">fecha:</label>
+                    <input type="text" class="form-control" required  readonly name="txtFecha" value="2016-12-15" id="txtFecha" placeholder="Sector">
+                </div>   
+
+                <div class="form-group">
+                    <label for="txtNombre">Descripcion:</label>
+                    <textarea class="form-control" required readonly name="txtNombre" rows="3">Propicia condiciones para la inclusión escolar al interior del sistema educativo argentino para el acompañamiento de las trayectorias escolares de los/as estudiantes con discapacidad.</textarea>
+                </div>
+                <div class="form-group">
+                    <label for="txtVisto">Visto:</label>
+                    <textarea class="form-control" required readonly name="txtVisto" rows="3"> la Convención sobre los Derechos de las Personas con Discapacidad, la
+Ley de Educación Nacional Nº 26.206, la Resolución CFE N° Nº 155/11 y la
+Resolución CFE Nº 174/12 y</textarea>
+                </div>
+                <div class="form-group">
+                    <label for="txtConsiderando">Considerando:</label>
+                    <textarea class="form-control" required readonly name="txtConsiderando" rows="3">Que la Convención sobre los Derechos de las Personas con Discapacidad fue
+aprobada por la Asamblea General de Naciones Unidas en el año 2006, promulgada
+como Ley Nacional en 2008 y adquirió jerarquía constitucional en nuestro país en el
+año 2014 (Ley Nº 27.044).
+Que dicha Convención implica un cambio de paradigma al abordar la discapacidad
+desde un modelo social.
+Que su Preámbulo señala que “… la discapacidad es un concepto que evoluciona
+y que resulta de la interacción entre las personas con deficiencias y las barreras
+debidas a la actitud y al entorno que evitan su participación plena y efectiva en la
+sociedad, en igualdad de condiciones con las demás". (Preámbulo, inciso e).
+Que, asimismo, el artículo 24 de la referida Convención manifiesta que: 1) “Los
+Estados Partes reconocen el derecho de las personas con discapacidad a la
+educación. Con miras a hacer efectivo este derecho sin discriminación y sobre la base
+de la igualdad de oportunidades, los Estados Partes asegurarán un sistema de
+educación inclusivo a todos los niveles así como la enseñanza a lo largo de la vida,
+con miras a: a) Desarrollar plenamente el potencial humano y el sentido de la dignidad
+y la autoestima y reforzar el respeto por los derechos humanos, las libertades
+fundamentales y la diversidad humana; b) Desarrollar al máximo la personalidad, los
+talentos y la creatividad de las personas con discapacidad, así como sus aptitudes
+mentales y físicas; c) Hacer posible que las personas con discapacidad participen de
+manera efectiva en una sociedad libre. 2) Al hacer efectivo este derecho, los Estados
+Partes asegurarán que: a) Las personas con discapacidad no queden excluidas del
+sistema general de educación por motivos de discapacidad, y que los niños y las
+niñas con discapacidad no queden excluidos de la enseñanza primaria gratuita y</textarea>
+                </div>
+                <div class="form-group">
+                    <label for="txtArticulos">Articulos:</label>
+                    <textarea class="form-control" required readonly name="txtArticulos" rows="3">obligatoria ni de la enseñanza secundaria por motivos de discapacidad; b) Las
+personas con discapacidad puedan acceder a una educación primaria y secundaria
+inclusiva, de calidad y gratuita, en igualdad de condiciones con las demás, en la
+comunidad en que vivan; c) Se hagan ajustes razonables en función de las
+necesidades individuales; d) Se preste el apoyo necesario a las personas con
+discapacidad, en el marco del sistema general de educación, para facilitar su
+formación efectiva; e) Se faciliten medidas de apoyo personalizadas y efectivas en
+entornos que fomenten al máximo el desarrollo académico y social, de conformidad
+con el objetivo de la plena inclusión”.
+Que, en vistas a seguir formulando políticas que avancen en la concreción de los
+derechos de las personas con discapacidad, de manera que todos los/as estudiantes
+estén incluidos en el sistema educativo argentino, la Modalidad de Educación
+Especial toma lo expuesto en el artículo 11 de la Ley de Educación Nacional N°
+26.206: “Garantizar a todos/as el acceso y las condiciones para la permanencia y el
+egreso de los diferentes niveles del sistema educativo, asegurando la gratuidad de los
+servicios de gestión estatal, en todos los niveles y modalidades”. Y asimismo, se
+compromete a “brindar a las personas con discapacidades, temporales o
+permanentes, una propuesta pedagógica que les permita el máximo desarrollo de sus
+posibilidades, la integración y el pleno ejercicio de sus derechos” (artículo 11, inciso
+n).
+Que en el artículo 42 de la Ley de Educación Nacional se establece que: “La
+Educación Especial es la modalidad del sistema educativo destinada a asegurar el
+derecho a la educación de las personas con discapacidades, temporales o
+permanentes, en todos los niveles y modalidades del Sistema Educativo. La
+Educación Especial se rige por el principio de inclusión educativa, de acuerdo con el inciso n) del artículo 11 de esta Ley. La Educación Especial brinda atención educativa
+en todas aquellas problemáticas específicas que no puedan ser abordadas por la
+educación común. El Ministerio de Educación, Ciencia y Tecnología, en acuerdo con
+el Consejo Federal de Educación, garantizará por intermedio de diversas estrategias,
+la inclusión de los/as estudiantes con discapacidades en todos los niveles y
+modalidades según las posibilidades de cada persona”.
+Que en función de la recomendación de la Oficina del Alto Comisionado de
+Naciones Unidas para los Derechos Humanos en el Estudio Temático sobre el derecho de las personas con discapacidad a la educación (A/HRC/25/29): “Las
+escuelas tienen prohibido rechazar la inscripción o reinscripción de un/a estudiante
+por motivos de discapacidad. El rechazo por motivo de discapacidad, de forma directa
+o indirecta, será considerado un acto de discriminación”.
+Que el cuidado de la trayectoria escolar de los/as estudiantes con discapacidad
+implica tomar decisiones con respecto a las estrategias de enseñanza como también
+evaluar, acreditar, promover y certificar los aprendizajes, teniendo en cuenta el
+paradigma del modelo social de la discapacidad, las barreras que impiden el acceso
+al aprendizaje y la participación, respetando el principio de no discriminación y el
+derecho del alumnado a “ser evaluados/as en su desempeño y logros, conforme a
+criterios rigurosa y científicamente fundados, en todos los niveles, modalidades y
+orientaciones del sistema e informados/as al respecto” (artículo 126, inciso e).
+Que a partir de la revisión de las Resoluciones del CFE N°155 y Nº 174 se busca
+avanzar para seguir profundizando en políticas y estrategias que garanticen el
+ordenamiento y cohesión del Sistema Educativo, en lo que respecta a la organización
+y articulación de los niveles y modalidades de la educación.
+Que, tal como lo establece la Resolución CFE Nº 174: “La trayectoria escolar de
+niños y niñas en el nivel inicial no podrá ser alterada bajo la idea de permanencia o
+repitencia. Por lo tanto el pasaje de un año/sala/sección dentro del nivel no podrá
+exigir otro requisito que el de tener la edad cronológica para ello (…). Los
+aprendizajes no serán interpretados como indicadores de acreditación ni de
+promoción de los niños y niñas en el nivel inicial al nivel siguiente. Serán
+considerados como indicios a ser tenidos en cuenta por los docentes que reciban a
+los niños/as para garantizar la trayectoria escolar” (Resolución CFE Nº 174, párrafo
+14).
+Que según la referida Resolución “las jurisdicciones diseñarán las medidas
+administrativas necesarias para el registro y seguimiento de los alumnos en el pasaje
+del nivel inicial a la escuela primaria. Se pondrá en vigencia el pase administrativo
+entre un nivel y el otro, de modo de que cada institución de nivel inicial pueda contar
+con un registro respecto de la continuidad de los estudios de todos sus alumnos. Se
+instrumentarán las medidas que generen la utilización de un legajo único por alumno
+que sea compartido por ambos niveles.” (Ibíd., párrafo 17).
+Que la certificación será la prevista por el Nivel tal como lo establece la Resolución
+CFE Nº 18/07 y lo avalado por la Resolución CFE Nº 102/10: “los establecimientos de
+nivel inicial, primario y secundario (conf. Ley 26.206) emitirán desde el año 2013
+certificaciones de aprobación según la nueva estructura académica. Los certificados
+deberán consignar el número del acto resolutivo/normativo que aprueba el plan de
+estudios correspondiente y la denominación de la certificación o título, coincidente con
+la que figura en dicho plan.”
+Que la Ley de Educación Nacional dispone que la cartera educativa nacional “en
+acuerdo con el Consejo Federal de Educación, creará las instancias institucionales y técnicas necesarias para la orientación de la trayectoria escolar más adecuada de los/as estudiantes con discapacidades, temporales o permanentes, en todos los niveles de la enseñanza obligatoria, así como también las normas que regirán los procesos de evaluación y certificación escolar (...)” (artículo 45 de la LEN).
+Que la presente medida se adopta con el voto afirmativo de los miembros de esta Asamblea Federal conforme lo establece la Resolución CFE Nº 1/07, a excepción de la abstención del representante del CRUP.
+</textarea>
+                </div>
+                 <div class="form-group">
+                    <label for="txtSector">Sector:</label>
+                    <input type="text" class="form-control" required  readonly name="txtSector" value="ETP" id="txtSector" placeholder="Sector">
+                </div>
+                <div class="form-group">
+                    <label for="txtAnexos">Anexos:</label>
+                    <input type="text" class="form-control" required  readonly name="txtAnexos" value="4" id="txtAnexos" placeholder="Sector">
+                </div>
+
+
+                <div class="form-group">
+                    <label for="txtArchivo">Docs.:</label>                    
+                    <i class="fa fa-external-link-square fa-2x" aria-hidden="true"></i>
+                    <a href="https://www.argentina.gob.ar/sites/default/files/res-311-cfe-58add7585fbc4.pdf">https://www.argentina.gob.ar/sites/default/files/res-311-cfe-58add7585fbc4.pdf</a><br>
+                 </div>
+
+            </form>
+        </div>
+    </div>
+
+
+    <script src="../cdn.jsdelivr.net/npm/bootstrap%405.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" crossorigin="anonymous"></script>
+    <script src="js/datatables-simple-demo.js"></script>
+    <!--Ejemplo-->
+
+
+            
+        
+                        </main>
+                <footer class="py-4 bg-light mt-auto">
+                    <div class="container-fluid px-4">
+                        <div class="d-flex align-items-center justify-content-between small">
+                            <div class="text-muted">Copyright &copy; ST3 2022</div>
+                            <div>
+                                <a href="#">Privacy Policy</a>
+                                &middot;
+                                <a href="#">Terms &amp; Conditions</a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <script src="../cdn.jsdelivr.net/npm/bootstrap%405.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="js/scripts.js"></script>
+        <script src="../cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+<!--         <script src="assets/demo/chart-area-demo.js"></script> Ejemplo-->
+<!--        <script src="assets/demo/chart-bar-demo.js"></script> Ejemplo--> 
+        <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" crossorigin="anonymous"></script>
+<!--         <script src="js/datatables-simple-demo.js"></script> Ejemplo--> -->
+    </body>
+
+<!-- Mirrored from www.fpneuquen.com.ar/NormaLegal.php?id=145 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 05 Sep 2024 16:16:21 GMT -->
+</html>

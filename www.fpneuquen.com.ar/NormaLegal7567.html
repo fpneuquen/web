@@ -1,0 +1,278 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from www.fpneuquen.com.ar/NormaLegal.php?id=137 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 05 Sep 2024 16:16:21 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-D23TBS0BCN"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-D23TBS0BCN');
+    </script>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Web de consulta de Centros de Formacion Profesional" />
+    <meta name="author" content="Silvio Stenta" />
+    <title>Formacion Profesional WEB</title>
+    <link rel="icon" type="image/png" href="img/logofp.png">
+    <link href="../cdn.jsdelivr.net/npm/simple-datatables%40latest/dist/style.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="../use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+ <!--    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+ --></head>
+
+<body class="sb-nav-fixed">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+        <!-- Navbar Brand-->
+        <button class="btn btn-link btn-sm order-1 order-lg-1 me-4 me-lg-1" id="sidebarToggle" href="index-2.html">
+            <i class="fas fa-bars fa-lg "></i></button>
+        <a class="navbar-brand ps-3" href="index-2.html"><img src="img/logo%20fp%20288x271.png" class="img-fluid" alt="max-width: 30%;height: auto" width="20%"></a>
+        <!-- Sidebar Toggle-->
+
+        <!-- Navbar Search-->
+        <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
+            <div class="input-group">
+                <!-- <input class="form-control" type="text" placeholder="Search for..." aria-label="Search for..." aria-describedby="btnNavbarSearch" />
+                <button class="btn btn-primary" id="btnNavbarSearch" type="button"><i class="fas fa-search"></i></button> -->
+            </div>
+        </form>
+        <!-- Navbar User-->
+        <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="login.html">Login</a></li>
+                    <li><a class="dropdown-item" href="index-2.html">Settings</a></li>
+                    <li><a class="dropdown-item" href="#!">Activity Log</a></li>
+                    <li>
+                        <hr class="dropdown-divider" />
+                    </li>
+                    <li><a class="dropdown-item" href="index-2.html">Cerrar</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <!-- Navbar Lateral -->
+
+    <div id="layoutSidenav">
+        <div id="layoutSidenav_nav">
+            <nav class="sb-sidenav accordion sb-sidenav-primary" id="sidenavAccordion">
+                <div class="sb-sidenav-menu">
+                    <div class="nav">
+                        <div class="sb-sidenav-menu-heading"></div>
+                        <a class="nav-link" href="dashboard.html">
+                            <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                            Todas las Escuelas
+                        </a>
+                        <div class="collapse" id="collapsePages" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">
+                            <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
+                            </nav>
+                        </div>
+                        <!-- <div class="sb-sidenav-menu-heading">Addons</div> -->
+                        <!--                         <a class="nav-link" href="charts.php">
+                            <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
+                            Graficos
+                        </a> -->
+
+
+                        <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseCFP" aria-expanded="false" aria-controls="collapseCFP">
+                            <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                            Centros
+                            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                        </a>
+                        <div class="collapse" id="collapseCFP" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                            <nav class="sb-sidenav-menu-nested nav">
+                                <a class="nav-link" href="table.html"><i class="fa fa-book" aria-hidden="true"></i>Listado por Zona</a>
+                                <a class="nav-link" href="centrosxzonas.html"><i class="fas fa-map-pin" aria-hidden="true"></i>Ubicacion por Zona</a>
+                            </nav>
+                        </div>
+
+
+                        <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseTray" aria-expanded="false" aria-controls="collapseTray">
+                            <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                            Trayectos Formativos
+                            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                        </a>
+                        <div class="collapse" id="collapseTray" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                            <nav class="sb-sidenav-menu-nested nav">
+                                <a class="nav-link" href="Sectores.html">
+                                    <div class="sb-nav-link-icon"> <i class="fa-brands fa-bandcamp"></i></div>
+                                    Sectores Productivos
+                                </a>
+                                <a class="nav-link" href="SubSectores.html">
+                                    <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
+                                    Sub-Sectores
+                                </a>
+                                <a class="nav-link" href="TrayectosFormativos.html">
+                                    <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
+                                    Trayectos Formativos
+                                </a>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <div class="sb-sidenav-footer">
+                    <div class="small">Logged in as:</div>
+
+                    invitado                </div>
+            </nav>
+        </div>
+        <!-- Principal -->
+
+
+
+        <script src="../cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+        <script src="../cdn.datatables.net/buttons/2.2.3/js/buttons.html5.min.js"></script>
+        <script src="../cdn.datatables.net/buttons/2.2.3/js/buttons.print.min.js"></script>
+        <script src="../cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js" crossorigin="anonymous"></script>
+        <script src="../cdn.datatables.net/1.11.5/js/dataTables.bootstrap4.min.js" crossorigin="anonymous"></script>
+        <script src="../cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+        <script src="../cdn.datatables.net/buttons/2.2.3/js/dataTables.buttons.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" crossorigin="anonymous"></script>
+        <script src="js/datatables-simple-demo.js"></script>
+        <script src="js/scripts.js"></script>
+        <link rel="stylesheet" type="text/css" href="../cdn.datatables.net/v/dt/dt-1.11.5/datatables.min.css" />
+        <link rel="stylesheet" type="text/css" href="../cdn.datatables.net/v/dt/dt-1.11.5/fc-4.0.2/r-2.2.9/rr-1.2.8/sc-2.0.5/sl-1.3.4/datatables.min.css" />
+
+        <script type="text/javascript" src="../cdn.datatables.net/v/dt/dt-1.11.5/datatables.min.js"></script>
+        <script type="text/javascript" src="../cdn.datatables.net/v/dt/dt-1.11.5/fc-4.0.2/r-2.2.9/rr-1.2.8/sc-2.0.5/sl-1.3.4/datatables.min.js"></script>
+        <script type="text/javascript" src="../cdn.datatables.net/v/dt/dt-1.12.1/b-2.2.3/b-colvis-2.2.3/b-html5-2.2.3/b-print-2.2.3/datatables.min.js"></script>
+
+
+        <script src="../cdn.jsdelivr.net/npm/bootstrap%405.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+
+        <script src="../code.jquery.com/jquery-3.5.1.js"></script>
+        <script src="../code.jquery.com/jquery-3.5.1.js"></script>
+
+        <script src="../cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+        <script src="../cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+        <script src="../cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+
+        <div id="layoutSidenav_content">
+            <main>
+
+<div class="container-fluid px-4">
+    <h1 class="mt-4">Norma Legal</h1>
+    <ol class="breadcrumb mb-4">
+        <li class="breadcrumb-item"><a href="digesto.html">Digesto</a></li>
+        <li class="breadcrumb-item active">Tablas</li>
+    </ol>
+
+
+
+    <div class="col-md-12">
+
+        <div class="card">
+            <div class="card-header">
+            <h4 class="card-title">Datos del Trayecto</h4>
+            </div>
+
+
+
+            <form method="POST" enctype="multipart/form-data">
+
+                <div class="form-group">
+                    <label for="txtTipoNorma">Tipo Norma:</label>
+                    <input type="text" class="form-control" required readonly  name="txtTipoNorma" value="Resolucion CFE" id="txtTipoNorma" placeholder="Tipo">
+                </div>
+
+                <div class="form-group">
+                    <label for="txtNorma">Norma Legal:</label>
+                    <input type="text" class="form-control" required readonly  name="txtNorma" value="427" id="txtNorma" placeholder="Norma Legal">
+                </div>
+
+                <div class="form-group">
+                    <label for="txtAnio">Año:</label>
+                    <input type="text" class="form-control" required  readonly name="txtAnio" value="2022" id="txtAnio" placeholder="Sector">
+                </div> 
+
+                <div class="form-group">
+                    <label for="txtFecha">fecha:</label>
+                    <input type="text" class="form-control" required  readonly name="txtFecha" value="2022-06-24" id="txtFecha" placeholder="Sector">
+                </div>   
+
+                <div class="form-group">
+                    <label for="txtNombre">Descripcion:</label>
+                    <textarea class="form-control" required readonly name="txtNombre" rows="3">Sistema Nacional de Evaluación, Certificación y Acreditación Integral de la Educación Técnico Profesional</textarea>
+                </div>
+                <div class="form-group">
+                    <label for="txtVisto">Visto:</label>
+                    <textarea class="form-control" required readonly name="txtVisto" rows="3">la Ley de Educación Nacional N° 26.206, la Ley de Educación Técnico Profesional N° 26.058, lasResoluciones del CONSEJO FEDERAL DE EDUCACIÓN N° 261/06, 13/07, 39/08, 91/09,115/10, 134/11,229/14, 283/16, 295/16</textarea>
+                </div>
+                <div class="form-group">
+                    <label for="txtConsiderando">Considerando:</label>
+                    <textarea class="form-control" required readonly name="txtConsiderando" rows="3">Que el artículo 12 de la Ley de Educación Nacional N° 26.206 establece que la planificación, organización,supervisión y financiación del Sistema Educativo Nacional es responsabilidad, de manera concertada, del EstadoNacional, las Provincias y la Ciudad Autónoma de Buenos Aires.Que los objetivos de la Ley de Educación Técnico Profesional N° 26.058 refieren a la necesidad de alcanzarmayores niveles de equidad, calidad, pertinencia, relevancia y efectividad de la Educación Técnico Profesional(ETP) a través del fortalecimiento y mejora continua de las instituciones y programas de educación técnicoprofesional en el marco de políticas nacionales y estrategias de carácter federal que integren las particularidades ydiversidades jurisdiccionales.Que la Ley de Educación Técnico Profesional N° 26.058 establece desarrollar acciones de registro de lasinstituciones de ETP y de reconocimiento nacional de títulos y certificados de ETP, para lo cual instituye elRegistro Federal de Instituciones de ETP y el Proceso de Homologación de títulos y certificados comoinstrumentos de mejora de la calidad de la ETP en los aspectos institucionales y curriculares respectivamente(Título IV, Capítulo IV y VI, de la Ley de ETP N° 26.058, reglamentados en las Resoluciones CFE Nos. 261/06,13/07, 39/08, 91/09,115/10, 229/14, 283/16, 295/16).Que los resultados de las acciones de registro y homologación deben integrarse al Catálogo Nacional de Títulos yCertificados de ETP, siendo el instrumento de comunicación de la calidad de la ETP hacia la sociedad en suconjunto. (Título IV, Capítulo V de la Ley de ETP N° 26.058).Que la Ley N° 26.058, en su artículo 52, crea el Fondo Nacional para la Educación Técnico Profesional, con lafinalidad de favorecer la inversión necesaria para dar cumplimiento a los objetivos y propósitos fijados, y en suartículo 53 establece que los recursos se aplicarán a equipamiento, mantenimiento de equipos, insumos deoperación, desarrollo de proyectos institucionales y condiciones edilicias para el aprovechamiento integral de losrecursos recibidos.Que a partir de la sanción de la Ley de ETP N° 26.058 la inversión de fondos previstos ha contribuidosignificativamente al desarrollo de los instrumentos de mejora mencionados previamente.Que a partir de la experiencia recogida en la implementación de varios ańos de la Resolución CFE N° 283/16, ysus antecesoras, de las experiencias implementadas de evaluación institucional a instancias de la Resolución CFEN° 134/11 y Resolución INET N° 1171/15, y de planes de mejora jurisdiccionales e institucionales, resultanecesaria una estrategia de seguimiento, monitoreo y evaluación, sistematizada, permanente e institucionalizada.Que, en consecuencia, resulta necesario construir federalmente, sobre la base de concepciones y valorescompartidos, un mecanismo de enfoque sistémico para la evaluación, certificación y acreditación integral de laETP que operacionalice un vínculo estrecho entre las acciones de registro, homologación y comunicación a travésdel catálogo, e involucre a los distintos actores sociales de la ETP del orden nacional, federal, jurisdiccional einstitucional.Que el MINISTERIO DE EDUCACIÓN DE LA NACIÓN deberá establecer, en acuerdo con el CONSEJOFEDERAL DE EDUCACIÓN, los criterios y parámetros de calidad hacia los cuales se orientarán lasinstituciones que integren el Registro Federal de Instituciones de Educación Técnico Profesional (artículo 42 de laLey de ETP).Que la Ley de ETP reconoce al INSTITUTO NACIONAL DE EDUCACIÖN TECNOLÓGICA para cumplir conla responsabilidad y función de promover la calidad de la Educación Técnico Profesional para asegurar la equidady la adecuación permanente de la oferta educativa a las demandas sociales y productivas a través de lacoordinación de programas y proyectos en acuerdo con las pautas establecidas por el CONSEJO FEDERALEDUCACIÓN y también desarrollar los instrumentos necesarios para la evaluación de la calidad de las ofertas deEducación Técnico Profesional e intervenir en dicha evaluación (artículo 45 de la Ley de ETP N° 26.058).Que, en su 139° encuentro, la Comisión Federal de Educación Técnico Profesional consensuó la necesidad degenerar un mecanismo sistémico de evaluación, certificación y acreditación integral de la ETP, en base a losfundamentos precedentes.Que el CONSEJO FEDERAL DE EDUCACIÓN, organismo interjurisdiccional de carácter permanente, es elámbito de concertación, acuerdo y coordinación de la política educativa nacional, debiendo asegurar la unidad yarticulación del sistema educativo nacional.Que la presente medida se dicta conforme el Reglamento de Funcionamiento aprobado por las Resoluciones CFENş 1/07 y Nş 362/20, con el voto afirmativo de todos los integrantes del organismo, cuyo registro queda asentadopor la Secretaría General.</textarea>
+                </div>
+                <div class="form-group">
+                    <label for="txtArticulos">Articulos:</label>
+                    <textarea class="form-control" required readonly name="txtArticulos" rows="3">ARTÍCULO 1ş.- Instituir el “Sistema Nacional de Evaluación, Certificación y Acreditación Integral de laEducación Técnico Profesional”, que tendrá los siguientes propósitos y aspectos constitutivos:a) En cuanto a las partes que conforman el sistema. Los integrantes principales y fundamentales serán: elINSTITUTO NACIONAL DE EDUCACIÓN TECNOLÓGICA, en virtud de la responsabilidad que le esotorgada por la Ley de ETP en la administración de los aspectos curriculares e institucionales a través del Procesode Homologación de títulos y certificados, el Registro Federal de Instituciones y el Catálogo Nacional de Títulosy Certificados y la administración del Fondo Nacional para la ETP; la COMISIÓN FEDERAL DE ETP, enfunción de la responsabilidad compartida en la política pública de la ETP y el rol otorgado en el artículo 49,Capítulo VII, de la Ley de ETP, sobre la construcción federal de las acciones de gobierno; el CONSEJONACIONAL DE EDUCACIÓN, TRABAJO Y PRODUCCIÓN (CoNETyP) en su rol de asesor de la vinculaciónentre Educación y Trabajo. (Cap. VI, de la Ley de ETP); UNIDADES FEDERALES DE EVALUACIÓN,integradas por pares evaluadores de las Jurisdicciones, del INSTITUTO NACIONAL DE EDUCACIÖNTECNOLÓGICA, y del CoNETyP (que asegurará la representación tripartita del estado, los empleadores y de losgremios docentes y técnicos), intervendrán desarrollando la función operativa de evaluación y certificación deaspectos institucionales y curriculares.b) En cuanto al proceso, relación y funcionamiento de las partes. Las fases serán: la AUTOEVALUACIÓNINSTITUCIONAL, es decir, acciones de análisis y evaluación comparativa contra marcos referenciales, de lasinstituciones y sus ofertas formativas incorporadas al Registro Federal de ETP según lo establecido en laResolución CFE N° 283/16, desarrolladas en forma gradual y progresiva; DESARROLLO DE PLANES DEMEJORA, en función de la fase de autoevaluación institucional, se ajustarán a las soluciones de los problemasdetectados y podrán ser de carácter jurisdiccional y/o institucional; CERTIFICACIÓN INSTITUCIONAL, será lafase desarrollada y efectivizada por las UNIDADES FEDERALES DE EVALUACIÓN, mediante seguimiento ymonitoreo, darán fe de las mejoras alcanzadas mediante un certificado; la ACREDITACIÓN INSTITUCIONAL,será efectuada por el INSTITUTO NACIONAL DE EDUCACIÓN TECNOLÓGICA en acuerdo con laCOMISIÓN FEDERAL DE ETP. El INSTITUTO NACIONAL DE EDUCACIÓN TECNOLÓGICA acreditarálos certificados emitidos por las UNIDADES FEDERALES DE EVALUACIÓN. La acreditación tendrá unaduración programada. Finalizado el período de acreditación la institución en cuestión deberá iniciar nuevamenteel proceso (revalidación programada).ARTÍCULO 2ş.- Facultar al INSTITUTO NACIONAL DE EDUCACIÓN TECNOLÓGICA, en acuerdo con laComisión Federal de Educación Técnico Profesional, a determinar los aspectos e instrumentos operativos, decarácter reglamentario, del “Sistema Nacional de Evaluación, Certificación y Acreditación Integral de laEducación Técnico Profesional”, en el marco de los propósitos y aspectos constitutivos establecidos en el artículoprecedente.ARTÍCULO 3ş.- Establecer que el INSTITUTO NACIONAL DE EDUCACIÓN TECNOLÓGICA, en acuerdocon la Comisión Federal de Educación Técnico Profesional, realizará la asistencia técnica a los integrantes del“Sistema Nacional de Evaluación, Certificación y Acreditación Integral de la Educación Técnico Profesional”necesaria para su implementación, que incluye los recursos financieros para ella y previstos en el programapresupuestario nacional que administra el INSTITUTO NACIONAL DE EDUCACIÓN TECNOLÓGICA.ARTÍCULO 4ş.- Establecer que el INSTITUTO NACIONAL DE EDUCACIÓN TECNOLÓGICA, en trabajoconjunto con la Comisión Federal de Educación Técnico Profesional, será responsable de informarperiódicamente al CONSEJO FEDERAL DE EDUCACIÓN los avances y desarrollo del “Sistema Nacional deEvaluación, Certificación y Acreditación Integral de la Educación Técnico Profesional”.</textarea>
+                </div>
+                 <div class="form-group">
+                    <label for="txtSector">Sector:</label>
+                    <input type="text" class="form-control" required  readonly name="txtSector" value="ETP" id="txtSector" placeholder="Sector">
+                </div>
+                <div class="form-group">
+                    <label for="txtAnexos">Anexos:</label>
+                    <input type="text" class="form-control" required  readonly name="txtAnexos" value="No" id="txtAnexos" placeholder="Sector">
+                </div>
+
+
+                <div class="form-group">
+                    <label for="txtArchivo">Docs.:</label>                    
+                    <i class="fa fa-external-link-square fa-2x" aria-hidden="true"></i>
+                    <a href="http://www.bnm.me.gov.ar/giga1/normas/RCFE_427-22.pdf">http://www.bnm.me.gov.ar/giga1/normas/RCFE_427-22.pdf</a><br>
+                 </div>
+
+            </form>
+        </div>
+    </div>
+
+
+    <script src="../cdn.jsdelivr.net/npm/bootstrap%405.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" crossorigin="anonymous"></script>
+    <script src="js/datatables-simple-demo.js"></script>
+    <!--Ejemplo-->
+
+
+            
+        
+                        </main>
+                <footer class="py-4 bg-light mt-auto">
+                    <div class="container-fluid px-4">
+                        <div class="d-flex align-items-center justify-content-between small">
+                            <div class="text-muted">Copyright &copy; ST3 2022</div>
+                            <div>
+                                <a href="#">Privacy Policy</a>
+                                &middot;
+                                <a href="#">Terms &amp; Conditions</a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <script src="../cdn.jsdelivr.net/npm/bootstrap%405.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="js/scripts.js"></script>
+        <script src="../cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+<!--         <script src="assets/demo/chart-area-demo.js"></script> Ejemplo-->
+<!--        <script src="assets/demo/chart-bar-demo.js"></script> Ejemplo--> 
+        <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" crossorigin="anonymous"></script>
+<!--         <script src="js/datatables-simple-demo.js"></script> Ejemplo--> -->
+    </body>
+
+<!-- Mirrored from www.fpneuquen.com.ar/NormaLegal.php?id=137 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 05 Sep 2024 16:16:21 GMT -->
+</html>

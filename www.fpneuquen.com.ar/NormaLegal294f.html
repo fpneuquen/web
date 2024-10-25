@@ -1,0 +1,278 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from www.fpneuquen.com.ar/NormaLegal.php?id=105 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 05 Sep 2024 16:16:20 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-D23TBS0BCN"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-D23TBS0BCN');
+    </script>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Web de consulta de Centros de Formacion Profesional" />
+    <meta name="author" content="Silvio Stenta" />
+    <title>Formacion Profesional WEB</title>
+    <link rel="icon" type="image/png" href="img/logofp.png">
+    <link href="../cdn.jsdelivr.net/npm/simple-datatables%40latest/dist/style.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="../use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+ <!--    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+ --></head>
+
+<body class="sb-nav-fixed">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+        <!-- Navbar Brand-->
+        <button class="btn btn-link btn-sm order-1 order-lg-1 me-4 me-lg-1" id="sidebarToggle" href="index-2.html">
+            <i class="fas fa-bars fa-lg "></i></button>
+        <a class="navbar-brand ps-3" href="index-2.html"><img src="img/logo%20fp%20288x271.png" class="img-fluid" alt="max-width: 30%;height: auto" width="20%"></a>
+        <!-- Sidebar Toggle-->
+
+        <!-- Navbar Search-->
+        <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
+            <div class="input-group">
+                <!-- <input class="form-control" type="text" placeholder="Search for..." aria-label="Search for..." aria-describedby="btnNavbarSearch" />
+                <button class="btn btn-primary" id="btnNavbarSearch" type="button"><i class="fas fa-search"></i></button> -->
+            </div>
+        </form>
+        <!-- Navbar User-->
+        <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="login.html">Login</a></li>
+                    <li><a class="dropdown-item" href="index-2.html">Settings</a></li>
+                    <li><a class="dropdown-item" href="#!">Activity Log</a></li>
+                    <li>
+                        <hr class="dropdown-divider" />
+                    </li>
+                    <li><a class="dropdown-item" href="index-2.html">Cerrar</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <!-- Navbar Lateral -->
+
+    <div id="layoutSidenav">
+        <div id="layoutSidenav_nav">
+            <nav class="sb-sidenav accordion sb-sidenav-primary" id="sidenavAccordion">
+                <div class="sb-sidenav-menu">
+                    <div class="nav">
+                        <div class="sb-sidenav-menu-heading"></div>
+                        <a class="nav-link" href="dashboard.html">
+                            <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                            Todas las Escuelas
+                        </a>
+                        <div class="collapse" id="collapsePages" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">
+                            <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
+                            </nav>
+                        </div>
+                        <!-- <div class="sb-sidenav-menu-heading">Addons</div> -->
+                        <!--                         <a class="nav-link" href="charts.php">
+                            <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
+                            Graficos
+                        </a> -->
+
+
+                        <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseCFP" aria-expanded="false" aria-controls="collapseCFP">
+                            <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                            Centros
+                            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                        </a>
+                        <div class="collapse" id="collapseCFP" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                            <nav class="sb-sidenav-menu-nested nav">
+                                <a class="nav-link" href="table.html"><i class="fa fa-book" aria-hidden="true"></i>Listado por Zona</a>
+                                <a class="nav-link" href="centrosxzonas.html"><i class="fas fa-map-pin" aria-hidden="true"></i>Ubicacion por Zona</a>
+                            </nav>
+                        </div>
+
+
+                        <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseTray" aria-expanded="false" aria-controls="collapseTray">
+                            <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                            Trayectos Formativos
+                            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                        </a>
+                        <div class="collapse" id="collapseTray" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                            <nav class="sb-sidenav-menu-nested nav">
+                                <a class="nav-link" href="Sectores.html">
+                                    <div class="sb-nav-link-icon"> <i class="fa-brands fa-bandcamp"></i></div>
+                                    Sectores Productivos
+                                </a>
+                                <a class="nav-link" href="SubSectores.html">
+                                    <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
+                                    Sub-Sectores
+                                </a>
+                                <a class="nav-link" href="TrayectosFormativos.html">
+                                    <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
+                                    Trayectos Formativos
+                                </a>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <div class="sb-sidenav-footer">
+                    <div class="small">Logged in as:</div>
+
+                    invitado                </div>
+            </nav>
+        </div>
+        <!-- Principal -->
+
+
+
+        <script src="../cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+        <script src="../cdn.datatables.net/buttons/2.2.3/js/buttons.html5.min.js"></script>
+        <script src="../cdn.datatables.net/buttons/2.2.3/js/buttons.print.min.js"></script>
+        <script src="../cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js" crossorigin="anonymous"></script>
+        <script src="../cdn.datatables.net/1.11.5/js/dataTables.bootstrap4.min.js" crossorigin="anonymous"></script>
+        <script src="../cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+        <script src="../cdn.datatables.net/buttons/2.2.3/js/dataTables.buttons.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" crossorigin="anonymous"></script>
+        <script src="js/datatables-simple-demo.js"></script>
+        <script src="js/scripts.js"></script>
+        <link rel="stylesheet" type="text/css" href="../cdn.datatables.net/v/dt/dt-1.11.5/datatables.min.css" />
+        <link rel="stylesheet" type="text/css" href="../cdn.datatables.net/v/dt/dt-1.11.5/fc-4.0.2/r-2.2.9/rr-1.2.8/sc-2.0.5/sl-1.3.4/datatables.min.css" />
+
+        <script type="text/javascript" src="../cdn.datatables.net/v/dt/dt-1.11.5/datatables.min.js"></script>
+        <script type="text/javascript" src="../cdn.datatables.net/v/dt/dt-1.11.5/fc-4.0.2/r-2.2.9/rr-1.2.8/sc-2.0.5/sl-1.3.4/datatables.min.js"></script>
+        <script type="text/javascript" src="../cdn.datatables.net/v/dt/dt-1.12.1/b-2.2.3/b-colvis-2.2.3/b-html5-2.2.3/b-print-2.2.3/datatables.min.js"></script>
+
+
+        <script src="../cdn.jsdelivr.net/npm/bootstrap%405.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+
+        <script src="../code.jquery.com/jquery-3.5.1.js"></script>
+        <script src="../code.jquery.com/jquery-3.5.1.js"></script>
+
+        <script src="../cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+        <script src="../cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+        <script src="../cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+
+        <div id="layoutSidenav_content">
+            <main>
+
+<div class="container-fluid px-4">
+    <h1 class="mt-4">Norma Legal</h1>
+    <ol class="breadcrumb mb-4">
+        <li class="breadcrumb-item"><a href="digesto.html">Digesto</a></li>
+        <li class="breadcrumb-item active">Tablas</li>
+    </ol>
+
+
+
+    <div class="col-md-12">
+
+        <div class="card">
+            <div class="card-header">
+            <h4 class="card-title">Datos del Trayecto</h4>
+            </div>
+
+
+
+            <form method="POST" enctype="multipart/form-data">
+
+                <div class="form-group">
+                    <label for="txtTipoNorma">Tipo Norma:</label>
+                    <input type="text" class="form-control" required readonly  name="txtTipoNorma" value="Resolucion CFE" id="txtTipoNorma" placeholder="Tipo">
+                </div>
+
+                <div class="form-group">
+                    <label for="txtNorma">Norma Legal:</label>
+                    <input type="text" class="form-control" required readonly  name="txtNorma" value="49" id="txtNorma" placeholder="Norma Legal">
+                </div>
+
+                <div class="form-group">
+                    <label for="txtAnio">Año:</label>
+                    <input type="text" class="form-control" required  readonly name="txtAnio" value="2008" id="txtAnio" placeholder="Sector">
+                </div> 
+
+                <div class="form-group">
+                    <label for="txtFecha">fecha:</label>
+                    <input type="text" class="form-control" required  readonly name="txtFecha" value="2008-05-29" id="txtFecha" placeholder="Sector">
+                </div>   
+
+                <div class="form-group">
+                    <label for="txtNombre">Descripcion:</label>
+                    <textarea class="form-control" required readonly name="txtNombre" rows="3">Establecer plazos jurisdiccionales para la presentación de planes de mejora correspondientes a instituciones de gestión privada, propuestos para ser financiados con los recursos previstos en el Fondo Nacional para la Educación Técnico Profesional, según documentación, requisitos, líneas de acción,operatoria y demás condiciones previstas en la presente resolución.</textarea>
+                </div>
+                <div class="form-group">
+                    <label for="txtVisto">Visto:</label>
+                    <textarea class="form-control" required readonly name="txtVisto" rows="3">la Ley de Educación Técnico Profesional Nş 26.058, la Resolución CFCyENş 269/06 y la Resolución CFE Nş 39/08</textarea>
+                </div>
+                <div class="form-group">
+                    <label for="txtConsiderando">Considerando:</label>
+                    <textarea class="form-control" required readonly name="txtConsiderando" rows="3">Que los objetivos enunciados en la Ley Nş 26.058 refieren a la necesidad dealcanzar mayores niveles de equidad, calidad, eficiencia y efectividad de la EducaciónTécnico Profesional a través del fortalecimiento y mejora continua de las instituciones decarácter nacional, jurisdiccional y municipal, que brindan educación técnico profesional denivel medio, de nivel superior y de formación profesional.Que el artículo 9ş de la citada ley incluye a los establecimientos de gestión privadacomo instituciones comprendidas en la misma, reconociendo su aporte a la expansión enlos sistemas educativos provinciales.Que a través del Programa de mejora continua de la calidad de las instituciones deEducación Técnico Profesional, aprobado por las Resoluciones CFCyE Nş 250/05 y Nş269/06, se ha logrado mejorar las condiciones institucionales de la mayoría de lasinstituciones de educación técnico profesional de gestión estatal.Que el INET, durante el período 2003-2007, ha desarrollado el Programa EquipAr,con presupuesto propio, otorgando financiamiento a más de mil quinientos proyectos deequipamiento presentados por instituciones de gestión privada, atendiendo a que dichasinstituciones resguardan el carácter de la educación como bien público y derecho social.Que algunas jurisdicciones educativas han solicitado tratamiento de excepción a laResolución CFCyE Nş 269/06 de planes de mejora correspondientes a instituciones deeducación técnico profesional de gestión privada, dado que los requerimientos superanlas posibilidades de gestión y financiamiento del Programa EquipAr.Que la temática que aborda la presente resolución fue considerada y analizada enlos encuentros de la Comisión Federal para la Educación Técnico Profesional llevados acabo en los meses de marzo y mayo del corriente ańo, así como en reuniones delCONSEJO NACIONAL DE EDUCACIÓN, TRABAJO Y PRODUCCIÓN.Que el MINISTERIO DE EDUCACIÓN, en acuerdo con el CONSEJO FEDERALDE EDUCACIÓN, debe establecer las políticas, los criterios, las estrategias y los procedimientos que orienten y definan la aplicación de la Ley de Educación TécnicoProfesional.Que la presente medida se adopta con el voto afirmativo de todos los miembros deesta Asamblea Federal, a excepción de las provincias de Chubut, Neuquén y San Luispor ausencia de sus representantes. </textarea>
+                </div>
+                <div class="form-group">
+                    <label for="txtArticulos">Articulos:</label>
+                    <textarea class="form-control" required readonly name="txtArticulos" rows="3">ARTÍCULO 1ş.- Establecer que, a partir de la fecha de la presente resolución y hasta el30 de septiembre de 2008, las autoridades educativas de las jurisdicciones podránpresentar planes de mejora correspondientes a instituciones de gestión privada,propuestos para ser financiados con los recursos previstos en el Fondo Nacional para laEducación Técnico Profesional, presentando la documentación pertinente ante elINSTITUTO NACIONAL DE EDUCACIÓN TECNOLÓGICA.ARTÍCULO 2ş.- Establecer que la presentación de esos planes de mejora estará sujeta aque las instituciones de educación técnico profesional de gestión privada cumplan con lossiguientes requisitos:1- Inscripción en el Registro Federal de instituciones de Educación Técnico Profesional.2- Emisión de títulos técnicos o certificados de formación profesional, cuya trayectoriaformativa esté aprobada por la jurisdicción nacional y/o jurisdiccional.3- Acreditación de máxima subvención estatal vigente en la jurisdicción, certificada por lamáxima autoridad educativa respectiva.4- Acreditación de gratuidad del servicio educativo, contribución voluntaria o bajoarancel, certificada por la máxima autoridad educativa de la jurisdicción respectiva.5- Localización en zonas en las que no esté presente una oferta equivalente del sectorestatal.6- Aval de la autoridad educativa de la jurisdicción sobre la relevancia comunitaria de lapropuesta.7- Razón social ó denominación de la entidad propietaria.ARTÍCULO 3ş.- Establecer que las líneas de acción a ser comprometidas en los planesde mejora institucionales son las relativas a: estrategias para igualdad de oportunidades(mochila técnica y traslados), prácticas profesionalizantes, equipamiento de talleres,laboratorios, espacios productivos y proyectos institucionales, condiciones de higiene y seguridad en talleres, laboratorios y espacios productivos en que se desarrollan lasprácticas pre profesionales y profesionalizantes, acondicionamiento edilicio según lascondiciones de seguridad e higiene necesarias para dichos laboratorios, talleres yespacios productivos y bibliotecas técnicas especializadas.ARTÍCULO 4ş.- Establecer que para esta operatoria, son de aplicación los puntos 10, 11,14, 16, 17, 19, 20, 23, 24, 25, 26, 27, 28, 29, 30, 31, 40 (b, d, e, f, g, i. partes pertinentes),41, 42, 43, 44, 45, 46, 47 y 48 del documento “Mejora Continua de la Calidad de laEducación Técnico Profesional – 2007”, aprobado por Resolución CFCyE Nş 269/06.ARTÍCULO 5ş.- Establecer que los bienes adquiridos con los recursos transferidos por elPrograma de Mejora Continua de la Calidad de la ETP deberán ser inventariados deacuerdo con la normativa jurisdiccional. La institución destinataria de los bienes asumirála mera custodia y conservación de los mismos, así como la responsabilidad civil y penalpor el uso de dichos bienes. En caso de cesación de las actividades educativas, total oparcial o de desafectación del servicio educativo, dichos bienes deberán ser reasignadosa otro u otros establecimientos educativos propuestos por la jurisdicción con laconformidad del INET, debiendo cumplir las personas que los tuvieran a su cargo, hastatanto se les dé nuevo destino, con lo normado por el artículo 488 del Código Civil.ARTÍCULO 6ş.- Regístrese, comuníquese, notifíquese a los integrantes del CONSEJOFEDERAL DE EDUCACIÓN y cumplido archívese. </textarea>
+                </div>
+                 <div class="form-group">
+                    <label for="txtSector">Sector:</label>
+                    <input type="text" class="form-control" required  readonly name="txtSector" value="ETP" id="txtSector" placeholder="Sector">
+                </div>
+                <div class="form-group">
+                    <label for="txtAnexos">Anexos:</label>
+                    <input type="text" class="form-control" required  readonly name="txtAnexos" value="No" id="txtAnexos" placeholder="Sector">
+                </div>
+
+
+                <div class="form-group">
+                    <label for="txtArchivo">Docs.:</label>                    
+                    <i class="fa fa-external-link-square fa-2x" aria-hidden="true"></i>
+                    <a href="https://cfe.educacion.gob.ar/resoluciones/res08/49-08.pdf">https://cfe.educacion.gob.ar/resoluciones/res08/49-08.pdf</a><br>
+                 </div>
+
+            </form>
+        </div>
+    </div>
+
+
+    <script src="../cdn.jsdelivr.net/npm/bootstrap%405.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" crossorigin="anonymous"></script>
+    <script src="js/datatables-simple-demo.js"></script>
+    <!--Ejemplo-->
+
+
+            
+        
+                        </main>
+                <footer class="py-4 bg-light mt-auto">
+                    <div class="container-fluid px-4">
+                        <div class="d-flex align-items-center justify-content-between small">
+                            <div class="text-muted">Copyright &copy; ST3 2022</div>
+                            <div>
+                                <a href="#">Privacy Policy</a>
+                                &middot;
+                                <a href="#">Terms &amp; Conditions</a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <script src="../cdn.jsdelivr.net/npm/bootstrap%405.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="js/scripts.js"></script>
+        <script src="../cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+<!--         <script src="assets/demo/chart-area-demo.js"></script> Ejemplo-->
+<!--        <script src="assets/demo/chart-bar-demo.js"></script> Ejemplo--> 
+        <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" crossorigin="anonymous"></script>
+<!--         <script src="js/datatables-simple-demo.js"></script> Ejemplo--> -->
+    </body>
+
+<!-- Mirrored from www.fpneuquen.com.ar/NormaLegal.php?id=105 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 05 Sep 2024 16:16:20 GMT -->
+</html>

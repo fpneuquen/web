@@ -1,0 +1,278 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from www.fpneuquen.com.ar/NormaLegal.php?id=13 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 05 Sep 2024 16:16:17 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-D23TBS0BCN"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-D23TBS0BCN');
+    </script>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Web de consulta de Centros de Formacion Profesional" />
+    <meta name="author" content="Silvio Stenta" />
+    <title>Formacion Profesional WEB</title>
+    <link rel="icon" type="image/png" href="img/logofp.png">
+    <link href="../cdn.jsdelivr.net/npm/simple-datatables%40latest/dist/style.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="../use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+ <!--    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+ --></head>
+
+<body class="sb-nav-fixed">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+        <!-- Navbar Brand-->
+        <button class="btn btn-link btn-sm order-1 order-lg-1 me-4 me-lg-1" id="sidebarToggle" href="index-2.html">
+            <i class="fas fa-bars fa-lg "></i></button>
+        <a class="navbar-brand ps-3" href="index-2.html"><img src="img/logo%20fp%20288x271.png" class="img-fluid" alt="max-width: 30%;height: auto" width="20%"></a>
+        <!-- Sidebar Toggle-->
+
+        <!-- Navbar Search-->
+        <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
+            <div class="input-group">
+                <!-- <input class="form-control" type="text" placeholder="Search for..." aria-label="Search for..." aria-describedby="btnNavbarSearch" />
+                <button class="btn btn-primary" id="btnNavbarSearch" type="button"><i class="fas fa-search"></i></button> -->
+            </div>
+        </form>
+        <!-- Navbar User-->
+        <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="login.html">Login</a></li>
+                    <li><a class="dropdown-item" href="index-2.html">Settings</a></li>
+                    <li><a class="dropdown-item" href="#!">Activity Log</a></li>
+                    <li>
+                        <hr class="dropdown-divider" />
+                    </li>
+                    <li><a class="dropdown-item" href="index-2.html">Cerrar</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <!-- Navbar Lateral -->
+
+    <div id="layoutSidenav">
+        <div id="layoutSidenav_nav">
+            <nav class="sb-sidenav accordion sb-sidenav-primary" id="sidenavAccordion">
+                <div class="sb-sidenav-menu">
+                    <div class="nav">
+                        <div class="sb-sidenav-menu-heading"></div>
+                        <a class="nav-link" href="dashboard.html">
+                            <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                            Todas las Escuelas
+                        </a>
+                        <div class="collapse" id="collapsePages" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">
+                            <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
+                            </nav>
+                        </div>
+                        <!-- <div class="sb-sidenav-menu-heading">Addons</div> -->
+                        <!--                         <a class="nav-link" href="charts.php">
+                            <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
+                            Graficos
+                        </a> -->
+
+
+                        <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseCFP" aria-expanded="false" aria-controls="collapseCFP">
+                            <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                            Centros
+                            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                        </a>
+                        <div class="collapse" id="collapseCFP" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                            <nav class="sb-sidenav-menu-nested nav">
+                                <a class="nav-link" href="table.html"><i class="fa fa-book" aria-hidden="true"></i>Listado por Zona</a>
+                                <a class="nav-link" href="centrosxzonas.html"><i class="fas fa-map-pin" aria-hidden="true"></i>Ubicacion por Zona</a>
+                            </nav>
+                        </div>
+
+
+                        <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseTray" aria-expanded="false" aria-controls="collapseTray">
+                            <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                            Trayectos Formativos
+                            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                        </a>
+                        <div class="collapse" id="collapseTray" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                            <nav class="sb-sidenav-menu-nested nav">
+                                <a class="nav-link" href="Sectores.html">
+                                    <div class="sb-nav-link-icon"> <i class="fa-brands fa-bandcamp"></i></div>
+                                    Sectores Productivos
+                                </a>
+                                <a class="nav-link" href="SubSectores.html">
+                                    <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
+                                    Sub-Sectores
+                                </a>
+                                <a class="nav-link" href="TrayectosFormativos.html">
+                                    <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
+                                    Trayectos Formativos
+                                </a>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <div class="sb-sidenav-footer">
+                    <div class="small">Logged in as:</div>
+
+                    invitado                </div>
+            </nav>
+        </div>
+        <!-- Principal -->
+
+
+
+        <script src="../cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+        <script src="../cdn.datatables.net/buttons/2.2.3/js/buttons.html5.min.js"></script>
+        <script src="../cdn.datatables.net/buttons/2.2.3/js/buttons.print.min.js"></script>
+        <script src="../cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js" crossorigin="anonymous"></script>
+        <script src="../cdn.datatables.net/1.11.5/js/dataTables.bootstrap4.min.js" crossorigin="anonymous"></script>
+        <script src="../cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+        <script src="../cdn.datatables.net/buttons/2.2.3/js/dataTables.buttons.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" crossorigin="anonymous"></script>
+        <script src="js/datatables-simple-demo.js"></script>
+        <script src="js/scripts.js"></script>
+        <link rel="stylesheet" type="text/css" href="../cdn.datatables.net/v/dt/dt-1.11.5/datatables.min.css" />
+        <link rel="stylesheet" type="text/css" href="../cdn.datatables.net/v/dt/dt-1.11.5/fc-4.0.2/r-2.2.9/rr-1.2.8/sc-2.0.5/sl-1.3.4/datatables.min.css" />
+
+        <script type="text/javascript" src="../cdn.datatables.net/v/dt/dt-1.11.5/datatables.min.js"></script>
+        <script type="text/javascript" src="../cdn.datatables.net/v/dt/dt-1.11.5/fc-4.0.2/r-2.2.9/rr-1.2.8/sc-2.0.5/sl-1.3.4/datatables.min.js"></script>
+        <script type="text/javascript" src="../cdn.datatables.net/v/dt/dt-1.12.1/b-2.2.3/b-colvis-2.2.3/b-html5-2.2.3/b-print-2.2.3/datatables.min.js"></script>
+
+
+        <script src="../cdn.jsdelivr.net/npm/bootstrap%405.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+
+        <script src="../code.jquery.com/jquery-3.5.1.js"></script>
+        <script src="../code.jquery.com/jquery-3.5.1.js"></script>
+
+        <script src="../cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+        <script src="../cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+        <script src="../cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+
+        <div id="layoutSidenav_content">
+            <main>
+
+<div class="container-fluid px-4">
+    <h1 class="mt-4">Norma Legal</h1>
+    <ol class="breadcrumb mb-4">
+        <li class="breadcrumb-item"><a href="digesto.html">Digesto</a></li>
+        <li class="breadcrumb-item active">Tablas</li>
+    </ol>
+
+
+
+    <div class="col-md-12">
+
+        <div class="card">
+            <div class="card-header">
+            <h4 class="card-title">Datos del Trayecto</h4>
+            </div>
+
+
+
+            <form method="POST" enctype="multipart/form-data">
+
+                <div class="form-group">
+                    <label for="txtTipoNorma">Tipo Norma:</label>
+                    <input type="text" class="form-control" required readonly  name="txtTipoNorma" value="Resolucion CFE" id="txtTipoNorma" placeholder="Tipo">
+                </div>
+
+                <div class="form-group">
+                    <label for="txtNorma">Norma Legal:</label>
+                    <input type="text" class="form-control" required readonly  name="txtNorma" value="355" id="txtNorma" placeholder="Norma Legal">
+                </div>
+
+                <div class="form-group">
+                    <label for="txtAnio">Año:</label>
+                    <input type="text" class="form-control" required  readonly name="txtAnio" value="2019" id="txtAnio" placeholder="Sector">
+                </div> 
+
+                <div class="form-group">
+                    <label for="txtFecha">fecha:</label>
+                    <input type="text" class="form-control" required  readonly name="txtFecha" value="2019-06-25" id="txtFecha" placeholder="Sector">
+                </div>   
+
+                <div class="form-group">
+                    <label for="txtNombre">Descripcion:</label>
+                    <textarea class="form-control" required readonly name="txtNombre" rows="3">Aprobar los lineamientos comunes para la organización e implementación de ofertas formativas entre la Formación Profesional y Secundaria parajóvenes entre 15 y 18 ańos.</textarea>
+                </div>
+                <div class="form-group">
+                    <label for="txtVisto">Visto:</label>
+                    <textarea class="form-control" required readonly name="txtVisto" rows="3">la Ley de Educación Nacional (LEN) N° 26.206, la Ley de Educación Técnico Profesional (LETP) N° 26.058, las Resoluciones CFE N° 261106, N° 13/07, N° 84/09, N° 93109, N° 103/10, N° 115/10, N° 118/10, N° 254/15, N° 285/16, N° 287/16, N° 288/16, N° 308/16</textarea>
+                </div>
+                <div class="form-group">
+                    <label for="txtConsiderando">Considerando:</label>
+                    <textarea class="form-control" required readonly name="txtConsiderando" rows="3">Que el artículo 12 de la Ley de Educación Nacional (LEN) establece que el Estado Nacional, las Provincias y la Ciudad Autónoma de Buenos Aires, son los responsables de garantizar a todos los ciudadanos el cumplimiento de la obligatoriedad escolar.Que el artículo 16 de la LEN prevé que el MINISTERIO DE EDUCACIÓN de la NACIÓN y las autoridades jurisdiccionales asegurarán el cumplimiento de la obligatoriedad escolar a través de alternativas institucionales, propuestas pedagógicas, Programas especiales y recupera la centralidad de los/las adolescentes y jóvenes habitantes del territorio argentino como sujetos de derecho a la educación.Que la Resolución N° 93/09 del CONSEJO FEDERAL DE EDUCACIÓN define "Orientaciones para la organización pedagógica e institucional de la Educación Secundaria obligatoria" y manifiesta que todas las escuelas del país se abocarán a ampliar la concepción de escolarización vigente, contemplando diversas situaciones de vida y los bagajes sociales y culturales de los diferentes estudiantes.Que la Resolución CFE N°103/10 sobre "Propuestas de Inclusión y/o Regularización de Trayectorias Escolares en la Educación Secundaria", establece que las Jurisdicciones podrán habilitar variadas alternativas y/o programas educativos que procuren que los jóvenes menores de dieciocho ańos, desescolarizados, ingresen y finalicen la educación secundaria obligatoria.Que por razones y diferentes factores intervinientes las tasas de ingreso, repitencia, retención y egreso de la escuela secundaria siguen siendo una problemática a resolver.Que universalizar el derecho a la educación básica y el compromiso de garantizar el acceso a la Educación Secundaria obligatoria como un bien público y derecho personal y. social, continúa siendo un desafío.Que se cuenta con información sobre experiencias exitosas a partir de Programas y ofertas diseńadas y en implementación en las Jurisdicciones orientadas a resolver la situación de exclusión educativa de adolescentes y jóvenes desescolarizados del grupo etario de 15 a 18 ańos y en algunos casos desde los 14 ańos.Que los jóvenes con trayectorias educativas discontinuas que suelen culminar en la desescolarización frecuentemente recurren a la Formación Profesional para mejorar sus cualificaciones y así poder acceder al mundo del trabajoQue el título de finalización de estudios de Escuela Secundaria es un requerimiento que en el mundo del trabajo se exige como condición y junto a un Certificado de Formación Profesional los jóvenes encuentran mejores posibilidades de inserción laboral.Que las Jurisdicciones que cuentan con experiencias de secundaria complementadas con Formación Profesional ? capacitación Laboral tienen mejores resultados en cuanto a las tasas de retención y egreso.Que la Resolución CFE N° 285/16 aprueba el Plan Estratégico Nacional 2016-2021 "ARGENTINA ENSEŃA Y APRENDE", establece como eje central de la política educativa nacional el Aprendizaje de saberes y capacidades fundamentales: ingreso, permanencia, aprendizaje de calidad y egreso de la totalidad de los/as nińos/as, adolescentes, jóvenes y adultos/as de la educación obligatoria, y explicita la necesidad de garantizar una educación que desarrolle todas las dimensiones de la persona para su desempeńo social y laboral y para el aprendizaje a lo largo de toda la vida.Que para posibilitar la cualificación o recualificación profesional de los sujetos debe concurrir la Educación Técnico Profesional.Que la Resolución CFE N° 13/07 aprueba el documento "Títulos y Certificados de la Educación Técnico Profesional" en el que se incluyen los referenciales de ingreso para la Formación Profesional Inicial.Que las Resoluciones CFE Nos. 115/10, 287/16 y 288/16 establecen la organización de las Formación Profesional, la Capacitación Laboral y la Formación Profesional Continua.Que se han desarrollado y se implementan actualmente en las jurisdicciones, en carácter de Proyectos Institucionales, sustantivas experiencias de articulación entre la formación profesional y la finalización de estudios de nivel primario y/o secundario destinadas a la población joven y adulta que lo requiere.Que la Resolución CFE N°308/16 habilita esta articulación para la EPJA y para la Formación Profesional.Que, para ello, se hace necesario aprobar en este ámbito definiciones y orientaciones a efectos de dar respuesta a adolescentes y jóvenes que están fuera del circuito educativo como así mejorar la retención y egreso del Nivel secundario. Que la presente medida se adopta con el voto afirmativo de todos los miembros de esta Asamblea Federal, a excepción de las provincias de San Luis y Santa Fe por ausencia de sus representantes, conforme lo previsto en la Resolución CFE N° 1/07.</textarea>
+                </div>
+                <div class="form-group">
+                    <label for="txtArticulos">Articulos:</label>
+                    <textarea class="form-control" required readonly name="txtArticulos" rows="3">ARTICULÓ 1°.- Apruébese los lineamientos comunes nacionales para la organización e implementación de ofertas formativas entre la Formación Profesional y Secundaria para jóvenes entre 15 y 18 ańos.ARTICULO 2°.- Modifíquese el artículo 64 del apartado 6.3. Referenciales de ingreso según niveles de certificación de la Resolución CFE N° 115/10 como sigue: "64. La edad mínima establecida para el ingreso a ofertas de formación profesional es de 18 ańos, con la excepción del ingreso de adolescente desde los 15 ańos de edad en propuestas de FP vinculadas curricular o institucionalmente al cursado de niveles educativos, atendiendo a la salvedad realizada en este documento en relación con las trayectorias formativas de formación profesional cuyos certificados habilitan para el ejercicio de actividades profesionales que están reguladas legalmente en los ámbitos nacional y/o provincial y/o que se enmarcan en normativas de matriculación o colegiación obligatorias".ARTICULO 30.- Encomiéndese al INSTITUTO NACIONAL DE EDUCACIÓN TECNOLÓGICA instrumentar dispositivos que favorezcan el acompańamiento técnico-pedagógico y el relevamiento de experiencias jurisdiccionales.ARTICULO 40.- Regístrese, comuníquese a los integrantes del CONSEJO FEDERAL DE EDUCACIÓN cumplido, archívese.</textarea>
+                </div>
+                 <div class="form-group">
+                    <label for="txtSector">Sector:</label>
+                    <input type="text" class="form-control" required  readonly name="txtSector" value="Formacion Profesional" id="txtSector" placeholder="Sector">
+                </div>
+                <div class="form-group">
+                    <label for="txtAnexos">Anexos:</label>
+                    <input type="text" class="form-control" required  readonly name="txtAnexos" value="No" id="txtAnexos" placeholder="Sector">
+                </div>
+
+
+                <div class="form-group">
+                    <label for="txtArchivo">Docs.:</label>                    
+                    <i class="fa fa-external-link-square fa-2x" aria-hidden="true"></i>
+                    <a href="https://www.argentina.gob.ar/sites/default/files/res_cfe_355_y_anexo.pdf">https://www.argentina.gob.ar/sites/default/files/res_cfe_355_y_anexo.pdf</a><br>
+                 </div>
+
+            </form>
+        </div>
+    </div>
+
+
+    <script src="../cdn.jsdelivr.net/npm/bootstrap%405.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" crossorigin="anonymous"></script>
+    <script src="js/datatables-simple-demo.js"></script>
+    <!--Ejemplo-->
+
+
+            
+        
+                        </main>
+                <footer class="py-4 bg-light mt-auto">
+                    <div class="container-fluid px-4">
+                        <div class="d-flex align-items-center justify-content-between small">
+                            <div class="text-muted">Copyright &copy; ST3 2022</div>
+                            <div>
+                                <a href="#">Privacy Policy</a>
+                                &middot;
+                                <a href="#">Terms &amp; Conditions</a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <script src="../cdn.jsdelivr.net/npm/bootstrap%405.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="js/scripts.js"></script>
+        <script src="../cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+<!--         <script src="assets/demo/chart-area-demo.js"></script> Ejemplo-->
+<!--        <script src="assets/demo/chart-bar-demo.js"></script> Ejemplo--> 
+        <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" crossorigin="anonymous"></script>
+<!--         <script src="js/datatables-simple-demo.js"></script> Ejemplo--> -->
+    </body>
+
+<!-- Mirrored from www.fpneuquen.com.ar/NormaLegal.php?id=13 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 05 Sep 2024 16:16:17 GMT -->
+</html>

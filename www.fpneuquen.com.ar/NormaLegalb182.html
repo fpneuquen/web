@@ -1,0 +1,278 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from www.fpneuquen.com.ar/NormaLegal.php?id=100 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 05 Sep 2024 16:16:20 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-D23TBS0BCN"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-D23TBS0BCN');
+    </script>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Web de consulta de Centros de Formacion Profesional" />
+    <meta name="author" content="Silvio Stenta" />
+    <title>Formacion Profesional WEB</title>
+    <link rel="icon" type="image/png" href="img/logofp.png">
+    <link href="../cdn.jsdelivr.net/npm/simple-datatables%40latest/dist/style.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="../use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+ <!--    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+ --></head>
+
+<body class="sb-nav-fixed">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+        <!-- Navbar Brand-->
+        <button class="btn btn-link btn-sm order-1 order-lg-1 me-4 me-lg-1" id="sidebarToggle" href="index-2.html">
+            <i class="fas fa-bars fa-lg "></i></button>
+        <a class="navbar-brand ps-3" href="index-2.html"><img src="img/logo%20fp%20288x271.png" class="img-fluid" alt="max-width: 30%;height: auto" width="20%"></a>
+        <!-- Sidebar Toggle-->
+
+        <!-- Navbar Search-->
+        <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
+            <div class="input-group">
+                <!-- <input class="form-control" type="text" placeholder="Search for..." aria-label="Search for..." aria-describedby="btnNavbarSearch" />
+                <button class="btn btn-primary" id="btnNavbarSearch" type="button"><i class="fas fa-search"></i></button> -->
+            </div>
+        </form>
+        <!-- Navbar User-->
+        <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="login.html">Login</a></li>
+                    <li><a class="dropdown-item" href="index-2.html">Settings</a></li>
+                    <li><a class="dropdown-item" href="#!">Activity Log</a></li>
+                    <li>
+                        <hr class="dropdown-divider" />
+                    </li>
+                    <li><a class="dropdown-item" href="index-2.html">Cerrar</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <!-- Navbar Lateral -->
+
+    <div id="layoutSidenav">
+        <div id="layoutSidenav_nav">
+            <nav class="sb-sidenav accordion sb-sidenav-primary" id="sidenavAccordion">
+                <div class="sb-sidenav-menu">
+                    <div class="nav">
+                        <div class="sb-sidenav-menu-heading"></div>
+                        <a class="nav-link" href="dashboard.html">
+                            <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                            Todas las Escuelas
+                        </a>
+                        <div class="collapse" id="collapsePages" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">
+                            <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
+                            </nav>
+                        </div>
+                        <!-- <div class="sb-sidenav-menu-heading">Addons</div> -->
+                        <!--                         <a class="nav-link" href="charts.php">
+                            <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
+                            Graficos
+                        </a> -->
+
+
+                        <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseCFP" aria-expanded="false" aria-controls="collapseCFP">
+                            <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                            Centros
+                            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                        </a>
+                        <div class="collapse" id="collapseCFP" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                            <nav class="sb-sidenav-menu-nested nav">
+                                <a class="nav-link" href="table.html"><i class="fa fa-book" aria-hidden="true"></i>Listado por Zona</a>
+                                <a class="nav-link" href="centrosxzonas.html"><i class="fas fa-map-pin" aria-hidden="true"></i>Ubicacion por Zona</a>
+                            </nav>
+                        </div>
+
+
+                        <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseTray" aria-expanded="false" aria-controls="collapseTray">
+                            <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                            Trayectos Formativos
+                            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                        </a>
+                        <div class="collapse" id="collapseTray" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                            <nav class="sb-sidenav-menu-nested nav">
+                                <a class="nav-link" href="Sectores.html">
+                                    <div class="sb-nav-link-icon"> <i class="fa-brands fa-bandcamp"></i></div>
+                                    Sectores Productivos
+                                </a>
+                                <a class="nav-link" href="SubSectores.html">
+                                    <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
+                                    Sub-Sectores
+                                </a>
+                                <a class="nav-link" href="TrayectosFormativos.html">
+                                    <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
+                                    Trayectos Formativos
+                                </a>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <div class="sb-sidenav-footer">
+                    <div class="small">Logged in as:</div>
+
+                    invitado                </div>
+            </nav>
+        </div>
+        <!-- Principal -->
+
+
+
+        <script src="../cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+        <script src="../cdn.datatables.net/buttons/2.2.3/js/buttons.html5.min.js"></script>
+        <script src="../cdn.datatables.net/buttons/2.2.3/js/buttons.print.min.js"></script>
+        <script src="../cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js" crossorigin="anonymous"></script>
+        <script src="../cdn.datatables.net/1.11.5/js/dataTables.bootstrap4.min.js" crossorigin="anonymous"></script>
+        <script src="../cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+        <script src="../cdn.datatables.net/buttons/2.2.3/js/dataTables.buttons.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" crossorigin="anonymous"></script>
+        <script src="js/datatables-simple-demo.js"></script>
+        <script src="js/scripts.js"></script>
+        <link rel="stylesheet" type="text/css" href="../cdn.datatables.net/v/dt/dt-1.11.5/datatables.min.css" />
+        <link rel="stylesheet" type="text/css" href="../cdn.datatables.net/v/dt/dt-1.11.5/fc-4.0.2/r-2.2.9/rr-1.2.8/sc-2.0.5/sl-1.3.4/datatables.min.css" />
+
+        <script type="text/javascript" src="../cdn.datatables.net/v/dt/dt-1.11.5/datatables.min.js"></script>
+        <script type="text/javascript" src="../cdn.datatables.net/v/dt/dt-1.11.5/fc-4.0.2/r-2.2.9/rr-1.2.8/sc-2.0.5/sl-1.3.4/datatables.min.js"></script>
+        <script type="text/javascript" src="../cdn.datatables.net/v/dt/dt-1.12.1/b-2.2.3/b-colvis-2.2.3/b-html5-2.2.3/b-print-2.2.3/datatables.min.js"></script>
+
+
+        <script src="../cdn.jsdelivr.net/npm/bootstrap%405.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+
+        <script src="../code.jquery.com/jquery-3.5.1.js"></script>
+        <script src="../code.jquery.com/jquery-3.5.1.js"></script>
+
+        <script src="../cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+        <script src="../cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+        <script src="../cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+
+        <div id="layoutSidenav_content">
+            <main>
+
+<div class="container-fluid px-4">
+    <h1 class="mt-4">Norma Legal</h1>
+    <ol class="breadcrumb mb-4">
+        <li class="breadcrumb-item"><a href="digesto.html">Digesto</a></li>
+        <li class="breadcrumb-item active">Tablas</li>
+    </ol>
+
+
+
+    <div class="col-md-12">
+
+        <div class="card">
+            <div class="card-header">
+            <h4 class="card-title">Datos del Trayecto</h4>
+            </div>
+
+
+
+            <form method="POST" enctype="multipart/form-data">
+
+                <div class="form-group">
+                    <label for="txtTipoNorma">Tipo Norma:</label>
+                    <input type="text" class="form-control" required readonly  name="txtTipoNorma" value="Resolucion CFE" id="txtTipoNorma" placeholder="Tipo">
+                </div>
+
+                <div class="form-group">
+                    <label for="txtNorma">Norma Legal:</label>
+                    <input type="text" class="form-control" required readonly  name="txtNorma" value="64" id="txtNorma" placeholder="Norma Legal">
+                </div>
+
+                <div class="form-group">
+                    <label for="txtAnio">Año:</label>
+                    <input type="text" class="form-control" required  readonly name="txtAnio" value="2008" id="txtAnio" placeholder="Sector">
+                </div> 
+
+                <div class="form-group">
+                    <label for="txtFecha">fecha:</label>
+                    <input type="text" class="form-control" required  readonly name="txtFecha" value="2008-10-28" id="txtFecha" placeholder="Sector">
+                </div>   
+
+                <div class="form-group">
+                    <label for="txtNombre">Descripcion:</label>
+                    <textarea class="form-control" required readonly name="txtNombre" rows="3">Aprobar el “Programa Nacional de Formación Docente Inicial para la Educación Técnico Profesional” (Anexo I). Aprobar los perfiles profesionalesrequeridos para la implementación del Programa (Anexo II).</textarea>
+                </div>
+                <div class="form-group">
+                    <label for="txtVisto">Visto:</label>
+                    <textarea class="form-control" required readonly name="txtVisto" rows="3"> la Ley de Educación Nacional Nş 26.206, la Ley de Educación TécnicoProfesional Nş 26.058 y la Resolución CFE Nş 24/07,</textarea>
+                </div>
+                <div class="form-group">
+                    <label for="txtConsiderando">Considerando:</label>
+                    <textarea class="form-control" required readonly name="txtConsiderando" rows="3">Que el artículo 73, inciso b) de la LEN enuncia como uno de los objetivos de lapolítica nacional de formación docente “...desarrollar las capacidades y los conocimientosnecesarios para el trabajo docente en los diferentes niveles y modalidades del sistemaeducativo de acuerdo a las orientaciones de la presente ley.”Que el artículo 74, inciso a) de la LEN encomienda al MINISTERIO DEEDUCACIÓN DE LA NACIÓN y al CONSEJO FEDERAL DE EDUCACIÓN acordar “....laspolíticas y los planes de formación docente inicial”.Que los objetivos enunciados en la Ley Nş 26.058 refieren a la necesidad dealcanzar mayores niveles de equidad, calidad, eficiencia y efectividad de la EducaciónTécnico Profesional a través del fortalecimiento y mejora continua de las instituciones, enel marco de políticas nacionales y estrategias de carácter federal que integren lasparticularidades y diversidades jurisdiccionales.Que la mejora de la calidad de la ETP incluye necesariamente brindaroportunidades para que los docentes y directivos de las instituciones de esa modalidadpuedan acceder a su formación docente, de forma tal de mejorar los procesos deenseńanza y aprendizaje así como la gestión de las instituciones de ETP. Que el artículo 30 de la LETP encomienda al MINISTERIO DE EDUCACIÓNnacional concertar en el CONSEJO FEDERAL DE EDUCACIÓN “... la implementación demodalidades para que i) los profesionales de nivel superior universitario o no universitarioegresados en campos afines a las diferentes ofertas de educación técnico profesional,puedan realizar estudios pedagógicos –en instituciones de educación superioruniversitaria o no universitaria- que califiquen su ingreso y promoción en la carreradocente, ii) los egresados de carreras técnico profesional de nivel medio que sedesempeńan en instituciones del mismo nivel, reciban actualización pedagógica, quecalifiquen su carrera docente”.Que el artículo 52 de la LETP crea el Fondo Nacional para la Educación TécnicoProfesional con la finalidad de favorecer la inversión necesaria para dar cumplimiento alos objetivos y propósitos enunciados en el considerando precedente.Que de acuerdo al artículo 73, inciso d) de la LETP es competencia del CONSEJOFEDERAL DE EDUCACIÓN acordar los procedimientos de gestión del Fondo nacionalpara la ETP.Que el INSTITUTO NACIONAL DE EDUCACIÓN TECNOLÓGICA tiene a su cargola administración del Fondo Nacional para la ETP en el marco de los lineamientos yprocedimientos acordados por la Resolución CFE Nş 269/06 – “Mejora continua de lacalidad de la educación técnico profesional”- siendo además, responsable de determinar yproponer al CONSEJO FEDERAL DE EDUCACIÓN las inversiones financiadas con dichofondo, conforme el artículo 45, inciso a) de la LETP.Que, en ese marco, el anexo citado estableció en su cap. V.I. nueve líneas deacción de alcance nacional y ejecución jurisdiccional e institucional, para el logro de lospropósitos de los planes de mejora jurisdiccionales e institucionales a ser financiados conlos recursos del Fondo, la primera de las cuales destinada a la formación inicial y continuade docentes de ETP.Que, sin perjuicio de las acciones de formación continua que han realizado lasjurisdicciones hasta la fecha, es conveniente crear, como aporte al Programa de MejoraContinua de las Instituciones de ETP, un Programa Nacional específico de formacióndocente inicial para la ETP.Que, dado el objeto y las características de este Programa, el INSTITUTONACIONAL DE EDUCACIÓN TECNOLÓGICA ha trabajado en consulta con elINSTITUTO NACIONAL DE FORMACIÓN DOCENTE, observando los LineamientosCurriculares Nacionales para la Formación Docente Inicial elaborados por el INFD yaprobados según Resolución CFE Nş24/07.Que la temática que aborda la presente resolución fue considerada y analizada enlos encuentros de la Comisión Federal de Educación Técnico Profesional llevados a caboen los meses de febrero, abril, junio y agosto de 2008, en virtud de las atribucionesconferidas en la LETP, artículo 49, y en las reuniones de CONETyP de fechas 14 demarzo, 28 de marzo y 24 de julio de 2008 en su carácter de órgano de consulta, tal comose expresa en la LETP, artículo 46.Que el MINISTERIO DE EDUCACIÓN DE LA NACIÓN en acuerdo con elCONSEJO FEDERAL DE EDUCACIÓN, debe establecer las políticas, los criterios, las estrategias y los procedimientos que orienten y definan la aplicación de la Ley deEducación Técnico Profesional.Que la presente medida se adopta con el voto afirmativo de todos los miembros deesta Asamblea Federal, a excepción de las provincias de San Luis y Santiago del Estero yun integrante del Consejo de Universidades, por ausencia de sus representantes. </textarea>
+                </div>
+                <div class="form-group">
+                    <label for="txtArticulos">Articulos:</label>
+                    <textarea class="form-control" required readonly name="txtArticulos" rows="3">ARTÍCULO 1ş.- Aprobar el “Programa Nacional de Formación Docente Inicial para laEducación Técnico Profesional” en los términos indicados en el Anexo I que forma partede la presente resolución.ARTÍCULO 2ş.- Aprobar los perfiles profesionales requeridos para la implementación delpresente Programa, que se agrega como Anexo II que forma parte de la presenteresolución.ARTÍCULO 3ş.- Establecer que el Programa aprobado por el Artículo 1° tendrá vigenciadurante 3 ańos, aplicándose a la cohorte que se inicia en el ciclo 2009 y su continuidadestará sujeta a una evaluación de resultados.ARTÍCULO 4ş.- Establecer que a partir de la fecha de la presente resolución, lasautoridades de las jurisdicciones educativas podrán acordar con el INSTITUTONACIONAL DE EDUCACIÓN TECNOLÓGICA su incorporación al presente Programa, enforma total o parcial, suscribiendo a tal fin un protocolo adicional al convenio marcovigente, todo ello con arreglo a lo enunciado en los Anexos I y II de la presente resolución.ARTÍCULO 5ş.- Regístrese, comuníquese, notifíquese a los integrantes del CONSEJOFEDERAL DE EDUCACIÓN y cumplido archívese. </textarea>
+                </div>
+                 <div class="form-group">
+                    <label for="txtSector">Sector:</label>
+                    <input type="text" class="form-control" required  readonly name="txtSector" value="ETP" id="txtSector" placeholder="Sector">
+                </div>
+                <div class="form-group">
+                    <label for="txtAnexos">Anexos:</label>
+                    <input type="text" class="form-control" required  readonly name="txtAnexos" value="SI" id="txtAnexos" placeholder="Sector">
+                </div>
+
+
+                <div class="form-group">
+                    <label for="txtArchivo">Docs.:</label>                    
+                    <i class="fa fa-external-link-square fa-2x" aria-hidden="true"></i>
+                    <a href="https://cfe.educacion.gob.ar/resoluciones/res08/64-08.pdf">https://cfe.educacion.gob.ar/resoluciones/res08/64-08.pdf</a><br>
+                 </div>
+
+            </form>
+        </div>
+    </div>
+
+
+    <script src="../cdn.jsdelivr.net/npm/bootstrap%405.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" crossorigin="anonymous"></script>
+    <script src="js/datatables-simple-demo.js"></script>
+    <!--Ejemplo-->
+
+
+            
+        
+                        </main>
+                <footer class="py-4 bg-light mt-auto">
+                    <div class="container-fluid px-4">
+                        <div class="d-flex align-items-center justify-content-between small">
+                            <div class="text-muted">Copyright &copy; ST3 2022</div>
+                            <div>
+                                <a href="#">Privacy Policy</a>
+                                &middot;
+                                <a href="#">Terms &amp; Conditions</a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <script src="../cdn.jsdelivr.net/npm/bootstrap%405.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="js/scripts.js"></script>
+        <script src="../cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+<!--         <script src="assets/demo/chart-area-demo.js"></script> Ejemplo-->
+<!--        <script src="assets/demo/chart-bar-demo.js"></script> Ejemplo--> 
+        <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" crossorigin="anonymous"></script>
+<!--         <script src="js/datatables-simple-demo.js"></script> Ejemplo--> -->
+    </body>
+
+<!-- Mirrored from www.fpneuquen.com.ar/NormaLegal.php?id=100 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 05 Sep 2024 16:16:20 GMT -->
+</html>
