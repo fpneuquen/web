@@ -1,0 +1,1913 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from www.fpneuquen.com.ar/table.php by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 05 Sep 2024 16:04:09 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-D23TBS0BCN"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-D23TBS0BCN');
+    </script>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Web de consulta de Centros de Formacion Profesional" />
+    <meta name="author" content="Silvio Stenta" />
+    <title>Formacion Profesional WEB</title>
+    <link rel="icon" type="image/png" href="img/logofp.png">
+    <link href="../cdn.jsdelivr.net/npm/simple-datatables%40latest/dist/style.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="../use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+ <!--    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+ --></head>
+
+<body class="sb-nav-fixed">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+        <!-- Navbar Brand-->
+        <button class="btn btn-link btn-sm order-1 order-lg-1 me-4 me-lg-1" id="sidebarToggle" href="index-2.html">
+            <i class="fas fa-bars fa-lg "></i></button>
+        <a class="navbar-brand ps-3" href="index-2.html"><img src="img/logo%20fp%20288x271.png" class="img-fluid" alt="max-width: 30%;height: auto" width="20%"></a>
+        <!-- Sidebar Toggle-->
+
+        <!-- Navbar Search-->
+        <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
+            <div class="input-group">
+                <!-- <input class="form-control" type="text" placeholder="Search for..." aria-label="Search for..." aria-describedby="btnNavbarSearch" />
+                <button class="btn btn-primary" id="btnNavbarSearch" type="button"><i class="fas fa-search"></i></button> -->
+            </div>
+        </form>
+        <!-- Navbar User-->
+        <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="login.html">Login</a></li>
+                    <li><a class="dropdown-item" href="index-2.html">Settings</a></li>
+                    <li><a class="dropdown-item" href="#!">Activity Log</a></li>
+                    <li>
+                        <hr class="dropdown-divider" />
+                    </li>
+                    <li><a class="dropdown-item" href="index-2.html">Cerrar</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <!-- Navbar Lateral -->
+
+    <div id="layoutSidenav">
+        <div id="layoutSidenav_nav">
+            <nav class="sb-sidenav accordion sb-sidenav-primary" id="sidenavAccordion">
+                <div class="sb-sidenav-menu">
+                    <div class="nav">
+                        <div class="sb-sidenav-menu-heading"></div>
+                        <a class="nav-link" href="dashboard.html">
+                            <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                            Todas las Escuelas
+                        </a>
+                        <div class="collapse" id="collapsePages" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">
+                            <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
+                            </nav>
+                        </div>
+                        <!-- <div class="sb-sidenav-menu-heading">Addons</div> -->
+                        <!--                         <a class="nav-link" href="charts.php">
+                            <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
+                            Graficos
+                        </a> -->
+
+
+                        <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseCFP" aria-expanded="false" aria-controls="collapseCFP">
+                            <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                            Centros
+                            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                        </a>
+                        <div class="collapse" id="collapseCFP" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                            <nav class="sb-sidenav-menu-nested nav">
+                                <a class="nav-link" href="table.html"><i class="fa fa-book" aria-hidden="true"></i>Listado por Zona</a>
+                                <a class="nav-link" href="centrosxzonas.html"><i class="fas fa-map-pin" aria-hidden="true"></i>Ubicacion por Zona</a>
+                            </nav>
+                        </div>
+
+
+                        <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseTray" aria-expanded="false" aria-controls="collapseTray">
+                            <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                            Trayectos Formativos
+                            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                        </a>
+                        <div class="collapse" id="collapseTray" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                            <nav class="sb-sidenav-menu-nested nav">
+                                <a class="nav-link" href="Sectores.html">
+                                    <div class="sb-nav-link-icon"> <i class="fa-brands fa-bandcamp"></i></div>
+                                    Sectores Productivos
+                                </a>
+                                <a class="nav-link" href="SubSectores.html">
+                                    <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
+                                    Sub-Sectores
+                                </a>
+                                <a class="nav-link" href="TrayectosFormativos.html">
+                                    <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
+                                    Trayectos Formativos
+                                </a>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <div class="sb-sidenav-footer">
+                    <div class="small">Logged in as:</div>
+
+                    invitado                </div>
+            </nav>
+        </div>
+        <!-- Principal -->
+
+
+
+        <script src="../cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+        <script src="../cdn.datatables.net/buttons/2.2.3/js/buttons.html5.min.js"></script>
+        <script src="../cdn.datatables.net/buttons/2.2.3/js/buttons.print.min.js"></script>
+        <script src="../cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js" crossorigin="anonymous"></script>
+        <script src="../cdn.datatables.net/1.11.5/js/dataTables.bootstrap4.min.js" crossorigin="anonymous"></script>
+        <script src="../cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+        <script src="../cdn.datatables.net/buttons/2.2.3/js/dataTables.buttons.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" crossorigin="anonymous"></script>
+        <script src="js/datatables-simple-demo.js"></script>
+        <script src="js/scripts.js"></script>
+        <link rel="stylesheet" type="text/css" href="../cdn.datatables.net/v/dt/dt-1.11.5/datatables.min.css" />
+        <link rel="stylesheet" type="text/css" href="../cdn.datatables.net/v/dt/dt-1.11.5/fc-4.0.2/r-2.2.9/rr-1.2.8/sc-2.0.5/sl-1.3.4/datatables.min.css" />
+
+        <script type="text/javascript" src="../cdn.datatables.net/v/dt/dt-1.11.5/datatables.min.js"></script>
+        <script type="text/javascript" src="../cdn.datatables.net/v/dt/dt-1.11.5/fc-4.0.2/r-2.2.9/rr-1.2.8/sc-2.0.5/sl-1.3.4/datatables.min.js"></script>
+        <script type="text/javascript" src="../cdn.datatables.net/v/dt/dt-1.12.1/b-2.2.3/b-colvis-2.2.3/b-html5-2.2.3/b-print-2.2.3/datatables.min.js"></script>
+
+
+        <script src="../cdn.jsdelivr.net/npm/bootstrap%405.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+
+        <script src="../code.jquery.com/jquery-3.5.1.js"></script>
+        <script src="../code.jquery.com/jquery-3.5.1.js"></script>
+
+        <script src="../cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+        <script src="../cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+        <script src="../cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+
+        <div id="layoutSidenav_content">
+            <main>
+
+
+<div class="container-fluid px-4">
+    <h1 class="mt-4">Escuelas</h1>
+    <ol class="breadcrumb mb-4">
+        <li class="breadcrumb-item"><a href="index-2.html">Escritorio</a></li>
+        <li class="breadcrumb-item active">Tablas</li>
+    </ol>
+
+
+<!--     <div class="row">
+        <div class="col-xl-10">
+            <div class="card mb-6">
+                <div class="card-header">
+                    <i class="fas fa-chart-bar me-1"></i>
+                    Escuelas por Tipo
+                </div>
+                <div class="card-body d-flex justify-content-center">
+                    
+
+
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['bar']});
+      google.charts.setOnLoadCallback(drawStuff);
+
+      function drawStuff() {
+        var data = new google.visualization.arrayToDataTable([
+            ['Tipo', 'Cant.Escuelas'],
+                            ['ASOC',2],
+                            ['ATM',6],
+                            ['CECALAB',4],
+                            ['CEMOE',1],
+                            ['CEPI',14],
+                            ['CFP',42],
+                            ['CFPA',5],
+                            ['EPA',10],
+                            ['NE',5],
+                            ['SUPERIOR',2],
+                    ]);
+
+        var options = {
+          width: 800,
+          legend: { position: 'none' },
+          chart: {
+            title: 'Centros de Formación ',
+            subtitle: 'datos propios' },
+          axes: {
+            x: {
+              0: { side: 'top', label: ''} // Top x-axis.
+            }
+          },
+          bar: { groupWidth: "70%" }
+        };
+
+        var chart = new google.charts.Bar(document.getElementById('top_x_div'));
+        // Convert the Classic options to Material options.
+        chart.draw(data, google.charts.Bar.convertOptions(options));
+      };
+    </script>
+  </head>
+  <body>
+    <div id="top_x_div"></div>
+  </body>
+</html>
+                </div>
+            </div>
+        </div>
+
+    </div> -->
+
+
+    <!-- Botonera -->
+    <form method="POST" enctype="multipart/form-data">
+        <div class="btn-group" role="group" aria-label="Basic outlined example">
+                            <input name="znelegida" class="btn btn-primary" type="submit" value="Confluencia 1">
+                            <input name="znelegida" class="btn btn-primary" type="submit" value="Confluencia 2">
+                            <input name="znelegida" class="btn btn-primary" type="submit" value="Centro">
+                            <input name="znelegida" class="btn btn-primary" type="submit" value="Norte">
+                            <input name="znelegida" class="btn btn-primary" type="submit" value="Sur">
+                            <input name="znelegida" class="btn btn-primary" type="submit" value="Sede Central">
+                            <input name="znelegida" class="btn btn-primary" type="submit" value="ECPL">
+                        <input name="znelegida" class="btn btn-primary" type="submit" value="Todos">
+        </div>
+    </form>
+
+    <!-- Listado -->
+
+    <div class="alert alert-primary" role="alert">
+        <h3></h3>
+    </div>
+
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+
+                    </br>
+            <div class="card">
+                <div class="card-header">
+                    ASOC                </div>
+                <div class="card-body">
+                    <h5 class="card-title">APADIC ASOCIACIÓN DE PADRES Y AMIGOS DEL DISCAPACITADO</h5>
+                    <p class="card-text">
+                        HONDURAS 1810</br>
+                        <a href="mailto:apadicnuevaesperanza@hotmail.com">apadicnuevaesperanza@hotmail.com</a></br>
+                        CENTENARIO</br>
+                        2994894521</br>
+                    </p>
+                    <a class="btn btn-outline-primary btn-sm" href="datoscentrod3e0.html?id=580093711">
+                        Apadic                    </a>
+                </div>
+
+            </div>
+                    </br>
+            <div class="card">
+                <div class="card-header">
+                    ASOC                </div>
+                <div class="card-body">
+                    <h5 class="card-title">A.R.D.E.R. ASOCIACIÓN REGIONAL DEL ENFERMO RENAL</h5>
+                    <p class="card-text">
+                        MINAS 1321</br>
+                        <a href="mailto:arder_1997@yahoo.com.ar">arder_1997@yahoo.com.ar</a></br>
+                        NEUQUEN</br>
+                        299155795079</br>
+                    </p>
+                    <a class="btn btn-outline-primary btn-sm" href="datoscentro413c.html?id=580093709">
+                        Asoc. Arder.                    </a>
+                </div>
+
+            </div>
+                    </br>
+            <div class="card">
+                <div class="card-header">
+                    CEMOE                </div>
+                <div class="card-body">
+                    <h5 class="card-title">C.E.A. 1</h5>
+                    <p class="card-text">
+                        SIN NOMBRE</br>
+                        <a href="mailto:cea001@neuquen.gov.ar">cea001@neuquen.gov.ar</a></br>
+                        LAS COLORADAS</br>
+                        2942495038</br>
+                    </p>
+                    <a class="btn btn-outline-primary btn-sm" href="datoscentro92d2.html?id=580084000">
+                        Cea. 1 Las Coloradas                    </a>
+                </div>
+
+            </div>
+                    </br>
+            <div class="card">
+                <div class="card-header">
+                    CECALAB                </div>
+                <div class="card-body">
+                    <h5 class="card-title">CE.CA.LAB. 134</h5>
+                    <p class="card-text">
+                        MITRE BARTOLOME 675</br>
+                        <a href="mailto:jorgecristian@gmail.com">jorgecristian@gmail.com</a></br>
+                        NEUQUEN</br>
+                        299155212115</br>
+                    </p>
+                    <a class="btn btn-outline-primary btn-sm" href="datoscentro6e10.html?id=580083100">
+                        Cecalab. 134                    </a>
+                </div>
+
+            </div>
+                    </br>
+            <div class="card">
+                <div class="card-header">
+                    CECALAB                </div>
+                <div class="card-body">
+                    <h5 class="card-title">CE.CA.LAB. 135</h5>
+                    <p class="card-text">
+                        MITRE BARTOLOME 675</br>
+                        <a href="mailto:fabianmonzon84@hotmail.com">fabianmonzon84@hotmail.com</a></br>
+                        NEUQUEN</br>
+                        299155311450</br>
+                    </p>
+                    <a class="btn btn-outline-primary btn-sm" href="datoscentrocf79.html?id=580083700">
+                        Cecalab. 135                    </a>
+                </div>
+
+            </div>
+                    </br>
+            <div class="card">
+                <div class="card-header">
+                    CECALAB                </div>
+                <div class="card-body">
+                    <h5 class="card-title">CE.CA.LAB. 178</h5>
+                    <p class="card-text">
+                        SAN MARTIN AV 593</br>
+                        <a href="mailto:epa012@neuquen.gov.ar">epa012@neuquen.gov.ar</a></br>
+                        PLAZA HUINCUL</br>
+                        2994968184</br>
+                    </p>
+                    <a class="btn btn-outline-primary btn-sm" href="datoscentro6c52.html?id=580083900">
+                        Cecalab. 178                    </a>
+                </div>
+
+            </div>
+                    </br>
+            <div class="card">
+                <div class="card-header">
+                    CECALAB                </div>
+                <div class="card-body">
+                    <h5 class="card-title">CE.CA.LAB. 59</h5>
+                    <p class="card-text">
+                        MITRE BARTOLOME 675</br>
+                        <a href="mailto:sainzgustavo@hotmail.com">sainzgustavo@hotmail.com</a></br>
+                        NEUQUEN</br>
+                        2994424698</br>
+                    </p>
+                    <a class="btn btn-outline-primary btn-sm" href="datoscentro940a.html?id=580083300">
+                        Cecalab. 59                    </a>
+                </div>
+
+            </div>
+                    </br>
+            <div class="card">
+                <div class="card-header">
+                    ASOC                </div>
+                <div class="card-body">
+                    <h5 class="card-title">C.E.I. SAN IGNACIO NIVEL ADULTOS</h5>
+                    <p class="card-text">
+                        RUTA PROVINCIAL 61 KM 6,5</br>
+                        <a href="mailto:ceisanignacio@cruzadapatagonica.org">ceisanignacio@cruzadapatagonica.org</a></br>
+                        SAN CABAO</br>
+                        2972429765</br>
+                    </p>
+                    <a class="btn btn-outline-primary btn-sm" href="datoscentro75da.html?id=580102800">
+                        Cei. San Ignacio N. Adultos - San Cabao                    </a>
+                </div>
+
+            </div>
+                    </br>
+            <div class="card">
+                <div class="card-header">
+                    CEMOE                </div>
+                <div class="card-body">
+                    <h5 class="card-title">CE.M.O.E. CEFERINO NAMUNCURA</h5>
+                    <p class="card-text">
+                        PONTE GINES 571</br>
+                        <a href="mailto:cemoeceferino@neuquen.gov.ar">cemoeceferino@neuquen.gov.ar</a></br>
+                        JUNIN DE LOS ANDES</br>
+                        2972491178</br>
+                    </p>
+                    <a class="btn btn-outline-primary btn-sm" href="datoscentrod57c.html?id=580049500">
+                        Cemoe. Cef. Namuncura                    </a>
+                </div>
+
+            </div>
+                    </br>
+            <div class="card">
+                <div class="card-header">
+                    CEMOE                </div>
+                <div class="card-body">
+                    <h5 class="card-title">CE.M.O.E. HUECHE</h5>
+                    <p class="card-text">
+                        SIN NOMBRE</br>
+                        <a href="mailto:huechelascoloradas@yahoo.com.ar">huechelascoloradas@yahoo.com.ar</a></br>
+                        LAS COLORADAS</br>
+                        2942495038</br>
+                    </p>
+                    <a class="btn btn-outline-primary btn-sm" href="datoscentro8c75.html?id=580067500">
+                        Cemoe. Hueche Las Coloradas                    </a>
+                </div>
+
+            </div>
+                    </br>
+            <div class="card">
+                <div class="card-header">
+                    CEMOE                </div>
+                <div class="card-body">
+                    <h5 class="card-title">CE.M.O.E. MARCELINO CHAMPAGNAT</h5>
+                    <p class="card-text">
+                        ANTARTIDA ARGENTINA 1774</br>
+                        <a href="mailto:cemoechampagnat@neuquen.gov.ar">cemoechampagnat@neuquen.gov.ar</a></br>
+                        NEUQUEN</br>
+                        2994435223</br>
+                    </p>
+                    <a class="btn btn-outline-primary btn-sm" href="datoscentro289c.html?id=580070900">
+                        Cemoe. M. Champagnat                    </a>
+                </div>
+
+            </div>
+                    </br>
+            <div class="card">
+                <div class="card-header">
+                    CEMOE                </div>
+                <div class="card-body">
+                    <h5 class="card-title">CE.M.O.E. MARCELINO CHAMPAGNAT ANEXO BARRIO SAN LORENZO</h5>
+                    <p class="card-text">
+                        CAYASTA</br>
+                        <a href="mailto:cemoechampagnat@neuquen.gov.ar">cemoechampagnat@neuquen.gov.ar</a></br>
+                        NEUQUEN</br>
+                        2994435223</br>
+                    </p>
+                    <a class="btn btn-outline-primary btn-sm" href="datoscentro7c2c.html?id=580070901">
+                        Cemoe. M. Champagnat Anexo                    </a>
+                </div>
+
+            </div>
+                    </br>
+            <div class="card">
+                <div class="card-header">
+                    CEMOE                </div>
+                <div class="card-body">
+                    <h5 class="card-title">CE.M.O.E. SAN JOSÉ OBRERO</h5>
+                    <p class="card-text">
+                        PRIMEROS POBLADORES 1123</br>
+                        <a href="mailto:cemoesanjoseobrero@gmail.com">cemoesanjoseobrero@gmail.com</a></br>
+                        NEUQUEN</br>
+                        2994423957</br>
+                    </p>
+                    <a class="btn btn-outline-primary btn-sm" href="datoscentroe4c3.html?id=580000100">
+                        Cemoe. S.J. Obrero                    </a>
+                </div>
+
+            </div>
+                    </br>
+            <div class="card">
+                <div class="card-header">
+                    SUPERIOR                </div>
+                <div class="card-body">
+                    <h5 class="card-title">CENTRO REGIONAL DE EDUCACIÓN TECNOLÓGICA (CeRET)</h5>
+                    <p class="card-text">
+                        DE SAN MARTIN JOSE GRL 3293</br>
+                        <a href="mailto:ceretnqn2016@yahoo.com">ceretnqn2016@yahoo.com</a></br>
+                        NEUQUEN</br>
+                        2994467154</br>
+                    </p>
+                    <a class="btn btn-outline-primary btn-sm" href="datoscentrofa9c.html?id=580122900">
+                        Ceret                    </a>
+                </div>
+
+            </div>
+                    </br>
+            <div class="card">
+                <div class="card-header">
+                    CEPI                </div>
+                <div class="card-body">
+                    <h5 class="card-title">CENTRO DE FORMACIÓN PROFESIONAL Nº39 ANEXO I  - UD 11</h5>
+                    <p class="card-text">
+                        HUERGO LUIS A ING</br>
+                        <a href="mailto:cepinivelmedio@gmail.com">cepinivelmedio@gmail.com</a></br>
+                        NEUQUEN</br>
+                        2994479304</br>
+                    </p>
+                    <a class="btn btn-outline-primary btn-sm" href="datoscentro1c1d.html?id=580123501">
+                        CFP 39 (U 11)                    </a>
+                </div>
+
+            </div>
+                    </br>
+            <div class="card">
+                <div class="card-header">
+                    CEPI                </div>
+                <div class="card-body">
+                    <h5 class="card-title">CENTRO DE FORMACIÓN PROFESIONAL Nº39 ANEXO II - UD 12</h5>
+                    <p class="card-text">
+                        VENADO TUERTO</br>
+                        <a href="mailto:cepinivelmedio@gmail.com">cepinivelmedio@gmail.com</a></br>
+                        NEUQUEN</br>
+                        2994479304</br>
+                    </p>
+                    <a class="btn btn-outline-primary btn-sm" href="datoscentro1d61.html?id=580123502">
+                        CFP 39 (U 12)                    </a>
+                </div>
+
+            </div>
+                    </br>
+            <div class="card">
+                <div class="card-header">
+                    CEPI                </div>
+                <div class="card-body">
+                    <h5 class="card-title">CENTRO DE FORMACIÓN PROFESIONAL Nº39 ANEXO III - UD 16</h5>
+                    <p class="card-text">
+                        DE SAN MARTIN JOSE GRL 6325</br>
+                        <a href="mailto:cepinivelmedio@gmail.com">cepinivelmedio@gmail.com</a></br>
+                        NEUQUEN</br>
+                        2994479304</br>
+                    </p>
+                    <a class="btn btn-outline-primary btn-sm" href="datoscentrode1a.html?id=580123503">
+                        CFP 39 (U 16)                    </a>
+                </div>
+
+            </div>
+                    </br>
+            <div class="card">
+                <div class="card-header">
+                    CEPI                </div>
+                <div class="card-body">
+                    <h5 class="card-title">CENTRO DE FORMACIÓN PROFESIONAL Nº39 ANEXO V - Inst.Rehabilitacion ARROYITO</h5>
+                    <p class="card-text">
+                        RUTA NACIONAL 22</br>
+                        <a href="mailto:cepinivelprimario@neuquen.gov.ar">cepinivelprimario@neuquen.gov.ar</a></br>
+                        ARROYITO</br>
+                        2994479304</br>
+                    </p>
+                    <a class="btn btn-outline-primary btn-sm" href="datoscentro6c77.html?id=580123505">
+                        CFP 39 Arroyito                    </a>
+                </div>
+
+            </div>
+                    </br>
+            <div class="card">
+                <div class="card-header">
+                    CEPI                </div>
+                <div class="card-body">
+                    <h5 class="card-title">CENTRO DE FORMACIÓN PROFESIONAL Nº39 ANEXO IV - PF 5</h5>
+                    <p class="card-text">
+                        ESPINOZA BENITO</br>
+                        <a href="mailto:cepinivelsecundario@neuquen.gov.ar">cepinivelsecundario@neuquen.gov.ar</a></br>
+                        SENILLOSA</br>
+                        2994479304</br>
+                    </p>
+                    <a class="btn btn-outline-primary btn-sm" href="datoscentrobf07.html?id=580123504">
+                        CFP 39 Senillosa                    </a>
+                </div>
+
+            </div>
+                    </br>
+            <div class="card">
+                <div class="card-header">
+                    CEPI                </div>
+                <div class="card-body">
+                    <h5 class="card-title">CENTRO DE FORMACIÓN PROFESIONAL 41
+</h5>
+                    <p class="card-text">
+                        LONCOPUE 550,  (Q8340)</br>
+                        <a href="mailto:cfp041@neuquen.edu.ar">cfp041@neuquen.edu.ar</a></br>
+                        ZAPALA</br>
+                        0299 5234696</br>
+                    </p>
+                    <a class="btn btn-outline-primary btn-sm" href="datoscentro39d1.html?id=580131600">
+                        CFP 41                    </a>
+                </div>
+
+            </div>
+                    </br>
+            <div class="card">
+                <div class="card-header">
+                    CEPI                </div>
+                <div class="card-body">
+                    <h5 class="card-title">CENTRO DE FORMACIÓN PROFESIONAL Nº41 ANEXO VI - UD 42</h5>
+                    <p class="card-text">
+                        ELORRIAGA DAMIAN</br>
+                        <a href="mailto:cepinivelmedio@gmail.com">cepinivelmedio@gmail.com</a></br>
+                        SAN MARTIN DE LOS ANDES</br>
+                        </br>
+                    </p>
+                    <a class="btn btn-outline-primary btn-sm" href="datoscentroa427.html?id=580131606">
+                        CFP 41 (CAD) S.M. de los Andes                    </a>
+                </div>
+
+            </div>
+                    </br>
+            <div class="card">
+                <div class="card-header">
+                    CEPI                </div>
+                <div class="card-body">
+                    <h5 class="card-title">CENTRO DE FORMACIÓN PROFESIONAL Nº41 ANEXO I - UD 21</h5>
+                    <p class="card-text">
+                        RODRIGUEZ CARLOS H 230</br>
+                        <a href="mailto:cepinivelmedio@gmail.com">cepinivelmedio@gmail.com</a></br>
+                        CUTRAL CO</br>
+                        2994964984</br>
+                    </p>
+                    <a class="btn btn-outline-primary btn-sm" href="datoscentro2824.html?id=580131601">
+                        CFP 41 (U 21)                    </a>
+                </div>
+
+            </div>
+                    </br>
+            <div class="card">
+                <div class="card-header">
+                    CEPI                </div>
+                <div class="card-body">
+                    <h5 class="card-title">CENTRO DE FORMACIÓN PROFESIONAL Nº41 ANEXO II - UD 22</h5>
+                    <p class="card-text">
+                        CONQUISTADORES DEL DESIERTO</br>
+                        <a href="mailto:cepinivelmedio@gmail.com">cepinivelmedio@gmail.com</a></br>
+                        CUTRAL CO</br>
+                        2994964984</br>
+                    </p>
+                    <a class="btn btn-outline-primary btn-sm" href="datoscentro8f4e.html?id=580131602">
+                        CFP 41 (U 22)                    </a>
+                </div>
+
+            </div>
+                    </br>
+            <div class="card">
+                <div class="card-header">
+                    CEPI                </div>
+                <div class="card-body">
+                    <h5 class="card-title">CENTRO DE FORMACIÓN PROFESIONAL Nº41 ANEXO III - UD 31</h5>
+                    <p class="card-text">
+                        TORRES MAYOR</br>
+                        <a href="mailto:cepinivelmedio@gmail.com">cepinivelmedio@gmail.com</a></br>
+                        ZAPALA</br>
+                        2994479304</br>
+                    </p>
+                    <a class="btn btn-outline-primary btn-sm" href="datoscentrocfe5.html?id=580131603">
+                        CFP 41 (U 31)                    </a>
+                </div>
+
+            </div>
+                    </br>
+            <div class="card">
+                <div class="card-header">
+                    CEPI                </div>
+                <div class="card-body">
+                    <h5 class="card-title">CENTRO DE FORMACIÓN PROFESIONAL Nº41 ANEXO IV - UD 32</h5>
+                    <p class="card-text">
+                        FORTABAT ALFREDO</br>
+                        <a href="mailto:cepinivelmedio@gmail.com">cepinivelmedio@gmail.com</a></br>
+                        ZAPALA</br>
+                        2994479304</br>
+                    </p>
+                    <a class="btn btn-outline-primary btn-sm" href="datoscentro1f7c.html?id=580131604">
+                        CFP 41 (U 32)                    </a>
+                </div>
+
+            </div>
+                    </br>
+            <div class="card">
+                <div class="card-header">
+                    CEPI                </div>
+                <div class="card-body">
+                    <h5 class="card-title">CENTRO DE FORMACIÓN PROFESIONAL Nº41 ANEXO V - UD 41</h5>
+                    <p class="card-text">
+                        LAMADRID GRL</br>
+                        <a href="mailto:cepinivelmedio@gmail.com">cepinivelmedio@gmail.com</a></br>
+                        JUNIN DE LOS ANDES</br>
+                        2994479304</br>
+                    </p>
+                    <a class="btn btn-outline-primary btn-sm" href="datoscentroc5f7.html?id=580131605">
+                        CFP 41 (U 41)                    </a>
+                </div>
+
+            </div>
+                    </br>
+            <div class="card">
+                <div class="card-header">
+                    CEPI                </div>
+                <div class="card-body">
+                    <h5 class="card-title">CENTRO DE FORMACIÓN PROFESIONAL Nº41 ANEXO VII - UD 51</h5>
+                    <p class="card-text">
+                        SOBERANIA</br>
+                        <a href="mailto:cepinivelmedio@gmail.com">cepinivelmedio@gmail.com</a></br>
+                        CHOS MALAL</br>
+                        </br>
+                    </p>
+                    <a class="btn btn-outline-primary btn-sm" href="datoscentroe762.html?id=580131607">
+                        CFP 41 (U 51)                    </a>
+                </div>
+
+            </div>
+                    </br>
+            <div class="card">
+                <div class="card-header">
+                    CFP                </div>
+                <div class="card-body">
+                    <h5 class="card-title">CENTRO DE FORMACIÓN PROFESIONAL 01</h5>
+                    <p class="card-text">
+                        SANTA CRUZ 742</br>
+                        <a href="mailto:cfp001@neuquen.gov.ar">cfp001@neuquen.gov.ar</a></br>
+                        NEUQUEN</br>
+                        2994430874</br>
+                    </p>
+                    <a class="btn btn-outline-primary btn-sm" href="datoscentro7a1f.html?id=580081600">
+                        Cfp. 01                    </a>
+                </div>
+
+            </div>
+                    </br>
+            <div class="card">
+                <div class="card-header">
+                    CFP                </div>
+                <div class="card-body">
+                    <h5 class="card-title">CENTRO DE FORMACIÓN PROFESIONAL 02</h5>
+                    <p class="card-text">
+                        HUERGO LUIS A ING</br>
+                        <a href="mailto:cfp002@neuquen.gov.ar">cfp002@neuquen.gov.ar</a></br>
+                        NEUQUEN</br>
+                        2994413431</br>
+                    </p>
+                    <a class="btn btn-outline-primary btn-sm" href="datoscentro8aed.html?id=580098800">
+                        Cfp. 02                    </a>
+                </div>
+
+            </div>
+                    </br>
+            <div class="card">
+                <div class="card-header">
+                    CFP                </div>
+                <div class="card-body">
+                    <h5 class="card-title">CENTRO DE FORMACIÓN PROFESIONAL 03</h5>
+                    <p class="card-text">
+                        EL MAIZ</br>
+                        <a href="mailto:cfp003@neuquen.gov.ar">cfp003@neuquen.gov.ar</a></br>
+                        NEUQUEN</br>
+                        299155878727</br>
+                    </p>
+                    <a class="btn btn-outline-primary btn-sm" href="datoscentro1eb1.html?id=580106800">
+                        Cfp. 03                    </a>
+                </div>
+
+            </div>
+                    </br>
+            <div class="card">
+                <div class="card-header">
+                    CFP                </div>
+                <div class="card-body">
+                    <h5 class="card-title">CENTRO DE FORMACIÓN PROFESIONAL 04</h5>
+                    <p class="card-text">
+                        MAIZANI AZUCENA AV 670</br>
+                        <a href="mailto:cfp004@neuquen.gov.ar">cfp004@neuquen.gov.ar</a></br>
+                        PLAZA HUINCUL</br>
+                        299156563164</br>
+                    </p>
+                    <a class="btn btn-outline-primary btn-sm" href="datoscentro4c51.html?id=580111100">
+                        Cfp. 04                    </a>
+                </div>
+
+            </div>
+                    </br>
+            <div class="card">
+                <div class="card-header">
+                    CFP                </div>
+                <div class="card-body">
+                    <h5 class="card-title">CENTRO DE FORMACIÓN PROFESIONAL 05</h5>
+                    <p class="card-text">
+                        BUSTOS PEREZ JOSE</br>
+                        <a href="mailto:cfp005@neuquen.gov.ar">cfp005@neuquen.gov.ar</a></br>
+                        NEUQUEN</br>
+                        2994440314</br>
+                    </p>
+                    <a class="btn btn-outline-primary btn-sm" href="datoscentroe1f2.html?id=580111200">
+                        Cfp. 05                    </a>
+                </div>
+
+            </div>
+                    </br>
+            <div class="card">
+                <div class="card-header">
+                    CFP                </div>
+                <div class="card-body">
+                    <h5 class="card-title">CENTRO DE FORMACIÓN PROFESIONAL 05 ANEXO AÑELO</h5>
+                    <p class="card-text">
+                        RUTA PROVINCIAL 17</br>
+                        <a href="mailto:centrodeformacionprofesional5@hotmail.com">centrodeformacionprofesional5@hotmail.com</a></br>
+                        ANELO</br>
+                        2994440314</br>
+                    </p>
+                    <a class="btn btn-outline-primary btn-sm" href="datoscentro91e9.html?id=580111201">
+                        Cfp. 05 Anexo Añelo                    </a>
+                </div>
+
+            </div>
+                    </br>
+            <div class="card">
+                <div class="card-header">
+                    CFP                </div>
+                <div class="card-body">
+                    <h5 class="card-title">CENTRO DE FORMACIÓN PROFESIONAL 06 U.O.C.R.A.</h5>
+                    <p class="card-text">
+                        GONZALEZ MTRO 450</br>
+                        <a href="mailto:cfp006@neuquen.gov.ar">cfp006@neuquen.gov.ar</a></br>
+                        NEUQUEN</br>
+                        2994474995</br>
+                    </p>
+                    <a class="btn btn-outline-primary btn-sm" href="datoscentrob819.html?id=580111300">
+                        Cfp. 06 Uocra.                    </a>
+                </div>
+
+            </div>
+                    </br>
+            <div class="card">
+                <div class="card-header">
+                    CFP                </div>
+                <div class="card-body">
+                    <h5 class="card-title">CENTRO DE FORMACIÓN PROFESIONAL 07 DEL AULA A LA VIDA</h5>
+                    <p class="card-text">
+                        RUTA PROVINCIAL 6</br>
+                        <a href="mailto:cfp007@neuquen.gov.ar">cfp007@neuquen.gov.ar</a></br>
+                        EL CHOLAR</br>
+                        2948492904</br>
+                    </p>
+                    <a class="btn btn-outline-primary btn-sm" href="datoscentroacb9.html?id=580114400">
+                        Cfp. 07 El Cholar                    </a>
+                </div>
+
+            </div>
+                    </br>
+            <div class="card">
+                <div class="card-header">
+                    CFP                </div>
+                <div class="card-body">
+                    <h5 class="card-title">CENTRO DE FORMACIÓN PROFESIONAL 08</h5>
+                    <p class="card-text">
+                        BELGRANO MANUEL</br>
+                        <a href="mailto:cfp008@neuquen.gov.ar">cfp008@neuquen.gov.ar</a></br>
+                        LONCOPUE</br>
+                        2948498068</br>
+                    </p>
+                    <a class="btn btn-outline-primary btn-sm" href="datoscentro947a.html?id=580084900">
+                        Cfp. 08                    </a>
+                </div>
+
+            </div>
+                    </br>
+            <div class="card">
+                <div class="card-header">
+                    CFP                </div>
+                <div class="card-body">
+                    <h5 class="card-title">CENTRO DE FORMACIÓN PROFESIONAL 09</h5>
+                    <p class="card-text">
+                        OLASCOAGA MANUEL AV 1282</br>
+                        <a href="mailto:cfp009@neuquen.gov.ar">cfp009@neuquen.gov.ar</a></br>
+                        NEUQUEN</br>
+                        2994439714</br>
+                    </p>
+                    <a class="btn btn-outline-primary btn-sm" href="datoscentro3d20.html?id=580077700">
+                        Cfp. 09                    </a>
+                </div>
+
+            </div>
+                    </br>
+            <div class="card">
+                <div class="card-header">
+                    CFP                </div>
+                <div class="card-body">
+                    <h5 class="card-title">CENTRO DE FORMACIÓN PROFESIONAL 10</h5>
+                    <p class="card-text">
+                        CARREÑO GENARO</br>
+                        <a href="mailto:cfp010@neuquen.gov.ar">cfp010@neuquen.gov.ar</a></br>
+                        BUTA RANQUIL</br>
+                        2948493238</br>
+                    </p>
+                    <a class="btn btn-outline-primary btn-sm" href="datoscentro6c81.html?id=580084600">
+                        Cfp. 10                    </a>
+                </div>
+
+            </div>
+                    </br>
+            <div class="card">
+                <div class="card-header">
+                    CFP                </div>
+                <div class="card-body">
+                    <h5 class="card-title">CENTRO DE FORMACIÓN PROFESIONAL 11</h5>
+                    <p class="card-text">
+                        PETRY MARTIN 534</br>
+                        <a href="mailto:cfp011@neuquen.gov.ar">cfp011@neuquen.gov.ar</a></br>
+                        ZAPALA</br>
+                        2942421890</br>
+                    </p>
+                    <a class="btn btn-outline-primary btn-sm" href="datoscentro3b9f.html?id=580077600">
+                        Cfp. 11                    </a>
+                </div>
+
+            </div>
+                    </br>
+            <div class="card">
+                <div class="card-header">
+                    CFP                </div>
+                <div class="card-body">
+                    <h5 class="card-title">CENTRO DE FORMACIÓN PROFESIONAL 12</h5>
+                    <p class="card-text">
+                        INDEPENDENCIA 446</br>
+                        <a href="mailto:cfp012@neuquen.gov.ar; cfp_n12@hotmail.com">cfp012@neuquen.gov.ar; cfp_n12@hotmail.com</a></br>
+                        NEUQUEN</br>
+                        2994483567</br>
+                    </p>
+                    <a class="btn btn-outline-primary btn-sm" href="datoscentroe48f.html?id=580081700">
+                        Cfp. 12                    </a>
+                </div>
+
+            </div>
+                    </br>
+            <div class="card">
+                <div class="card-header">
+                    CFP                </div>
+                <div class="card-body">
+                    <h5 class="card-title">CENTRO DE FORMACIÓN PROFESIONAL 13</h5>
+                    <p class="card-text">
+                        LAGO VIEDMA 5826</br>
+                        <a href="mailto:cfp013@neuquen.gov.ar">cfp013@neuquen.gov.ar</a></br>
+                        NEUQUEN</br>
+                        2994467388</br>
+                    </p>
+                    <a class="btn btn-outline-primary btn-sm" href="datoscentroa533.html?id=580079100">
+                        Cfp. 13                    </a>
+                </div>
+
+            </div>
+                    </br>
+            <div class="card">
+                <div class="card-header">
+                    CFP                </div>
+                <div class="card-body">
+                    <h5 class="card-title">CENTRO DE FORMACIÓN PROFESIONAL 14</h5>
+                    <p class="card-text">
+                        CHILE</br>
+                        <a href="mailto:cfp014@neuquen.gov.ar">cfp014@neuquen.gov.ar</a></br>
+                        PLOTTIER</br>
+                        2994933858</br>
+                    </p>
+                    <a class="btn btn-outline-primary btn-sm" href="datoscentro370e.html?id=580081200">
+                        Cfp. 14                    </a>
+                </div>
+
+            </div>
+                    </br>
+            <div class="card">
+                <div class="card-header">
+                    CFP                </div>
+                <div class="card-body">
+                    <h5 class="card-title">CENTRO DE FORMACIÓN PROFESIONAL 15</h5>
+                    <p class="card-text">
+                        COPAHUE 650</br>
+                        <a href="mailto:cfp015@neuquen.gov.ar">cfp015@neuquen.gov.ar</a></br>
+                        ZAPALA</br>
+                        2942423569</br>
+                    </p>
+                    <a class="btn btn-outline-primary btn-sm" href="datoscentroa4d0.html?id=580074000">
+                        Cfp. 15                    </a>
+                </div>
+
+            </div>
+                    </br>
+            <div class="card">
+                <div class="card-header">
+                    CFP                </div>
+                <div class="card-body">
+                    <h5 class="card-title">CENTRO DE FORMACIÓN PROFESIONAL 16</h5>
+                    <p class="card-text">
+                        SAPAG FELIPE GDOR AV 120</br>
+                        <a href="mailto:cfp016@neuquen.gov.ar">cfp016@neuquen.gov.ar</a></br>
+                        ANDACOLLO</br>
+                        2948494204</br>
+                    </p>
+                    <a class="btn btn-outline-primary btn-sm" href="datoscentroe620.html?id=580080300">
+                        Cfp. 16                    </a>
+                </div>
+
+            </div>
+                    </br>
+            <div class="card">
+                <div class="card-header">
+                    CFP                </div>
+                <div class="card-body">
+                    <h5 class="card-title">CENTRO DE FORMACIÓN PROFESIONAL 17</h5>
+                    <p class="card-text">
+                        OLASCOAGA MANUEL 363</br>
+                        <a href="mailto:cfp017@neuquen.gov.ar">cfp017@neuquen.gov.ar</a></br>
+                        LAS LAJAS</br>
+                        2942499585</br>
+                    </p>
+                    <a class="btn btn-outline-primary btn-sm" href="datoscentro4a0d.html?id=580077800">
+                        Cfp. 17                    </a>
+                </div>
+
+            </div>
+                    </br>
+            <div class="card">
+                <div class="card-header">
+                    CFP                </div>
+                <div class="card-body">
+                    <h5 class="card-title">CENTRO DE FORMACIÓN PROFESIONAL 18</h5>
+                    <p class="card-text">
+                        LOS HUINGANES</br>
+                        <a href="mailto:cfp018@neuquen.gov.ar">cfp018@neuquen.gov.ar</a></br>
+                        HUINGANCO</br>
+                        2948499049</br>
+                    </p>
+                    <a class="btn btn-outline-primary btn-sm" href="datoscentro3c96.html?id=580084800">
+                        Cfp. 18 Huinganco                    </a>
+                </div>
+
+            </div>
+                    </br>
+            <div class="card">
+                <div class="card-header">
+                    CFP                </div>
+                <div class="card-body">
+                    <h5 class="card-title">CENTRO DE FORMACIÓN PROFESIONAL 19</h5>
+                    <p class="card-text">
+                        BROWN ALMTE 717</br>
+                        <a href="mailto:cfp019@neuquen.gov.ar">cfp019@neuquen.gov.ar</a></br>
+                        SAN MARTIN DE LOS ANDES</br>
+                        2972428891</br>
+                    </p>
+                    <a class="btn btn-outline-primary btn-sm" href="datoscentro35f0.html?id=580084500">
+                        Cfp. 19                    </a>
+                </div>
+
+            </div>
+                    </br>
+            <div class="card">
+                <div class="card-header">
+                    CFP                </div>
+                <div class="card-body">
+                    <h5 class="card-title">CENTRO DE FORMACIÓN PROFESIONAL 20</h5>
+                    <p class="card-text">
+                        JAIME DE NEVAREZ Y ATAHUALA YUPANQUI </br>
+                        <a href="mailto:cfp020@neuquen.gov.ar">cfp020@neuquen.gov.ar</a></br>
+                        CHOS MALAL</br>
+                        2948422998</br>
+                    </p>
+                    <a class="btn btn-outline-primary btn-sm" href="datoscentro7f1b.html?id=580077900">
+                        Cfp. 20                    </a>
+                </div>
+
+            </div>
+                    </br>
+            <div class="card">
+                <div class="card-header">
+                    CFP                </div>
+                <div class="card-body">
+                    <h5 class="card-title">CENTRO DE FORMACIÓN PROFESIONAL 21</h5>
+                    <p class="card-text">
+                        BELGRANO MANUEL GRL 3385</br>
+                        <a href="mailto:cfp021@neuquen.gov.ar">cfp021@neuquen.gov.ar</a></br>
+                        NEUQUEN</br>
+                        2994450145</br>
+                    </p>
+                    <a class="btn btn-outline-primary btn-sm" href="datoscentro7f67.html?id=580087400">
+                        Cfp. 21                    </a>
+                </div>
+
+            </div>
+                    </br>
+            <div class="card">
+                <div class="card-header">
+                    CFP                </div>
+                <div class="card-body">
+                    <h5 class="card-title">CENTRO DE FORMACIÓN PROFESIONAL 22</h5>
+                    <p class="card-text">
+                        SALTA 650</br>
+                        <a href="mailto:cfp022@neuquen.gov.ar">cfp022@neuquen.gov.ar</a></br>
+                        CUTRAL CO</br>
+                        2994965789</br>
+                    </p>
+                    <a class="btn btn-outline-primary btn-sm" href="datoscentro831b.html?id=580078000">
+                        Cfp. 22                    </a>
+                </div>
+
+            </div>
+                    </br>
+            <div class="card">
+                <div class="card-header">
+                    CFP                </div>
+                <div class="card-body">
+                    <h5 class="card-title">CENTRO DE FORMACIÓN PROFESIONAL 23</h5>
+                    <p class="card-text">
+                        Colon y Mariano Moreno</br>
+                        <a href="mailto:cfp023@neuquen.gov.ar">cfp023@neuquen.gov.ar</a></br>
+                        CENTENARIO</br>
+                        2994890791</br>
+                    </p>
+                    <a class="btn btn-outline-primary btn-sm" href="datoscentroea65.html?id=580085000">
+                        Cfp. 23                    </a>
+                </div>
+
+            </div>
+                    </br>
+            <div class="card">
+                <div class="card-header">
+                    CFP                </div>
+                <div class="card-body">
+                    <h5 class="card-title">CENTRO DE FORMACIÓN PROFESIONAL 24</h5>
+                    <p class="card-text">
+                        CERRO BAYO 454</br>
+                        <a href="mailto:cfp024@neuquen.gov.ar">cfp024@neuquen.gov.ar</a></br>
+                        VILLA LA ANGOSTURA</br>
+                        2944488483</br>
+                    </p>
+                    <a class="btn btn-outline-primary btn-sm" href="datoscentro74f5.html?id=580089600">
+                        Cfp. 24                    </a>
+                </div>
+
+            </div>
+                    </br>
+            <div class="card">
+                <div class="card-header">
+                    CFP                </div>
+                <div class="card-body">
+                    <h5 class="card-title">CENTRO DE FORMACIÓN PROFESIONAL 24 ANEXO VILLA TRAFUL</h5>
+                    <p class="card-text">
+                        CARPINTERO GIGANTE</br>
+                        <a href="mailto:cfp024@neuquen.gov.ar">cfp024@neuquen.gov.ar</a></br>
+                        VILLA TRAFUL</br>
+                        </br>
+                    </p>
+                    <a class="btn btn-outline-primary btn-sm" href="datoscentroba80.html?id=580089601">
+                        Cfp. 24 Anexo Villa Traful                    </a>
+                </div>
+
+            </div>
+                    </br>
+            <div class="card">
+                <div class="card-header">
+                    CFP                </div>
+                <div class="card-body">
+                    <h5 class="card-title">CENTRO DE FORMACIÓN PROFESIONAL 25</h5>
+                    <p class="card-text">
+                        EMMA CARLOS MAESTRO PSJE 965</br>
+                        <a href="mailto:cfp025@neuquen.gov.ar">cfp025@neuquen.gov.ar</a></br>
+                        NEUQUEN</br>
+                        2994437367</br>
+                    </p>
+                    <a class="btn btn-outline-primary btn-sm" href="datoscentroe97e.html?id=580075400">
+                        Cfp. 25                    </a>
+                </div>
+
+            </div>
+                    </br>
+            <div class="card">
+                <div class="card-header">
+                    CFP                </div>
+                <div class="card-body">
+                    <h5 class="card-title">CENTRO DE FORMACIÓN PROFESIONAL 26</h5>
+                    <p class="card-text">
+                        SARMIENTO DOMINGO F</br>
+                        <a href="mailto:cfp026@neuquen.gov.ar">cfp026@neuquen.gov.ar</a></br>
+                        CUTRAL CO</br>
+                        2994966123</br>
+                    </p>
+                    <a class="btn btn-outline-primary btn-sm" href="datoscentroda1b.html?id=580080100">
+                        Cfp. 26                    </a>
+                </div>
+
+            </div>
+                    </br>
+            <div class="card">
+                <div class="card-header">
+                    CFP                </div>
+                <div class="card-body">
+                    <h5 class="card-title">CENTRO DE FORMACIÓN PROFESIONAL 27</h5>
+                    <p class="card-text">
+                        DON BOSCO AV</br>
+                        <a href="mailto:cfp027@neuquen.gov.ar">cfp027@neuquen.gov.ar</a></br>
+                        CHOS MALAL</br>
+                        2948421121</br>
+                    </p>
+                    <a class="btn btn-outline-primary btn-sm" href="datoscentro85de.html?id=580082600">
+                        Cfp. 27                    </a>
+                </div>
+
+            </div>
+                    </br>
+            <div class="card">
+                <div class="card-header">
+                    CFP                </div>
+                <div class="card-body">
+                    <h5 class="card-title">CENTRO DE FORMACIÓN PROFESIONAL 28</h5>
+                    <p class="card-text">
+                        ITALIA 969</br>
+                        <a href="mailto:cfp028@neuquen.gov.ar">cfp028@neuquen.gov.ar</a></br>
+                        ZAPALA</br>
+                        2942431359</br>
+                    </p>
+                    <a class="btn btn-outline-primary btn-sm" href="datoscentroa5e3.html?id=580084700">
+                        Cfp. 28                    </a>
+                </div>
+
+            </div>
+                    </br>
+            <div class="card">
+                <div class="card-header">
+                    CFP                </div>
+                <div class="card-body">
+                    <h5 class="card-title">CENTRO DE FORMACIÓN PROFESIONAL 29</h5>
+                    <p class="card-text">
+                        DARRIEUX JUAN B 470</br>
+                        <a href="mailto:cfp029@neuquen.gov.ar">cfp029@neuquen.gov.ar</a></br>
+                        CENTENARIO</br>
+                        2994898762</br>
+                    </p>
+                    <a class="btn btn-outline-primary btn-sm" href="datoscentrof6d6.html?id=580080200">
+                        Cfp. 29                    </a>
+                </div>
+
+            </div>
+                    </br>
+            <div class="card">
+                <div class="card-header">
+                    CFP                </div>
+                <div class="card-body">
+                    <h5 class="card-title">CENTRO DE FORMACIÓN PROFESIONAL 30</h5>
+                    <p class="card-text">
+                        CANDELARIA TTE 926</br>
+                        <a href="mailto:cfp030@neuquen.gov.ar">cfp030@neuquen.gov.ar</a></br>
+                        ZAPALA</br>
+                        2942422243</br>
+                    </p>
+                    <a class="btn btn-outline-primary btn-sm" href="datoscentro98e8.html?id=580083500">
+                        Cfp. 30                    </a>
+                </div>
+
+            </div>
+                    </br>
+            <div class="card">
+                <div class="card-header">
+                    CFP                </div>
+                <div class="card-body">
+                    <h5 class="card-title">CENTRO DE FORMACIÓN PROFESIONAL 31</h5>
+                    <p class="card-text">
+                        BELGRANO MANUEL GRL 2250</br>
+                        <a href="mailto:cfp031@neuquen.gov.ar">cfp031@neuquen.gov.ar</a></br>
+                        NEUQUEN</br>
+                        2994432203</br>
+                    </p>
+                    <a class="btn btn-outline-primary btn-sm" href="datoscentro5c53.html?id=580069900">
+                        Cfp. 31                    </a>
+                </div>
+
+            </div>
+                    </br>
+            <div class="card">
+                <div class="card-header">
+                    CFP                </div>
+                <div class="card-body">
+                    <h5 class="card-title">CENTRO DE FORMACIÓN PROFESIONAL 32</h5>
+                    <p class="card-text">
+                        OLASCOAGA 385</br>
+                        <a href="mailto:cfp032@neuquen.gov.ar">cfp032@neuquen.gov.ar</a></br>
+                        LAS LAJAS</br>
+                        2942499468</br>
+                    </p>
+                    <a class="btn btn-outline-primary btn-sm" href="datoscentrodb8f.html?id=580085300">
+                        Cfp. 32                    </a>
+                </div>
+
+            </div>
+                    </br>
+            <div class="card">
+                <div class="card-header">
+                    CFP                </div>
+                <div class="card-body">
+                    <h5 class="card-title">CENTRO DE FORMACIÓN PROFESIONAL 33</h5>
+                    <p class="card-text">
+                        LEVALLE NICOLAS AV</br>
+                        <a href="mailto:cfp033@neuquen.gov.ar">cfp033@neuquen.gov.ar</a></br>
+                        MARIANO MORENO</br>
+                        2942490137</br>
+                    </p>
+                    <a class="btn btn-outline-primary btn-sm" href="datoscentro256a.html?id=580081000">
+                        Cfp. 33                    </a>
+                </div>
+
+            </div>
+                    </br>
+            <div class="card">
+                <div class="card-header">
+                    CFP                </div>
+                <div class="card-body">
+                    <h5 class="card-title">CENTRO DE FORMACIÓN PROFESIONAL 34</h5>
+                    <p class="card-text">
+                        ALVAREZ GREGORIO DR 449</br>
+                        <a href="mailto:cfp034@neuquen.gov.ar">cfp034@neuquen.gov.ar</a></br>
+                        SENILLOSA</br>
+                        2994920810</br>
+                    </p>
+                    <a class="btn btn-outline-primary btn-sm" href="datoscentro0ea2.html?id=580085700">
+                        Cfp. 34                    </a>
+                </div>
+
+            </div>
+                    </br>
+            <div class="card">
+                <div class="card-header">
+                    CFP                </div>
+                <div class="card-body">
+                    <h5 class="card-title">CENTRO DE FORMACIÓN PROFESIONAL 35</h5>
+                    <p class="card-text">
+                        EL CHOCON 2575</br>
+                        <a href="mailto:cfp035@neuquen.gov.ar">cfp035@neuquen.gov.ar</a></br>
+                        NEUQUEN</br>
+                        2994402754</br>
+                    </p>
+                    <a class="btn btn-outline-primary btn-sm" href="datoscentro5d4f.html?id=580120500">
+                        Cfp. 35                    </a>
+                </div>
+
+            </div>
+                    </br>
+            <div class="card">
+                <div class="card-header">
+                    CFP                </div>
+                <div class="card-body">
+                    <h5 class="card-title">CENTRO DE FORMACIÓN PROFESIONAL 36</h5>
+                    <p class="card-text">
+                        CABELLERA DEL FRIO 2300</br>
+                        <a href="mailto:cfp036@neuquen.gov.ar">cfp036@neuquen.gov.ar</a></br>
+                        NEUQUEN</br>
+                        299154197178 </br>
+                    </p>
+                    <a class="btn btn-outline-primary btn-sm" href="datoscentro25f9.html?id=580120600">
+                        Cfp. 36                    </a>
+                </div>
+
+            </div>
+                    </br>
+            <div class="card">
+                <div class="card-header">
+                    CFP                </div>
+                <div class="card-body">
+                    <h5 class="card-title">CENTRO DE FORMACIÓN PROFESIONAL 37</h5>
+                    <p class="card-text">
+                        SANCHEZ MODESTO PSJE</br>
+                        <a href="mailto:cfp16andacollo@gmail.com">cfp16andacollo@gmail.com</a></br>
+                        LAS OVEJAS</br>
+                        2948494204</br>
+                    </p>
+                    <a class="btn btn-outline-primary btn-sm" href="datoscentrof872.html?id=580088600">
+                        Cfp. 37                    </a>
+                </div>
+
+            </div>
+                    </br>
+            <div class="card">
+                <div class="card-header">
+                    CFP                </div>
+                <div class="card-body">
+                    <h5 class="card-title">CENTRO DE FORMACIÓN PROFESIONAL 38</h5>
+                    <p class="card-text">
+                        LOS CONDORES (PEHUENCO) 470</br>
+                        <a href="mailto:cfp038@neuquen.gov.ar">cfp038@neuquen.gov.ar</a></br>
+                        VILLA PEHUENIA</br>
+                        2942650796</br>
+                    </p>
+                    <a class="btn btn-outline-primary btn-sm" href="datoscentro6a94.html?id=580124000">
+                        Cfp. 38 Villa Pehuenia                    </a>
+                </div>
+
+            </div>
+                    </br>
+            <div class="card">
+                <div class="card-header">
+                    CFP                </div>
+                <div class="card-body">
+                    <h5 class="card-title">CENTRO DE FORMACIÓN PROFESIONAL 42</h5>
+                    <p class="card-text">
+                        RUTA PROVINCIAL 2</br>
+                        <a href="mailto:cfp042@neuquen.edu.ar">cfp042@neuquen.edu.ar</a></br>
+                        TRICAO MALAL</br>
+                        0299 5157952</br>
+                    </p>
+                    <a class="btn btn-outline-primary btn-sm" href="datoscentro621d.html?id=580133000">
+                        Cfp. 42                    </a>
+                </div>
+
+            </div>
+                    </br>
+            <div class="card">
+                <div class="card-header">
+                    CFPA                </div>
+                <div class="card-body">
+                    <h5 class="card-title">CENTRO DE FORMACIÓN PROFESIONAL AGROPECUARIA 1</h5>
+                    <p class="card-text">
+                        RUTA NACIONAL 22 1233</br>
+                        <a href="mailto:cfpa001@neuquen.gov.ar">cfpa001@neuquen.gov.ar</a></br>
+                        PLOTTIER</br>
+                        2994933758</br>
+                    </p>
+                    <a class="btn btn-outline-primary btn-sm" href="datoscentrofd3e.html?id=580094500">
+                        Cfp. Agrop. 1                    </a>
+                </div>
+
+            </div>
+                    </br>
+            <div class="card">
+                <div class="card-header">
+                    CFPA                </div>
+                <div class="card-body">
+                    <h5 class="card-title">CENTRO DE FORMACIÓN PROFESIONAL AGROPECUARIA 2</h5>
+                    <p class="card-text">
+                        ALERCE</br>
+                        <a href="mailto:cfpa002@neuquen.gov.ar">cfpa002@neuquen.gov.ar</a></br>
+                        SAN PATRICIO DEL CHAÑAR</br>
+                        2994855103</br>
+                    </p>
+                    <a class="btn btn-outline-primary btn-sm" href="datoscentro1823.html?id=580094600">
+                        Cfp. Agrop. 2                    </a>
+                </div>
+
+            </div>
+                    </br>
+            <div class="card">
+                <div class="card-header">
+                    CFPA                </div>
+                <div class="card-body">
+                    <h5 class="card-title">CENTRO DE FORMACIÓN PROFESIONAL AGROPECUARIA 3</h5>
+                    <p class="card-text">
+                        LOS ALAMOS PSJE 210</br>
+                        <a href="mailto:cfpa003@neuquen.gov.ar">cfpa003@neuquen.gov.ar</a></br>
+                        PICUN LEUFU</br>
+                        2942492077</br>
+                    </p>
+                    <a class="btn btn-outline-primary btn-sm" href="datoscentro8a94.html?id=580094700">
+                        Cfp. Agrop. 3                    </a>
+                </div>
+
+            </div>
+                    </br>
+            <div class="card">
+                <div class="card-header">
+                    CFPA                </div>
+                <div class="card-body">
+                    <h5 class="card-title">CENTRO DE FORMACIÓN PROFESIONAL AGROPECUARIA 4</h5>
+                    <p class="card-text">
+                        R.I.M. 26 AV 1118</br>
+                        <a href="mailto:cfpa004@neuquen.gov.ar">cfpa004@neuquen.gov.ar</a></br>
+                        ALUMINE</br>
+                        2942496346</br>
+                    </p>
+                    <a class="btn btn-outline-primary btn-sm" href="datoscentro1aef.html?id=580096100">
+                        Cfp. Agrop. 4                    </a>
+                </div>
+
+            </div>
+                    </br>
+            <div class="card">
+                <div class="card-header">
+                    CFPA                </div>
+                <div class="card-body">
+                    <h5 class="card-title">CENTRO DE FORMACIÓN PROFESIONAL AGROPECUARIA 5</h5>
+                    <p class="card-text">
+                        SAN MARTIN</br>
+                        <a href="mailto:cfpa005@neuquen.gov.ar">cfpa005@neuquen.gov.ar</a></br>
+                        CHOS MALAL</br>
+                        2948421202</br>
+                    </p>
+                    <a class="btn btn-outline-primary btn-sm" href="datoscentro553b.html?id=580094800">
+                        Cfp. Agrop. 5                    </a>
+                </div>
+
+            </div>
+                    </br>
+            <div class="card">
+                <div class="card-header">
+                    EPA                </div>
+                <div class="card-body">
+                    <h5 class="card-title">E.P.A. 1</h5>
+                    <p class="card-text">
+                        RICCHIERI PABLO 1095</br>
+                        <a href="mailto:epa001@neuquen.gov.ar">epa001@neuquen.gov.ar</a></br>
+                        NEUQUEN</br>
+                        2994404287</br>
+                    </p>
+                    <a class="btn btn-outline-primary btn-sm" href="datoscentro040c.html?id=580059200">
+                        Epa. 1                    </a>
+                </div>
+
+            </div>
+                    </br>
+            <div class="card">
+                <div class="card-header">
+                    EPA                </div>
+                <div class="card-body">
+                    <h5 class="card-title">E.P.A. 10</h5>
+                    <p class="card-text">
+                        RODRIGUEZ LEOPOLDO INTD</br>
+                        <a href="mailto:epa010@neuquen.gov.ar">epa010@neuquen.gov.ar</a></br>
+                        SAN MARTIN DE LOS ANDES</br>
+                        2972412836</br>
+                    </p>
+                    <a class="btn btn-outline-primary btn-sm" href="datoscentro8d32.html?id=580017300">
+                        Epa. 10                    </a>
+                </div>
+
+            </div>
+                    </br>
+            <div class="card">
+                <div class="card-header">
+                    EPA                </div>
+                <div class="card-body">
+                    <h5 class="card-title">E.P.A. 11</h5>
+                    <p class="card-text">
+                        LAMADRID GRL 430</br>
+                        <a href="mailto:epa011@neuquen.gov.ar">epa011@neuquen.gov.ar</a></br>
+                        JUNIN DE LOS ANDES</br>
+                        2972492102</br>
+                    </p>
+                    <a class="btn btn-outline-primary btn-sm" href="datoscentrod0ad.html?id=580050800">
+                        Epa. 11                    </a>
+                </div>
+
+            </div>
+                    </br>
+            <div class="card">
+                <div class="card-header">
+                    EPA                </div>
+                <div class="card-body">
+                    <h5 class="card-title">E.P.A. 14</h5>
+                    <p class="card-text">
+                        ROCA GRL AV 230</br>
+                        <a href="mailto:epa014@neuquen.gov.ar">epa014@neuquen.gov.ar</a></br>
+                        PLOTTIER</br>
+                        2994938340</br>
+                    </p>
+                    <a class="btn btn-outline-primary btn-sm" href="datoscentro5a20.html?id=580061600">
+                        Epa. 14                    </a>
+                </div>
+
+            </div>
+                    </br>
+            <div class="card">
+                <div class="card-header">
+                    EPA                </div>
+                <div class="card-body">
+                    <h5 class="card-title">E.P.A. 2</h5>
+                    <p class="card-text">
+                        BROWN ALMTE 1651</br>
+                        <a href="mailto:epa002@neuquen.gov.ar">epa002@neuquen.gov.ar</a></br>
+                        ZAPALA</br>
+                        2942421446</br>
+                    </p>
+                    <a class="btn btn-outline-primary btn-sm" href="datoscentro3476.html?id=580053600">
+                        Epa. 2                    </a>
+                </div>
+
+            </div>
+                    </br>
+            <div class="card">
+                <div class="card-header">
+                    EPA                </div>
+                <div class="card-body">
+                    <h5 class="card-title">E.P.A. 6</h5>
+                    <p class="card-text">
+                        MISIONES 397</br>
+                        <a href="mailto:epa006@neuquen.gov.ar">epa006@neuquen.gov.ar</a></br>
+                        NEUQUEN</br>
+                        2994422920</br>
+                    </p>
+                    <a class="btn btn-outline-primary btn-sm" href="datoscentro9c92.html?id=580016100">
+                        Epa. 6                    </a>
+                </div>
+
+            </div>
+                    </br>
+            <div class="card">
+                <div class="card-header">
+                    EPA                </div>
+                <div class="card-body">
+                    <h5 class="card-title">E.P.A. 8</h5>
+                    <p class="card-text">
+                        HONDURAS</br>
+                        <a href="mailto:epa008@neuquen.gov.ar">epa008@neuquen.gov.ar</a></br>
+                        CENTENARIO</br>
+                        2994894399</br>
+                    </p>
+                    <a class="btn btn-outline-primary btn-sm" href="datoscentro5f0f.html?id=580072700">
+                        Epa. 8                    </a>
+                </div>
+
+            </div>
+                    </br>
+            <div class="card">
+                <div class="card-header">
+                    EPA                </div>
+                <div class="card-body">
+                    <h5 class="card-title">E.P.A. 9</h5>
+                    <p class="card-text">
+                        BUSTOS PEREZ JOSE 750</br>
+                        <a href="mailto:epa009@neuquen.gov.ar">epa009@neuquen.gov.ar</a></br>
+                        NEUQUEN</br>
+                        2994440627</br>
+                    </p>
+                    <a class="btn btn-outline-primary btn-sm" href="datoscentro2bba.html?id=580028200">
+                        Epa. 9                    </a>
+                </div>
+
+            </div>
+                    </br>
+            <div class="card">
+                <div class="card-header">
+                    EPA                </div>
+                <div class="card-body">
+                    <h5 class="card-title">E.P.A. 12</h5>
+                    <p class="card-text">
+                        SAN MARTIN AV 593</br>
+                        <a href="mailto:epa012@neuquen.gov.ar">epa012@neuquen.gov.ar</a></br>
+                        PLAZA HUINCUL</br>
+                        2994963287</br>
+                    </p>
+                    <a class="btn btn-outline-primary btn-sm" href="datoscentro1d05.html?id=580007600">
+                        Epa.12                    </a>
+                </div>
+
+            </div>
+                    </br>
+            <div class="card">
+                <div class="card-header">
+                    EPA                </div>
+                <div class="card-body">
+                    <h5 class="card-title">E.P.A. 5</h5>
+                    <p class="card-text">
+                        PAZ GRL 157</br>
+                        <a href="mailto:epa005@neuquen.gov.ar">epa005@neuquen.gov.ar</a></br>
+                        CUTRAL CO</br>
+                        2994962493</br>
+                    </p>
+                    <a class="btn btn-outline-primary btn-sm" href="datoscentro8ac3.html?id=580045700">
+                        Epa.5                    </a>
+                </div>
+
+            </div>
+                    </br>
+            <div class="card">
+                <div class="card-header">
+                    INST.PRIVADO                </div>
+                <div class="card-body">
+                    <h5 class="card-title">INSTITUCIÓN SALESIANA TALLERES DON BOSCO</h5>
+                    <p class="card-text">
+                        PRIMEROS POBLADORES 151</br>
+                        <a href="mailto:talleresdonbosco@neuquen.gov.ar">talleresdonbosco@neuquen.gov.ar</a></br>
+                        ZAPALA</br>
+                        2942422325</br>
+                    </p>
+                    <a class="btn btn-outline-primary btn-sm" href="datoscentrob887.html?id=580042300">
+                        Inst. Salec. Talleres D. Bosco                    </a>
+                </div>
+
+            </div>
+                    </br>
+            <div class="card">
+                <div class="card-header">
+                    NE                </div>
+                <div class="card-body">
+                    <h5 class="card-title">NUCLEAMIENTO EDUCATIVO 1</h5>
+                    <p class="card-text">
+                        NOGOYA 2725</br>
+                        <a href="mailto:ne001@neuquen.gov.ar">ne001@neuquen.gov.ar</a></br>
+                        NEUQUEN</br>
+                        2994468234</br>
+                    </p>
+                    <a class="btn btn-outline-primary btn-sm" href="datoscentroa199.html?id=580097000">
+                        Nuc. Educ. 1                    </a>
+                </div>
+
+            </div>
+                    </br>
+            <div class="card">
+                <div class="card-header">
+                    NE                </div>
+                <div class="card-body">
+                    <h5 class="card-title">NUCLEAMIENTO EDUCATIVO 3</h5>
+                    <p class="card-text">
+                        CAYASTA 1100</br>
+                        <a href="mailto:ne003@neuquen.gov.ar">ne003@neuquen.gov.ar</a></br>
+                        NEUQUEN</br>
+                        2994469384</br>
+                    </p>
+                    <a class="btn btn-outline-primary btn-sm" href="datoscentrodd0f.html?id=580107800">
+                        Nuc. Educ. 3                    </a>
+                </div>
+
+            </div>
+                    </br>
+            <div class="card">
+                <div class="card-header">
+                    NE                </div>
+                <div class="card-body">
+                    <h5 class="card-title">NUCLEAMIENTO EDUCATIVO 5</h5>
+                    <p class="card-text">
+                        RIO COLORADO 382</br>
+                        <a href="mailto:ne005@neuquen.gov.ar">ne005@neuquen.gov.ar</a></br>
+                        RINCON DE LOS SAUCES</br>
+                        2994887414</br>
+                    </p>
+                    <a class="btn btn-outline-primary btn-sm" href="datoscentroac33.html?id=580099700">
+                        Nuc. Educ. 5                    </a>
+                </div>
+
+            </div>
+                    </br>
+            <div class="card">
+                <div class="card-header">
+                    NE                </div>
+                <div class="card-body">
+                    <h5 class="card-title">NUCLEAMIENTO EDUCATIVO 6</h5>
+                    <p class="card-text">
+                        COMBATIENTES DE MALVINAS 35</br>
+                        <a href="mailto:ne006@neuquen.gov.ar">ne006@neuquen.gov.ar</a></br>
+                        PIEDRA DEL AGUILA</br>
+                        2942493430</br>
+                    </p>
+                    <a class="btn btn-outline-primary btn-sm" href="datoscentro149f.html?id=580096800">
+                        Nuc. Educ. 6                    </a>
+                </div>
+
+            </div>
+                    </br>
+            <div class="card">
+                <div class="card-header">
+                    NE                </div>
+                <div class="card-body">
+                    <h5 class="card-title">NUCLEAMIENTO EDUCATIVO 7 ALUMINE</h5>
+                    <p class="card-text">
+                        ALVAREZ GREGORIO 536</br>
+                        <a href="mailto:ne007@neuquen.gov.ar">ne007@neuquen.gov.ar</a></br>
+                        ALUMINE</br>
+                        2942496106</br>
+                    </p>
+                    <a class="btn btn-outline-primary btn-sm" href="datoscentro3a34.html?id=580112100">
+                        Nuc. Educ. 7 Alumine                    </a>
+                </div>
+
+            </div>
+                    </br>
+            <div class="card">
+                <div class="card-header">
+                    ATM                </div>
+                <div class="card-body">
+                    <h5 class="card-title">UNIDAD DE CULTURA TECNOLÓGICA AULA TALLER MÓVIL ENERGÍAS RENOVABLES</h5>
+                    <p class="card-text">
+                        RUTA PROVINCIAL 43</br>
+                        <a href="mailto:SIN DATO">SIN DATO</a></br>
+                        LAS OVEJAS</br>
+                        </br>
+                    </p>
+                    <a class="btn btn-outline-primary btn-sm" href="datoscentro9078.html?id=580122904">
+                        UCTATM Energías ren.                    </a>
+                </div>
+
+            </div>
+                    </br>
+            <div class="card">
+                <div class="card-header">
+                    ATM                </div>
+                <div class="card-body">
+                    <h5 class="card-title">UNIDAD DE CULTURA TECNOLÓGICA AULA TALLER MÓVIL DE INSTALACIONES DOMICILIARIAS</h5>
+                    <p class="card-text">
+                        RUTA PROVINCIAL 18 KM 23</br>
+                        <a href="mailto:SIN DATO">SIN DATO</a></br>
+                        RUCA-CHOROI</br>
+                        </br>
+                    </p>
+                    <a class="btn btn-outline-primary btn-sm" href="datoscentro992b.html?id=580122901">
+                        UCTATM Inst. dom.                    </a>
+                </div>
+
+            </div>
+                    </br>
+            <div class="card">
+                <div class="card-header">
+                    ATM                </div>
+                <div class="card-body">
+                    <h5 class="card-title">UNIDAD DE CULTURA TECNOLÓGICA AULA TALLER MÓVIL MECÁNICA DE MOTOS</h5>
+                    <p class="card-text">
+                        PAISIL JOSE</br>
+                        <a href="mailto:SIN DATO">SIN DATO</a></br>
+                        VILLA LA ANGOSTURA</br>
+                        2996040329</br>
+                    </p>
+                    <a class="btn btn-outline-primary btn-sm" href="datoscentro7abb.html?id=580122906">
+                        UCTATM Mecánica motos.                    </a>
+                </div>
+
+            </div>
+                    </br>
+            <div class="card">
+                <div class="card-header">
+                    ATM                </div>
+                <div class="card-body">
+                    <h5 class="card-title">UNIDAD DE CULTURA TECNOLÓGICA AULA TALLER MÓVIL METALMECÁNICA</h5>
+                    <p class="card-text">
+                        EL PORTON</br>
+                        <a href="mailto:SIN DATO">SIN DATO</a></br>
+                        RINCON DE LOS SAUCES</br>
+                        </br>
+                    </p>
+                    <a class="btn btn-outline-primary btn-sm" href="datoscentro0471.html?id=580122903">
+                        UCTATM Metalmecánica                    </a>
+                </div>
+
+            </div>
+                    </br>
+            <div class="card">
+                <div class="card-header">
+                    ATM                </div>
+                <div class="card-body">
+                    <h5 class="card-title">UNIDAD DE CULTURA TECNOLÓGICA AULA TALLER MÓVIL SOLDADURA</h5>
+                    <p class="card-text">
+                        JOSE JADULL AV</br>
+                        <a href="mailto:SIN DATO">SIN DATO</a></br>
+                        BUTA RANQUIL</br>
+                        </br>
+                    </p>
+                    <a class="btn btn-outline-primary btn-sm" href="datoscentrof006.html?id=580122902">
+                        UCTATM Soldadura                    </a>
+                </div>
+
+            </div>
+                    </br>
+            <div class="card">
+                <div class="card-header">
+                    ATM                </div>
+                <div class="card-body">
+                    <h5 class="card-title">UNIDAD DE CULTURA TECNOLÓGICA AULA TALLER MÓVIL TEXTIL E INDUMENTARIA</h5>
+                    <p class="card-text">
+                        EL CHOCON 35</br>
+                        <a href="mailto:SIN DATO">SIN DATO</a></br>
+                        NEUQUEN</br>
+                        2994435680</br>
+                    </p>
+                    <a class="btn btn-outline-primary btn-sm" href="datoscentroda02.html?id=580122905">
+                        UCTATM Textil e indum.                    </a>
+                </div>
+
+            </div>
+            </div>
+
+    <!-- Google -->
+    <script type="text/javascript" src="../www.gstatic.com/charts/loader.js"></script>
+    <script src="js/scripts.js"></script>
+
+
+            
+        
+                        </main>
+                <footer class="py-4 bg-light mt-auto">
+                    <div class="container-fluid px-4">
+                        <div class="d-flex align-items-center justify-content-between small">
+                            <div class="text-muted">Copyright &copy; ST3 2022</div>
+                            <div>
+                                <a href="#">Privacy Policy</a>
+                                &middot;
+                                <a href="#">Terms &amp; Conditions</a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <script src="../cdn.jsdelivr.net/npm/bootstrap%405.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="js/scripts.js"></script>
+        <script src="../cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+<!--         <script src="assets/demo/chart-area-demo.js"></script> Ejemplo-->
+<!--        <script src="assets/demo/chart-bar-demo.js"></script> Ejemplo--> 
+        <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" crossorigin="anonymous"></script>
+<!--         <script src="js/datatables-simple-demo.js"></script> Ejemplo--> -->
+    </body>
+
+<!-- Mirrored from www.fpneuquen.com.ar/table.php by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 05 Sep 2024 16:04:09 GMT -->
+</html>

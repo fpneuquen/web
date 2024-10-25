@@ -1,0 +1,1174 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from www.fpneuquen.com.ar/SubSectores.php by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 05 Sep 2024 16:04:10 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-D23TBS0BCN"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-D23TBS0BCN');
+    </script>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Web de consulta de Centros de Formacion Profesional" />
+    <meta name="author" content="Silvio Stenta" />
+    <title>Formacion Profesional WEB</title>
+    <link rel="icon" type="image/png" href="img/logofp.png">
+    <link href="../cdn.jsdelivr.net/npm/simple-datatables%40latest/dist/style.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="../use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+ <!--    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+ --></head>
+
+<body class="sb-nav-fixed">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+        <!-- Navbar Brand-->
+        <button class="btn btn-link btn-sm order-1 order-lg-1 me-4 me-lg-1" id="sidebarToggle" href="index-2.html">
+            <i class="fas fa-bars fa-lg "></i></button>
+        <a class="navbar-brand ps-3" href="index-2.html"><img src="img/logo%20fp%20288x271.png" class="img-fluid" alt="max-width: 30%;height: auto" width="20%"></a>
+        <!-- Sidebar Toggle-->
+
+        <!-- Navbar Search-->
+        <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
+            <div class="input-group">
+                <!-- <input class="form-control" type="text" placeholder="Search for..." aria-label="Search for..." aria-describedby="btnNavbarSearch" />
+                <button class="btn btn-primary" id="btnNavbarSearch" type="button"><i class="fas fa-search"></i></button> -->
+            </div>
+        </form>
+        <!-- Navbar User-->
+        <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="login.html">Login</a></li>
+                    <li><a class="dropdown-item" href="index-2.html">Settings</a></li>
+                    <li><a class="dropdown-item" href="#!">Activity Log</a></li>
+                    <li>
+                        <hr class="dropdown-divider" />
+                    </li>
+                    <li><a class="dropdown-item" href="index-2.html">Cerrar</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <!-- Navbar Lateral -->
+
+    <div id="layoutSidenav">
+        <div id="layoutSidenav_nav">
+            <nav class="sb-sidenav accordion sb-sidenav-primary" id="sidenavAccordion">
+                <div class="sb-sidenav-menu">
+                    <div class="nav">
+                        <div class="sb-sidenav-menu-heading"></div>
+                        <a class="nav-link" href="dashboard.html">
+                            <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                            Todas las Escuelas
+                        </a>
+                        <div class="collapse" id="collapsePages" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">
+                            <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
+                            </nav>
+                        </div>
+                        <!-- <div class="sb-sidenav-menu-heading">Addons</div> -->
+                        <!--                         <a class="nav-link" href="charts.php">
+                            <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
+                            Graficos
+                        </a> -->
+
+
+                        <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseCFP" aria-expanded="false" aria-controls="collapseCFP">
+                            <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                            Centros
+                            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                        </a>
+                        <div class="collapse" id="collapseCFP" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                            <nav class="sb-sidenav-menu-nested nav">
+                                <a class="nav-link" href="table.html"><i class="fa fa-book" aria-hidden="true"></i>Listado por Zona</a>
+                                <a class="nav-link" href="centrosxzonas.html"><i class="fas fa-map-pin" aria-hidden="true"></i>Ubicacion por Zona</a>
+                            </nav>
+                        </div>
+
+
+                        <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseTray" aria-expanded="false" aria-controls="collapseTray">
+                            <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                            Trayectos Formativos
+                            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                        </a>
+                        <div class="collapse" id="collapseTray" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                            <nav class="sb-sidenav-menu-nested nav">
+                                <a class="nav-link" href="Sectores.html">
+                                    <div class="sb-nav-link-icon"> <i class="fa-brands fa-bandcamp"></i></div>
+                                    Sectores Productivos
+                                </a>
+                                <a class="nav-link" href="SubSectores.html">
+                                    <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
+                                    Sub-Sectores
+                                </a>
+                                <a class="nav-link" href="TrayectosFormativos.html">
+                                    <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
+                                    Trayectos Formativos
+                                </a>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <div class="sb-sidenav-footer">
+                    <div class="small">Logged in as:</div>
+
+                    invitado                </div>
+            </nav>
+        </div>
+        <!-- Principal -->
+
+
+
+        <script src="../cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+        <script src="../cdn.datatables.net/buttons/2.2.3/js/buttons.html5.min.js"></script>
+        <script src="../cdn.datatables.net/buttons/2.2.3/js/buttons.print.min.js"></script>
+        <script src="../cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js" crossorigin="anonymous"></script>
+        <script src="../cdn.datatables.net/1.11.5/js/dataTables.bootstrap4.min.js" crossorigin="anonymous"></script>
+        <script src="../cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+        <script src="../cdn.datatables.net/buttons/2.2.3/js/dataTables.buttons.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" crossorigin="anonymous"></script>
+        <script src="js/datatables-simple-demo.js"></script>
+        <script src="js/scripts.js"></script>
+        <link rel="stylesheet" type="text/css" href="../cdn.datatables.net/v/dt/dt-1.11.5/datatables.min.css" />
+        <link rel="stylesheet" type="text/css" href="../cdn.datatables.net/v/dt/dt-1.11.5/fc-4.0.2/r-2.2.9/rr-1.2.8/sc-2.0.5/sl-1.3.4/datatables.min.css" />
+
+        <script type="text/javascript" src="../cdn.datatables.net/v/dt/dt-1.11.5/datatables.min.js"></script>
+        <script type="text/javascript" src="../cdn.datatables.net/v/dt/dt-1.11.5/fc-4.0.2/r-2.2.9/rr-1.2.8/sc-2.0.5/sl-1.3.4/datatables.min.js"></script>
+        <script type="text/javascript" src="../cdn.datatables.net/v/dt/dt-1.12.1/b-2.2.3/b-colvis-2.2.3/b-html5-2.2.3/b-print-2.2.3/datatables.min.js"></script>
+
+
+        <script src="../cdn.jsdelivr.net/npm/bootstrap%405.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+
+        <script src="../code.jquery.com/jquery-3.5.1.js"></script>
+        <script src="../code.jquery.com/jquery-3.5.1.js"></script>
+
+        <script src="../cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+        <script src="../cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+        <script src="../cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+
+        <div id="layoutSidenav_content">
+            <main>
+
+
+<div class="container-fluid px-4">
+    <h1 class="mt-4">SubSectores Productivos</h1>
+    <ol class="breadcrumb mb-4">
+        <li class="breadcrumb-item"><a href="index-2.html">Escritorio</a></li>
+        <li class="breadcrumb-item active">Tablas</li>
+    </ol>
+
+    <div class="card mb-4">
+        <div class="card-header">
+            <i class="fas fa-table me-1"></i>
+            Listado de Trayectos %%        </div>
+
+
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+                            <div class="col">
+                    <div class="card">
+                    <h5 class="card-title">    
+                    <img src="img/1659629223_bomberos_voluntarios.jpg" width="100" class="card-img-top">
+                    Actividad Bomberil                    </h5>
+                        <div class="card-body">
+                            <p class="card-text">Cantidad de Ofertas Formativas : 3</p>
+                            <a href="TrayectosFormativosSubSectordb7f.html?id=Actividad%20Bomberil" class="card-title btn btn-primary btn-sm">Trayectos del Sub-Sector</a>
+                            <a href="centrosXsubsectordb7f.html?id=Actividad%20Bomberil" class="card-title btn btn-secondary btn-sm">Centros del Sub-Sector </a>
+
+                        </div>
+                    </div>
+                </div>
+                            <div class="col">
+                    <div class="card">
+                    <h5 class="card-title">    
+                    <img src="img/1659249080_rafting-alumine-2%5b1%5d.jpg" width="100" class="card-img-top">
+                    Actividades Recreativas (Turismo)                    </h5>
+                        <div class="card-body">
+                            <p class="card-text">Cantidad de Ofertas Formativas : 2</p>
+                            <a href="TrayectosFormativosSubSectorf2ec.html?id=Actividades%20Recreativas%20(Turismo)" class="card-title btn btn-primary btn-sm">Trayectos del Sub-Sector</a>
+                            <a href="centrosXsubsectorf2ec.html?id=Actividades%20Recreativas%20(Turismo)" class="card-title btn btn-secondary btn-sm">Centros del Sub-Sector </a>
+
+                        </div>
+                    </div>
+                </div>
+                            <div class="col">
+                    <div class="card">
+                    <h5 class="card-title">    
+                    <img src="img/1659248886_salidas-laborales-de-administracion-de-servicios-de-salud%5b1%5d.webp" width="100" class="card-img-top">
+                    Administración (Salud)                    </h5>
+                        <div class="card-body">
+                            <p class="card-text">Cantidad de Ofertas Formativas : 1</p>
+                            <a href="TrayectosFormativosSubSectorbadf.html?id=Administraci%c3%b3n%20(Salud)" class="card-title btn btn-primary btn-sm">Trayectos del Sub-Sector</a>
+                            <a href="centrosXsubsectorbadf.html?id=Administraci%c3%b3n%20(Salud)" class="card-title btn btn-secondary btn-sm">Centros del Sub-Sector </a>
+
+                        </div>
+                    </div>
+                </div>
+                            <div class="col">
+                    <div class="card">
+                    <h5 class="card-title">    
+                    <img src="img/1659219900_adm.banca_y_finanzas%5b1%5d.png" width="100" class="card-img-top">
+                    Administración y Gestión (Administración)                    </h5>
+                        <div class="card-body">
+                            <p class="card-text">Cantidad de Ofertas Formativas : 5</p>
+                            <a href="TrayectosFormativosSubSector10d2.html?id=Administraci%c3%b3n%20y%20Gesti%c3%b3n%20(Administraci%c3%b3n)" class="card-title btn btn-primary btn-sm">Trayectos del Sub-Sector</a>
+                            <a href="centrosXsubsector10d2.html?id=Administraci%c3%b3n%20y%20Gesti%c3%b3n%20(Administraci%c3%b3n)" class="card-title btn btn-secondary btn-sm">Centros del Sub-Sector </a>
+
+                        </div>
+                    </div>
+                </div>
+                            <div class="col">
+                    <div class="card">
+                    <h5 class="card-title">    
+                    <img src="img/1659220084_carrera-hoteleria-1%5b1%5d.jpg" width="100" class="card-img-top">
+                    Administración y Gestión (Hotelería y Gastronomía)                    </h5>
+                        <div class="card-body">
+                            <p class="card-text">Cantidad de Ofertas Formativas : 1</p>
+                            <a href="TrayectosFormativosSubSectordcd3.html?id=Administraci%c3%b3n%20y%20Gesti%c3%b3n%20(Hoteler%c3%ada%20y%20Gastronom%c3%ada)" class="card-title btn btn-primary btn-sm">Trayectos del Sub-Sector</a>
+                            <a href="centrosXsubsectordcd3.html?id=Administraci%c3%b3n%20y%20Gesti%c3%b3n%20(Hoteler%c3%ada%20y%20Gastronom%c3%ada)" class="card-title btn btn-secondary btn-sm">Centros del Sub-Sector </a>
+
+                        </div>
+                    </div>
+                </div>
+                            <div class="col">
+                    <div class="card">
+                    <h5 class="card-title">    
+                    <img src="img/1659224420_Diapositiva1-5-1024x585%5b1%5d.jpg" width="100" class="card-img-top">
+                    Administración y Gestión de las Organizaciones (Informática)                    </h5>
+                        <div class="card-body">
+                            <p class="card-text">Cantidad de Ofertas Formativas : 1</p>
+                            <a href="TrayectosFormativosSubSector7f45.html?id=Administraci%c3%b3n%20y%20Gesti%c3%b3n%20de%20las%20Organizaciones%20(Inform%c3%a1tica)" class="card-title btn btn-primary btn-sm">Trayectos del Sub-Sector</a>
+                            <a href="centrosXsubsector7f45.html?id=Administraci%c3%b3n%20y%20Gesti%c3%b3n%20de%20las%20Organizaciones%20(Inform%c3%a1tica)" class="card-title btn btn-secondary btn-sm">Centros del Sub-Sector </a>
+
+                        </div>
+                    </div>
+                </div>
+                            <div class="col">
+                    <div class="card">
+                    <h5 class="card-title">    
+                    <img src="img/1659320960_analsis%20prcesos.jpg" width="100" class="card-img-top">
+                    Análisis de Procesos y Productos Metalmecánicos (Mecánica, Metalmecánica y Metalurgia)                    </h5>
+                        <div class="card-body">
+                            <p class="card-text">Cantidad de Ofertas Formativas : 2</p>
+                            <a href="TrayectosFormativosSubSector9dec.html?id=An%c3%a1lisis%20de%20Procesos%20y%20Productos%20Metalmec%c3%a1nicos%20(Mec%c3%a1nica,%20Metalmec%c3%a1nica%20y%20Metalurgia)" class="card-title btn btn-primary btn-sm">Trayectos del Sub-Sector</a>
+                            <a href="centrosXsubsector9dec.html?id=An%c3%a1lisis%20de%20Procesos%20y%20Productos%20Metalmec%c3%a1nicos%20(Mec%c3%a1nica,%20Metalmec%c3%a1nica%20y%20Metalurgia)" class="card-title btn btn-secondary btn-sm">Centros del Sub-Sector </a>
+
+                        </div>
+                    </div>
+                </div>
+                            <div class="col">
+                    <div class="card">
+                    <h5 class="card-title">    
+                    <img src="img/1659220440_joven-programando-ingenieria-de-software-upc-1-1024x536%5b1%5d.jpg" width="100" class="card-img-top">
+                    Análisis y Programación de Sistemas (Informática)                    </h5>
+                        <div class="card-body">
+                            <p class="card-text">Cantidad de Ofertas Formativas : 5</p>
+                            <a href="TrayectosFormativosSubSector3548.html?id=An%c3%a1lisis%20y%20Programaci%c3%b3n%20de%20Sistemas%20(Inform%c3%a1tica)" class="card-title btn btn-primary btn-sm">Trayectos del Sub-Sector</a>
+                            <a href="centrosXsubsector3548.html?id=An%c3%a1lisis%20y%20Programaci%c3%b3n%20de%20Sistemas%20(Inform%c3%a1tica)" class="card-title btn btn-secondary btn-sm">Centros del Sub-Sector </a>
+
+                        </div>
+                    </div>
+                </div>
+                            <div class="col">
+                    <div class="card">
+                    <h5 class="card-title">    
+                    <img src="img/1659220730_reparacion-de-heladeras-aire-acondicionado2%5b1%5d.jpg" width="100" class="card-img-top">
+                    Aplicada al Equipamiento Frío - Calor (Electromecánica)                    </h5>
+                        <div class="card-body">
+                            <p class="card-text">Cantidad de Ofertas Formativas : 2</p>
+                            <a href="TrayectosFormativosSubSector6b72.html?id=Aplicada%20al%20Equipamiento%20Fr%c3%ado%20-%20Calor%20(Electromec%c3%a1nica)" class="card-title btn btn-primary btn-sm">Trayectos del Sub-Sector</a>
+                            <a href="centrosXsubsector6b72.html?id=Aplicada%20al%20Equipamiento%20Fr%c3%ado%20-%20Calor%20(Electromec%c3%a1nica)" class="card-title btn btn-secondary btn-sm">Centros del Sub-Sector </a>
+
+                        </div>
+                    </div>
+                </div>
+                            <div class="col">
+                    <div class="card">
+                    <h5 class="card-title">    
+                    <img src="img/1659220912_electromecanica_inds%5b1%5d.jpg" width="100" class="card-img-top">
+                    Aplicada al Equipamiento Industrial (Electromecánica)                    </h5>
+                        <div class="card-body">
+                            <p class="card-text">Cantidad de Ofertas Formativas : 1</p>
+                            <a href="TrayectosFormativosSubSector7760.html?id=Aplicada%20al%20Equipamiento%20Industrial%20(Electromec%c3%a1nica)" class="card-title btn btn-primary btn-sm">Trayectos del Sub-Sector</a>
+                            <a href="centrosXsubsector7760.html?id=Aplicada%20al%20Equipamiento%20Industrial%20(Electromec%c3%a1nica)" class="card-title btn btn-secondary btn-sm">Centros del Sub-Sector </a>
+
+                        </div>
+                    </div>
+                </div>
+                            <div class="col">
+                    <div class="card">
+                    <h5 class="card-title">    
+                    <img src="img/1659628695_industrializacion-de-madera.jpg" width="100" class="card-img-top">
+                    Aplicado a la Industrialización de la Madera (Madera y Mueble)                    </h5>
+                        <div class="card-body">
+                            <p class="card-text">Cantidad de Ofertas Formativas : 5</p>
+                            <a href="TrayectosFormativosSubSector0f3d.html?id=Aplicado%20a%20la%20Industrializaci%c3%b3n%20de%20la%20Madera%20(Madera%20y%20Mueble)" class="card-title btn btn-primary btn-sm">Trayectos del Sub-Sector</a>
+                            <a href="centrosXsubsector0f3d.html?id=Aplicado%20a%20la%20Industrializaci%c3%b3n%20de%20la%20Madera%20(Madera%20y%20Mueble)" class="card-title btn btn-secondary btn-sm">Centros del Sub-Sector </a>
+
+                        </div>
+                    </div>
+                </div>
+                            <div class="col">
+                    <div class="card">
+                    <h5 class="card-title">    
+                    <img src="img/1659320171_1659222038_artesanias-1580290982%5b1%5d.jpg" width="100" class="card-img-top">
+                    Artístico y Artesanal (Actividades Artísticas Técnicas)                    </h5>
+                        <div class="card-body">
+                            <p class="card-text">Cantidad de Ofertas Formativas : 3</p>
+                            <a href="TrayectosFormativosSubSector0e77.html?id=Art%c3%adstico%20y%20Artesanal%20(Actividades%20Art%c3%adsticas%20T%c3%a9cnicas)" class="card-title btn btn-primary btn-sm">Trayectos del Sub-Sector</a>
+                            <a href="centrosXsubsector0e77.html?id=Art%c3%adstico%20y%20Artesanal%20(Actividades%20Art%c3%adsticas%20T%c3%a9cnicas)" class="card-title btn btn-secondary btn-sm">Centros del Sub-Sector </a>
+
+                        </div>
+                    </div>
+                </div>
+                            <div class="col">
+                    <div class="card">
+                    <h5 class="card-title">    
+                    <img src="img/1659223813_hosteleria-hoteleria-y-turismo%5b1%5d.jpg" width="100" class="card-img-top">
+                    Atención al Cliente (Hotelería y Gastronomía)                    </h5>
+                        <div class="card-body">
+                            <p class="card-text">Cantidad de Ofertas Formativas : 3</p>
+                            <a href="TrayectosFormativosSubSector6cf2.html?id=Atenci%c3%b3n%20al%20Cliente%20(Hoteler%c3%ada%20y%20Gastronom%c3%ada)" class="card-title btn btn-primary btn-sm">Trayectos del Sub-Sector</a>
+                            <a href="centrosXsubsector6cf2.html?id=Atenci%c3%b3n%20al%20Cliente%20(Hoteler%c3%ada%20y%20Gastronom%c3%ada)" class="card-title btn btn-secondary btn-sm">Centros del Sub-Sector </a>
+
+                        </div>
+                    </div>
+                </div>
+                            <div class="col">
+                    <div class="card">
+                    <h5 class="card-title">    
+                    <img src="img/1659321210_reparacion-de-televisores-en-torreon%5b1%5d.png" width="100" class="card-img-top">
+                    Audio, Video, Radio y Tv (Electrónica)                    </h5>
+                        <div class="card-body">
+                            <p class="card-text">Cantidad de Ofertas Formativas : 4</p>
+                            <a href="TrayectosFormativosSubSectoree2e.html?id=Audio,%20Video,%20Radio%20y%20Tv%20(Electr%c3%b3nica)" class="card-title btn btn-primary btn-sm">Trayectos del Sub-Sector</a>
+                            <a href="centrosXsubsectoree2e.html?id=Audio,%20Video,%20Radio%20y%20Tv%20(Electr%c3%b3nica)" class="card-title btn btn-secondary btn-sm">Centros del Sub-Sector </a>
+
+                        </div>
+                    </div>
+                </div>
+                            <div class="col">
+                    <div class="card">
+                    <h5 class="card-title">    
+                    <img src="img/1659321040_carpintero-que-trabaja-equipo-tabla-madera-tienda-carpinteria_1418-2326%5b1%5d.jpg" width="100" class="card-img-top">
+                    Carpintería (Madera y Mueble)                    </h5>
+                        <div class="card-body">
+                            <p class="card-text">Cantidad de Ofertas Formativas : 8</p>
+                            <a href="TrayectosFormativosSubSector88b5.html?id=Carpinter%c3%ada%20(Madera%20y%20Mueble)" class="card-title btn btn-primary btn-sm">Trayectos del Sub-Sector</a>
+                            <a href="centrosXsubsector88b5.html?id=Carpinter%c3%ada%20(Madera%20y%20Mueble)" class="card-title btn btn-secondary btn-sm">Centros del Sub-Sector </a>
+
+                        </div>
+                    </div>
+                </div>
+                            <div class="col">
+                    <div class="card">
+                    <h5 class="card-title">    
+                    <img src="img/1659222124_pastas_ceramicas%5b1%5d.jpg" width="100" class="card-img-top">
+                    Cerámica (Actividades Artísticas Técnicas)                    </h5>
+                        <div class="card-body">
+                            <p class="card-text">Cantidad de Ofertas Formativas : 3</p>
+                            <a href="TrayectosFormativosSubSectorb18f.html?id=Cer%c3%a1mica%20(Actividades%20Art%c3%adsticas%20T%c3%a9cnicas)" class="card-title btn btn-primary btn-sm">Trayectos del Sub-Sector</a>
+                            <a href="centrosXsubsectorb18f.html?id=Cer%c3%a1mica%20(Actividades%20Art%c3%adsticas%20T%c3%a9cnicas)" class="card-title btn btn-secondary btn-sm">Centros del Sub-Sector </a>
+
+                        </div>
+                    </div>
+                </div>
+                            <div class="col">
+                    <div class="card">
+                    <h5 class="card-title">    
+                    <img src="img/1659223882_cocina-adapta-necesidades-1%5b1%5d.jpg" width="100" class="card-img-top">
+                    Cocina (Hotelería y Gastronomía)                    </h5>
+                        <div class="card-body">
+                            <p class="card-text">Cantidad de Ofertas Formativas : 6</p>
+                            <a href="TrayectosFormativosSubSectorb2c7.html?id=Cocina%20(Hoteler%c3%ada%20y%20Gastronom%c3%ada)" class="card-title btn btn-primary btn-sm">Trayectos del Sub-Sector</a>
+                            <a href="centrosXsubsectorb2c7.html?id=Cocina%20(Hoteler%c3%ada%20y%20Gastronom%c3%ada)" class="card-title btn btn-secondary btn-sm">Centros del Sub-Sector </a>
+
+                        </div>
+                    </div>
+                </div>
+                            <div class="col">
+                    <div class="card">
+                    <h5 class="card-title">    
+                    <img src="img/1659224705_61c220a2309e1%5b1%5d.jpg" width="100" class="card-img-top">
+                    Construcción de Obra Civil (Construcción)                    </h5>
+                        <div class="card-body">
+                            <p class="card-text">Cantidad de Ofertas Formativas : 5</p>
+                            <a href="TrayectosFormativosSubSector60aa.html?id=Construcci%c3%b3n%20de%20Obra%20Civil%20(Construcci%c3%b3n)" class="card-title btn btn-primary btn-sm">Trayectos del Sub-Sector</a>
+                            <a href="centrosXsubsector60aa.html?id=Construcci%c3%b3n%20de%20Obra%20Civil%20(Construcci%c3%b3n)" class="card-title btn btn-secondary btn-sm">Centros del Sub-Sector </a>
+
+                        </div>
+                    </div>
+                </div>
+                            <div class="col">
+                    <div class="card">
+                    <h5 class="card-title">    
+                    <img src="img/1659224849_LADRILLOS-CONSTRUCCION-CASA-ALBANIL%5b1%5d.jpg" width="100" class="card-img-top">
+                    Construcciones de Base Húmeda (Construcción)                    </h5>
+                        <div class="card-body">
+                            <p class="card-text">Cantidad de Ofertas Formativas : 5</p>
+                            <a href="TrayectosFormativosSubSectordb33.html?id=Construcciones%20de%20Base%20H%c3%bameda%20(Construcci%c3%b3n)" class="card-title btn btn-primary btn-sm">Trayectos del Sub-Sector</a>
+                            <a href="centrosXsubsectordb33.html?id=Construcciones%20de%20Base%20H%c3%bameda%20(Construcci%c3%b3n)" class="card-title btn btn-secondary btn-sm">Centros del Sub-Sector </a>
+
+                        </div>
+                    </div>
+                </div>
+                            <div class="col">
+                    <div class="card">
+                    <h5 class="card-title">    
+                    <img src="img/1659224957_construccion-drywall-1024x768-1%5b1%5d.jpg" width="100" class="card-img-top">
+                    Construcciones en Seco Livianas (Construcción)                    </h5>
+                        <div class="card-body">
+                            <p class="card-text">Cantidad de Ofertas Formativas : 4</p>
+                            <a href="TrayectosFormativosSubSector9f23.html?id=Construcciones%20en%20Seco%20Livianas%20(Construcci%c3%b3n)" class="card-title btn btn-primary btn-sm">Trayectos del Sub-Sector</a>
+                            <a href="centrosXsubsector9f23.html?id=Construcciones%20en%20Seco%20Livianas%20(Construcci%c3%b3n)" class="card-title btn btn-secondary btn-sm">Centros del Sub-Sector </a>
+
+                        </div>
+                    </div>
+                </div>
+                            <div class="col">
+                    <div class="card">
+                    <h5 class="card-title">    
+                    <img src="img/1659249145_contabilidad-administrativa-e1564786257370%5b1%5d.jpg" width="100" class="card-img-top">
+                    Contabilidad (Administración)                    </h5>
+                        <div class="card-body">
+                            <p class="card-text">Cantidad de Ofertas Formativas : 2</p>
+                            <a href="TrayectosFormativosSubSectorb050.html?id=Contabilidad%20(Administraci%c3%b3n)" class="card-title btn btn-primary btn-sm">Trayectos del Sub-Sector</a>
+                            <a href="centrosXsubsectorb050.html?id=Contabilidad%20(Administraci%c3%b3n)" class="card-title btn btn-secondary btn-sm">Centros del Sub-Sector </a>
+
+                        </div>
+                    </div>
+                </div>
+                            <div class="col">
+                    <div class="card">
+                    <h5 class="card-title">    
+                    <img src="img/1659224211_tratamiento-en-cosmetologia%5b1%5d.jpg" width="100" class="card-img-top">
+                    Cosmetología (Estética Profesional)                    </h5>
+                        <div class="card-body">
+                            <p class="card-text">Cantidad de Ofertas Formativas : 6</p>
+                            <a href="TrayectosFormativosSubSectorf0e7.html?id=Cosmetolog%c3%ada%20(Est%c3%a9tica%20Profesional)" class="card-title btn btn-primary btn-sm">Trayectos del Sub-Sector</a>
+                            <a href="centrosXsubsectorf0e7.html?id=Cosmetolog%c3%ada%20(Est%c3%a9tica%20Profesional)" class="card-title btn btn-secondary btn-sm">Centros del Sub-Sector </a>
+
+                        </div>
+                    </div>
+                </div>
+                            <div class="col">
+                    <div class="card">
+                    <h5 class="card-title">    
+                    <img src="img/1659248796_RLVJ7HZAANFFVBDU7MA4IUCEII%5b1%5d.jpg" width="100" class="card-img-top">
+                    Cuero (Cuero y Calzado)                    </h5>
+                        <div class="card-body">
+                            <p class="card-text">Cantidad de Ofertas Formativas : 4</p>
+                            <a href="TrayectosFormativosSubSectorc3eb.html?id=Cuero%20(Cuero%20y%20Calzado)" class="card-title btn btn-primary btn-sm">Trayectos del Sub-Sector</a>
+                            <a href="centrosXsubsectorc3eb.html?id=Cuero%20(Cuero%20y%20Calzado)" class="card-title btn btn-secondary btn-sm">Centros del Sub-Sector </a>
+
+                        </div>
+                    </div>
+                </div>
+                            <div class="col">
+                    <div class="card">
+                    <h5 class="card-title">    
+                    <img src="img/1659628734_sector-secundario-indumentaria.jpg" width="100" class="card-img-top">
+                    Diseño de Indumentaria y Textil (Textil e Indumentaria)                    </h5>
+                        <div class="card-body">
+                            <p class="card-text">Cantidad de Ofertas Formativas : 19</p>
+                            <a href="TrayectosFormativosSubSectorec81.html?id=Dise%c3%b1o%20de%20Indumentaria%20y%20Textil%20(Textil%20e%20Indumentaria)" class="card-title btn btn-primary btn-sm">Trayectos del Sub-Sector</a>
+                            <a href="centrosXsubsectorec81.html?id=Dise%c3%b1o%20de%20Indumentaria%20y%20Textil%20(Textil%20e%20Indumentaria)" class="card-title btn btn-secondary btn-sm">Centros del Sub-Sector </a>
+
+                        </div>
+                    </div>
+                </div>
+                            <div class="col">
+                    <div class="card">
+                    <h5 class="card-title">    
+                    <img src="img/1659221841_ambientacion-de-eventos%5b1%5d.jpg" width="100" class="card-img-top">
+                    Diseño, Decoración y Ambientación (Actividades Artísticas Técnicas)                    </h5>
+                        <div class="card-body">
+                            <p class="card-text">Cantidad de Ofertas Formativas : 1</p>
+                            <a href="TrayectosFormativosSubSectorca9f.html?id=Dise%c3%b1o,%20Decoraci%c3%b3n%20y%20Ambientaci%c3%b3n%20(Actividades%20Art%c3%adsticas%20T%c3%a9cnicas)" class="card-title btn btn-primary btn-sm">Trayectos del Sub-Sector</a>
+                            <a href="centrosXsubsectorca9f.html?id=Dise%c3%b1o,%20Decoraci%c3%b3n%20y%20Ambientaci%c3%b3n%20(Actividades%20Art%c3%adsticas%20T%c3%a9cnicas)" class="card-title btn btn-secondary btn-sm">Centros del Sub-Sector </a>
+
+                        </div>
+                    </div>
+                </div>
+                            <div class="col">
+                    <div class="card">
+                    <h5 class="card-title">    
+                    <img src="img/index.html" width="100" class="card-img-top">
+                    Elaboración de Bebidas (Industria de la Alimentación)                    </h5>
+                        <div class="card-body">
+                            <p class="card-text">Cantidad de Ofertas Formativas : 4</p>
+                            <a href="TrayectosFormativosSubSector565a.html?id=Elaboraci%c3%b3n%20de%20Bebidas%20(Industria%20de%20la%20Alimentaci%c3%b3n)" class="card-title btn btn-primary btn-sm">Trayectos del Sub-Sector</a>
+                            <a href="centrosXsubsector565a.html?id=Elaboraci%c3%b3n%20de%20Bebidas%20(Industria%20de%20la%20Alimentaci%c3%b3n)" class="card-title btn btn-secondary btn-sm">Centros del Sub-Sector </a>
+
+                        </div>
+                    </div>
+                </div>
+                            <div class="col">
+                    <div class="card">
+                    <h5 class="card-title">    
+                    <img src="img/1659629596_industria-alimentacion.jpg" width="100" class="card-img-top">
+                    Elaboración de Productos Alimenticios (Industria de la Alimentación)                    </h5>
+                        <div class="card-body">
+                            <p class="card-text">Cantidad de Ofertas Formativas : 2</p>
+                            <a href="TrayectosFormativosSubSectorb8af.html?id=Elaboraci%c3%b3n%20de%20Productos%20Alimenticios%20(Industria%20de%20la%20Alimentaci%c3%b3n)" class="card-title btn btn-primary btn-sm">Trayectos del Sub-Sector</a>
+                            <a href="centrosXsubsectorb8af.html?id=Elaboraci%c3%b3n%20de%20Productos%20Alimenticios%20(Industria%20de%20la%20Alimentaci%c3%b3n)" class="card-title btn btn-secondary btn-sm">Centros del Sub-Sector </a>
+
+                        </div>
+                    </div>
+                </div>
+                            <div class="col">
+                    <div class="card">
+                    <h5 class="card-title">    
+                    <img src="img/1659629254_2_conservas.png" width="100" class="card-img-top">
+                    Elaboración y Conservación de Alimentos (Industria de la Alimentación)                    </h5>
+                        <div class="card-body">
+                            <p class="card-text">Cantidad de Ofertas Formativas : 3</p>
+                            <a href="TrayectosFormativosSubSectorbd0d.html?id=Elaboraci%c3%b3n%20y%20Conservaci%c3%b3n%20de%20Alimentos%20(Industria%20de%20la%20Alimentaci%c3%b3n)" class="card-title btn btn-primary btn-sm">Trayectos del Sub-Sector</a>
+                            <a href="centrosXsubsectorbd0d.html?id=Elaboraci%c3%b3n%20y%20Conservaci%c3%b3n%20de%20Alimentos%20(Industria%20de%20la%20Alimentaci%c3%b3n)" class="card-title btn btn-secondary btn-sm">Centros del Sub-Sector </a>
+
+                        </div>
+                    </div>
+                </div>
+                            <div class="col">
+                    <div class="card">
+                    <h5 class="card-title">    
+                    <img src="img/1659249311_curso-electronica-automotriz-01%5b1%5d.jpg" width="100" class="card-img-top">
+                    Electricidad / Electrónica (Automotriz)                    </h5>
+                        <div class="card-body">
+                            <p class="card-text">Cantidad de Ofertas Formativas : 1</p>
+                            <a href="TrayectosFormativosSubSectore66e.html?id=Electricidad%20/%20Electr%c3%b3nica%20(Automotriz)" class="card-title btn btn-primary btn-sm">Trayectos del Sub-Sector</a>
+                            <a href="centrosXsubsectore66e.html?id=Electricidad%20/%20Electr%c3%b3nica%20(Automotriz)" class="card-title btn btn-secondary btn-sm">Centros del Sub-Sector </a>
+
+                        </div>
+                    </div>
+                </div>
+                            <div class="col">
+                    <div class="card">
+                    <h5 class="card-title">    
+                    <img src="img/1659629312_Enfemeria.jpg" width="100" class="card-img-top">
+                    Enfermería (Salud)                    </h5>
+                        <div class="card-body">
+                            <p class="card-text">Cantidad de Ofertas Formativas : 1</p>
+                            <a href="TrayectosFormativosSubSectoref42.html?id=Enfermer%c3%ada%20(Salud)" class="card-title btn btn-primary btn-sm">Trayectos del Sub-Sector</a>
+                            <a href="centrosXsubsectoref42.html?id=Enfermer%c3%ada%20(Salud)" class="card-title btn btn-secondary btn-sm">Centros del Sub-Sector </a>
+
+                        </div>
+                    </div>
+                </div>
+                            <div class="col">
+                    <div class="card">
+                    <h5 class="card-title">    
+                    <img src="img/1659630279_Enfemeria.jpg" width="100" class="card-img-top">
+                    Especialidades (Salud)                    </h5>
+                        <div class="card-body">
+                            <p class="card-text">Cantidad de Ofertas Formativas : 1</p>
+                            <a href="TrayectosFormativosSubSector6c65.html?id=Especialidades%20(Salud)" class="card-title btn btn-primary btn-sm">Trayectos del Sub-Sector</a>
+                            <a href="centrosXsubsector6c65.html?id=Especialidades%20(Salud)" class="card-title btn btn-secondary btn-sm">Centros del Sub-Sector </a>
+
+                        </div>
+                    </div>
+                </div>
+                            <div class="col">
+                    <div class="card">
+                    <h5 class="card-title">    
+                    <img src="img/1659628784_forestacion_produccion.jpg" width="100" class="card-img-top">
+                    Forestal (Agropecuario)                    </h5>
+                        <div class="card-body">
+                            <p class="card-text">Cantidad de Ofertas Formativas : 2</p>
+                            <a href="TrayectosFormativosSubSector471d.html?id=Forestal%20(Agropecuario)" class="card-title btn btn-primary btn-sm">Trayectos del Sub-Sector</a>
+                            <a href="centrosXsubsector471d.html?id=Forestal%20(Agropecuario)" class="card-title btn btn-secondary btn-sm">Centros del Sub-Sector </a>
+
+                        </div>
+                    </div>
+                </div>
+                            <div class="col">
+                    <div class="card">
+                    <h5 class="card-title">    
+                    <img src="img/1659629636_generacion-transporte-ENERGIA.jpg" width="100" class="card-img-top">
+                    Generación, Transporte y Distribución de Energía Eléctrica (Energía Eléctrica)                    </h5>
+                        <div class="card-body">
+                            <p class="card-text">Cantidad de Ofertas Formativas : 4</p>
+                            <a href="TrayectosFormativosSubSectorc2ab.html?id=Generaci%c3%b3n,%20Transporte%20y%20Distribuci%c3%b3n%20de%20Energ%c3%ada%20El%c3%a9ctrica%20(Energ%c3%ada%20El%c3%a9ctrica)" class="card-title btn btn-primary btn-sm">Trayectos del Sub-Sector</a>
+                            <a href="centrosXsubsectorc2ab.html?id=Generaci%c3%b3n,%20Transporte%20y%20Distribuci%c3%b3n%20de%20Energ%c3%ada%20El%c3%a9ctrica%20(Energ%c3%ada%20El%c3%a9ctrica)" class="card-title btn btn-secondary btn-sm">Centros del Sub-Sector </a>
+
+                        </div>
+                    </div>
+                </div>
+                            <div class="col">
+                    <div class="card">
+                    <h5 class="card-title">    
+                    <img src="img/1659224125_220613-CONCURSO-HOTELERIA%5b1%5d.jpg" width="100" class="card-img-top">
+                    Hotelería (Hotelería y Gastronomía)                    </h5>
+                        <div class="card-body">
+                            <p class="card-text">Cantidad de Ofertas Formativas : 4</p>
+                            <a href="TrayectosFormativosSubSectorbe78.html?id=Hoteler%c3%ada%20(Hoteler%c3%ada%20y%20Gastronom%c3%ada)" class="card-title btn btn-primary btn-sm">Trayectos del Sub-Sector</a>
+                            <a href="centrosXsubsectorbe78.html?id=Hoteler%c3%ada%20(Hoteler%c3%ada%20y%20Gastronom%c3%ada)" class="card-title btn btn-secondary btn-sm">Centros del Sub-Sector </a>
+
+                        </div>
+                    </div>
+                </div>
+                            <div class="col">
+                    <div class="card">
+                    <h5 class="card-title">    
+                    <img src="img/1659629658_idiomas.jpg" width="100" class="card-img-top">
+                    Idioma (Turismo)                    </h5>
+                        <div class="card-body">
+                            <p class="card-text">Cantidad de Ofertas Formativas : 2</p>
+                            <a href="TrayectosFormativosSubSector114d.html?id=Idioma%20(Turismo)" class="card-title btn btn-primary btn-sm">Trayectos del Sub-Sector</a>
+                            <a href="centrosXsubsector114d.html?id=Idioma%20(Turismo)" class="card-title btn btn-secondary btn-sm">Centros del Sub-Sector </a>
+
+                        </div>
+                    </div>
+                </div>
+                            <div class="col">
+                    <div class="card">
+                    <h5 class="card-title">    
+                    <img src="img/1659629700_industria_grafica_impresores.jpg" width="100" class="card-img-top">
+                    Impresión (Industria Gráfica y Multimedial)                    </h5>
+                        <div class="card-body">
+                            <p class="card-text">Cantidad de Ofertas Formativas : 1</p>
+                            <a href="TrayectosFormativosSubSectordb8d.html?id=Impresi%c3%b3n%20(Industria%20Gr%c3%a1fica%20y%20Multimedial)" class="card-title btn btn-primary btn-sm">Trayectos del Sub-Sector</a>
+                            <a href="centrosXsubsectordb8d.html?id=Impresi%c3%b3n%20(Industria%20Gr%c3%a1fica%20y%20Multimedial)" class="card-title btn btn-secondary btn-sm">Centros del Sub-Sector </a>
+
+                        </div>
+                    </div>
+                </div>
+                            <div class="col">
+                    <div class="card">
+                    <h5 class="card-title">    
+                    <img src="img/1659629742_grafica.jpg" width="100" class="card-img-top">
+                    Industria Gráfica (Industria Gráfica y Multimedial)                    </h5>
+                        <div class="card-body">
+                            <p class="card-text">Cantidad de Ofertas Formativas : 1</p>
+                            <a href="TrayectosFormativosSubSector9f9e.html?id=Industria%20Gr%c3%a1fica%20(Industria%20Gr%c3%a1fica%20y%20Multimedial)" class="card-title btn btn-primary btn-sm">Trayectos del Sub-Sector</a>
+                            <a href="centrosXsubsector9f9e.html?id=Industria%20Gr%c3%a1fica%20(Industria%20Gr%c3%a1fica%20y%20Multimedial)" class="card-title btn btn-secondary btn-sm">Centros del Sub-Sector </a>
+
+                        </div>
+                    </div>
+                </div>
+                            <div class="col">
+                    <div class="card">
+                    <h5 class="card-title">    
+                    <img src="img/1659225085_FWQSWI3LARDBLJU2NRCGSAZ2QA%5b1%5d.jpg" width="100" class="card-img-top">
+                    Instalaciones de Energía Eléctrica en Inmuebles (Construcción)                    </h5>
+                        <div class="card-body">
+                            <p class="card-text">Cantidad de Ofertas Formativas : 3</p>
+                            <a href="TrayectosFormativosSubSector681a.html?id=Instalaciones%20de%20Energ%c3%ada%20El%c3%a9ctrica%20en%20Inmuebles%20(Construcci%c3%b3n)" class="card-title btn btn-primary btn-sm">Trayectos del Sub-Sector</a>
+                            <a href="centrosXsubsector681a.html?id=Instalaciones%20de%20Energ%c3%ada%20El%c3%a9ctrica%20en%20Inmuebles%20(Construcci%c3%b3n)" class="card-title btn btn-secondary btn-sm">Centros del Sub-Sector </a>
+
+                        </div>
+                    </div>
+                </div>
+                            <div class="col">
+                    <div class="card">
+                    <h5 class="card-title">    
+                    <img src="img/1659248469_Instalacion-y-Mantenimiento-Sanitarios-Centriplomeros%5b1%5d.jpg" width="100" class="card-img-top">
+                    Instalaciones Sanitarias y de Gas (Construcción)                    </h5>
+                        <div class="card-body">
+                            <p class="card-text">Cantidad de Ofertas Formativas : 8</p>
+                            <a href="TrayectosFormativosSubSector4b79.html?id=Instalaciones%20Sanitarias%20y%20de%20Gas%20(Construcci%c3%b3n)" class="card-title btn btn-primary btn-sm">Trayectos del Sub-Sector</a>
+                            <a href="centrosXsubsector4b79.html?id=Instalaciones%20Sanitarias%20y%20de%20Gas%20(Construcci%c3%b3n)" class="card-title btn btn-secondary btn-sm">Centros del Sub-Sector </a>
+
+                        </div>
+                    </div>
+                </div>
+                            <div class="col">
+                    <div class="card">
+                    <h5 class="card-title">    
+                    <img src="img/1659320369_Mantenimiento.jpg" width="100" class="card-img-top">
+                    Mantenimiento y Reparación de Automotores (Automotriz)                    </h5>
+                        <div class="card-body">
+                            <p class="card-text">Cantidad de Ofertas Formativas : 9</p>
+                            <a href="TrayectosFormativosSubSector0a81.html?id=Mantenimiento%20y%20Reparaci%c3%b3n%20de%20Automotores%20(Automotriz)" class="card-title btn btn-primary btn-sm">Trayectos del Sub-Sector</a>
+                            <a href="centrosXsubsector0a81.html?id=Mantenimiento%20y%20Reparaci%c3%b3n%20de%20Automotores%20(Automotriz)" class="card-title btn btn-secondary btn-sm">Centros del Sub-Sector </a>
+
+                        </div>
+                    </div>
+                </div>
+                            <div class="col">
+                    <div class="card">
+                    <h5 class="card-title">    
+                    <img src="img/1659320575_Mecanicos-revisando-carroceria.jpg" width="100" class="card-img-top">
+                    Mantenimiento y Reparación de Carrocería (Automotriz)                    </h5>
+                        <div class="card-body">
+                            <p class="card-text">Cantidad de Ofertas Formativas : 2</p>
+                            <a href="TrayectosFormativosSubSectorf984.html?id=Mantenimiento%20y%20Reparaci%c3%b3n%20de%20Carrocer%c3%ada%20(Automotriz)" class="card-title btn btn-primary btn-sm">Trayectos del Sub-Sector</a>
+                            <a href="centrosXsubsectorf984.html?id=Mantenimiento%20y%20Reparaci%c3%b3n%20de%20Carrocer%c3%ada%20(Automotriz)" class="card-title btn btn-secondary btn-sm">Centros del Sub-Sector </a>
+
+                        </div>
+                    </div>
+                </div>
+                            <div class="col">
+                    <div class="card">
+                    <h5 class="card-title">    
+                    <img src="img/1659629775_motores-combustion-interna.jpg" width="100" class="card-img-top">
+                    Mantenimiento y Reparación de Motores de Combustión Interna (Automotriz)                    </h5>
+                        <div class="card-body">
+                            <p class="card-text">Cantidad de Ofertas Formativas : 1</p>
+                            <a href="TrayectosFormativosSubSector3b07.html?id=Mantenimiento%20y%20Reparaci%c3%b3n%20de%20Motores%20de%20Combusti%c3%b3n%20Interna%20(Automotriz)" class="card-title btn btn-primary btn-sm">Trayectos del Sub-Sector</a>
+                            <a href="centrosXsubsector3b07.html?id=Mantenimiento%20y%20Reparaci%c3%b3n%20de%20Motores%20de%20Combusti%c3%b3n%20Interna%20(Automotriz)" class="card-title btn btn-secondary btn-sm">Centros del Sub-Sector </a>
+
+                        </div>
+                    </div>
+                </div>
+                            <div class="col">
+                    <div class="card">
+                    <h5 class="card-title">    
+                    <img src="img/1673450554_frenos.jpg" width="100" class="card-img-top">
+                    Mantenimiento y Reparación de Sistemas de Frenos (Automotriz)                    </h5>
+                        <div class="card-body">
+                            <p class="card-text">Cantidad de Ofertas Formativas : 1</p>
+                            <a href="TrayectosFormativosSubSector3ee1.html?id=Mantenimiento%20y%20Reparaci%c3%b3n%20de%20Sistemas%20de%20Frenos%20(Automotriz)" class="card-title btn btn-primary btn-sm">Trayectos del Sub-Sector</a>
+                            <a href="centrosXsubsector3ee1.html?id=Mantenimiento%20y%20Reparaci%c3%b3n%20de%20Sistemas%20de%20Frenos%20(Automotriz)" class="card-title btn btn-secondary btn-sm">Centros del Sub-Sector </a>
+
+                        </div>
+                    </div>
+                </div>
+                            <div class="col">
+                    <div class="card">
+                    <h5 class="card-title">    
+                    <img src="img/1659320211_1659249581_depositphotos_52800347-stock-photo-car-suspension-and-brakes%5b1%5d.jpg" width="100" class="card-img-top">
+                    Mantenimiento y Reparación de Sistemas de Suspensión y Dirección (Automotriz)                    </h5>
+                        <div class="card-body">
+                            <p class="card-text">Cantidad de Ofertas Formativas : 2</p>
+                            <a href="TrayectosFormativosSubSector4fd8.html?id=Mantenimiento%20y%20Reparaci%c3%b3n%20de%20Sistemas%20de%20Suspensi%c3%b3n%20y%20Direcci%c3%b3n%20(Automotriz)" class="card-title btn btn-primary btn-sm">Trayectos del Sub-Sector</a>
+                            <a href="centrosXsubsector4fd8.html?id=Mantenimiento%20y%20Reparaci%c3%b3n%20de%20Sistemas%20de%20Suspensi%c3%b3n%20y%20Direcci%c3%b3n%20(Automotriz)" class="card-title btn btn-secondary btn-sm">Centros del Sub-Sector </a>
+
+                        </div>
+                    </div>
+                </div>
+                            <div class="col">
+                    <div class="card">
+                    <h5 class="card-title">    
+                    <img src="img/1659630194_metalmecanica.jpg" width="100" class="card-img-top">
+                    Metalmecánica (Mecánica, Metalmecánica y Metalurgia)                    </h5>
+                        <div class="card-body">
+                            <p class="card-text">Cantidad de Ofertas Formativas : 5</p>
+                            <a href="TrayectosFormativosSubSector09ff.html?id=Metalmec%c3%a1nica%20(Mec%c3%a1nica,%20Metalmec%c3%a1nica%20y%20Metalurgia)" class="card-title btn btn-primary btn-sm">Trayectos del Sub-Sector</a>
+                            <a href="centrosXsubsector09ff.html?id=Metalmec%c3%a1nica%20(Mec%c3%a1nica,%20Metalmec%c3%a1nica%20y%20Metalurgia)" class="card-title btn btn-secondary btn-sm">Centros del Sub-Sector </a>
+
+                        </div>
+                    </div>
+                </div>
+                            <div class="col">
+                    <div class="card">
+                    <h5 class="card-title">    
+                    <img src="img/1659629796_Mecanizado-por-arranque-de-viruta.jpg" width="100" class="card-img-top">
+                    Metalmecánico por Arranque de Viruta (Mecánica, Metalmecánica y Metalurgia)                    </h5>
+                        <div class="card-body">
+                            <p class="card-text">Cantidad de Ofertas Formativas : 3</p>
+                            <a href="TrayectosFormativosSubSectorfc7e.html?id=Metalmec%c3%a1nico%20por%20Arranque%20de%20Viruta%20(Mec%c3%a1nica,%20Metalmec%c3%a1nica%20y%20Metalurgia)" class="card-title btn btn-primary btn-sm">Trayectos del Sub-Sector</a>
+                            <a href="centrosXsubsectorfc7e.html?id=Metalmec%c3%a1nico%20por%20Arranque%20de%20Viruta%20(Mec%c3%a1nica,%20Metalmec%c3%a1nica%20y%20Metalurgia)" class="card-title btn btn-secondary btn-sm">Centros del Sub-Sector </a>
+
+                        </div>
+                    </div>
+                </div>
+                            <div class="col">
+                    <div class="card">
+                    <h5 class="card-title">    
+                    <img src="img/1659629874_Mecanizado-por-conformado.jpg" width="100" class="card-img-top">
+                    Metalmecánico por Conformado (Mecánica, Metalmecánica y Metalurgia)                    </h5>
+                        <div class="card-body">
+                            <p class="card-text">Cantidad de Ofertas Formativas : 5</p>
+                            <a href="TrayectosFormativosSubSector9eaa.html?id=Metalmec%c3%a1nico%20por%20Conformado%20(Mec%c3%a1nica,%20Metalmec%c3%a1nica%20y%20Metalurgia)" class="card-title btn btn-primary btn-sm">Trayectos del Sub-Sector</a>
+                            <a href="centrosXsubsector9eaa.html?id=Metalmec%c3%a1nico%20por%20Conformado%20(Mec%c3%a1nica,%20Metalmec%c3%a1nica%20y%20Metalurgia)" class="card-title btn btn-secondary btn-sm">Centros del Sub-Sector </a>
+
+                        </div>
+                    </div>
+                </div>
+                            <div class="col">
+                    <div class="card">
+                    <h5 class="card-title">    
+                    <img src="img/1659629853_metalurgia.jpg" width="100" class="card-img-top">
+                    Metalurgia (Mecánica, Metalmecánica y Metalurgia)                    </h5>
+                        <div class="card-body">
+                            <p class="card-text">Cantidad de Ofertas Formativas : 5</p>
+                            <a href="TrayectosFormativosSubSectorc517.html?id=Metalurgia%20(Mec%c3%a1nica,%20Metalmec%c3%a1nica%20y%20Metalurgia)" class="card-title btn btn-primary btn-sm">Trayectos del Sub-Sector</a>
+                            <a href="centrosXsubsectorc517.html?id=Metalurgia%20(Mec%c3%a1nica,%20Metalmec%c3%a1nica%20y%20Metalurgia)" class="card-title btn btn-secondary btn-sm">Centros del Sub-Sector </a>
+
+                        </div>
+                    </div>
+                </div>
+                            <div class="col">
+                    <div class="card">
+                    <h5 class="card-title">    
+                    <img src="img/1659630171_mineria.jpg" width="100" class="card-img-top">
+                    Minería (Minería e Hidrocarburos)                    </h5>
+                        <div class="card-body">
+                            <p class="card-text">Cantidad de Ofertas Formativas : 2</p>
+                            <a href="TrayectosFormativosSubSector43ce.html?id=Miner%c3%ada%20(Miner%c3%ada%20e%20Hidrocarburos)" class="card-title btn btn-primary btn-sm">Trayectos del Sub-Sector</a>
+                            <a href="centrosXsubsector43ce.html?id=Miner%c3%ada%20(Miner%c3%ada%20e%20Hidrocarburos)" class="card-title btn btn-secondary btn-sm">Centros del Sub-Sector </a>
+
+                        </div>
+                    </div>
+                </div>
+                            <div class="col">
+                    <div class="card">
+                    <h5 class="card-title">    
+                    <img src="img/index.html" width="100" class="card-img-top">
+                    Muebles (Madera y Mueble)                    </h5>
+                        <div class="card-body">
+                            <p class="card-text">Cantidad de Ofertas Formativas : 4</p>
+                            <a href="TrayectosFormativosSubSectorc5f4.html?id=Muebles%20(Madera%20y%20Mueble)" class="card-title btn btn-primary btn-sm">Trayectos del Sub-Sector</a>
+                            <a href="centrosXsubsectorc5f4.html?id=Muebles%20(Madera%20y%20Mueble)" class="card-title btn btn-secondary btn-sm">Centros del Sub-Sector </a>
+
+                        </div>
+                    </div>
+                </div>
+                            <div class="col">
+                    <div class="card">
+                    <h5 class="card-title">    
+                    <img src="img/index.html" width="100" class="card-img-top">
+                    Multimedial (Industria Gráfica y Multimedial)                    </h5>
+                        <div class="card-body">
+                            <p class="card-text">Cantidad de Ofertas Formativas : 1</p>
+                            <a href="TrayectosFormativosSubSector90c3.html?id=Multimedial%20(Industria%20Gr%c3%a1fica%20y%20Multimedial)" class="card-title btn btn-primary btn-sm">Trayectos del Sub-Sector</a>
+                            <a href="centrosXsubsector90c3.html?id=Multimedial%20(Industria%20Gr%c3%a1fica%20y%20Multimedial)" class="card-title btn btn-secondary btn-sm">Centros del Sub-Sector </a>
+
+                        </div>
+                    </div>
+                </div>
+                            <div class="col">
+                    <div class="card">
+                    <h5 class="card-title">    
+                    <img src="img/1659629896_comunicaciones-vhf.jpg" width="100" class="card-img-top">
+                    Operación y Administracion de Comunicaciones                    </h5>
+                        <div class="card-body">
+                            <p class="card-text">Cantidad de Ofertas Formativas : 2</p>
+                            <a href="TrayectosFormativosSubSectore692.html?id=Operaci%c3%b3n%20y%20Administracion%20de%20Comunicaciones" class="card-title btn btn-primary btn-sm">Trayectos del Sub-Sector</a>
+                            <a href="centrosXsubsectore692.html?id=Operaci%c3%b3n%20y%20Administracion%20de%20Comunicaciones" class="card-title btn btn-secondary btn-sm">Centros del Sub-Sector </a>
+
+                        </div>
+                    </div>
+                </div>
+                            <div class="col">
+                    <div class="card">
+                    <h5 class="card-title">    
+                    <img src="img/1659221963_23%5b1%5d.jpg" width="100" class="card-img-top">
+                    Orfebrería y Bijouterie (Actividades Artísticas Técnicas)                    </h5>
+                        <div class="card-body">
+                            <p class="card-text">Cantidad de Ofertas Formativas : 2</p>
+                            <a href="TrayectosFormativosSubSectora43f.html?id=Orfebrer%c3%ada%20y%20Bijouterie%20(Actividades%20Art%c3%adsticas%20T%c3%a9cnicas)" class="card-title btn btn-primary btn-sm">Trayectos del Sub-Sector</a>
+                            <a href="centrosXsubsectora43f.html?id=Orfebrer%c3%ada%20y%20Bijouterie%20(Actividades%20Art%c3%adsticas%20T%c3%a9cnicas)" class="card-title btn btn-secondary btn-sm">Centros del Sub-Sector </a>
+
+                        </div>
+                    </div>
+                </div>
+                            <div class="col">
+                    <div class="card">
+                    <h5 class="card-title">    
+                    <img src="img/1659320290_1659224056_pastelero-1604585857%5b1%5d.jpg" width="100" class="card-img-top">
+                    Panadería y Repostería (Hotelería y Gastronomía)                    </h5>
+                        <div class="card-body">
+                            <p class="card-text">Cantidad de Ofertas Formativas : 7</p>
+                            <a href="TrayectosFormativosSubSectorf7ae.html?id=Panader%c3%ada%20y%20Reposter%c3%ada%20(Hoteler%c3%ada%20y%20Gastronom%c3%ada)" class="card-title btn btn-primary btn-sm">Trayectos del Sub-Sector</a>
+                            <a href="centrosXsubsectorf7ae.html?id=Panader%c3%ada%20y%20Reposter%c3%ada%20(Hoteler%c3%ada%20y%20Gastronom%c3%ada)" class="card-title btn btn-secondary btn-sm">Centros del Sub-Sector </a>
+
+                        </div>
+                    </div>
+                </div>
+                            <div class="col">
+                    <div class="card">
+                    <h5 class="card-title">    
+                    <img src="img/1659224299_foto-3blog-natalia%5b1%5d.jpg" width="100" class="card-img-top">
+                    Peluquería (Estética Profesional)                    </h5>
+                        <div class="card-body">
+                            <p class="card-text">Cantidad de Ofertas Formativas : 5</p>
+                            <a href="TrayectosFormativosSubSector21f2.html?id=Peluquer%c3%ada%20(Est%c3%a9tica%20Profesional)" class="card-title btn btn-primary btn-sm">Trayectos del Sub-Sector</a>
+                            <a href="centrosXsubsector21f2.html?id=Peluquer%c3%ada%20(Est%c3%a9tica%20Profesional)" class="card-title btn btn-secondary btn-sm">Centros del Sub-Sector </a>
+
+                        </div>
+                    </div>
+                </div>
+                            <div class="col">
+                    <div class="card">
+                    <h5 class="card-title">    
+                    <img src="img/1659629938_produccion-animal-agropecuario.jpg" width="100" class="card-img-top">
+                    Producción Animal (Agropecuario)                    </h5>
+                        <div class="card-body">
+                            <p class="card-text">Cantidad de Ofertas Formativas : 8</p>
+                            <a href="TrayectosFormativosSubSector7072.html?id=Producci%c3%b3n%20Animal%20(Agropecuario)" class="card-title btn btn-primary btn-sm">Trayectos del Sub-Sector</a>
+                            <a href="centrosXsubsector7072.html?id=Producci%c3%b3n%20Animal%20(Agropecuario)" class="card-title btn btn-secondary btn-sm">Centros del Sub-Sector </a>
+
+                        </div>
+                    </div>
+                </div>
+                            <div class="col">
+                    <div class="card">
+                    <h5 class="card-title">    
+                    <img src="img/1659222341_Cuello-fieltro-artesanal4-scaled%5b1%5d.jpg" width="100" class="card-img-top">
+                    Producción Artesanal (Actividades Artísticas Técnicas)                    </h5>
+                        <div class="card-body">
+                            <p class="card-text">Cantidad de Ofertas Formativas : 1</p>
+                            <a href="TrayectosFormativosSubSectord243.html?id=Producci%c3%b3n%20Artesanal%20(Actividades%20Art%c3%adsticas%20T%c3%a9cnicas)" class="card-title btn btn-primary btn-sm">Trayectos del Sub-Sector</a>
+                            <a href="centrosXsubsectord243.html?id=Producci%c3%b3n%20Artesanal%20(Actividades%20Art%c3%adsticas%20T%c3%a9cnicas)" class="card-title btn btn-secondary btn-sm">Centros del Sub-Sector </a>
+
+                        </div>
+                    </div>
+                </div>
+                            <div class="col">
+                    <div class="card">
+                    <h5 class="card-title">    
+                    <img src="img/1659629959_Producci%c3%b3n%20Vegetal%20Agropecuario.jpg" width="100" class="card-img-top">
+                    Producción Vegetal (Agropecuario)                    </h5>
+                        <div class="card-body">
+                            <p class="card-text">Cantidad de Ofertas Formativas : 7</p>
+                            <a href="TrayectosFormativosSubSectord3f9.html?id=Producci%c3%b3n%20Vegetal%20(Agropecuario)" class="card-title btn btn-primary btn-sm">Trayectos del Sub-Sector</a>
+                            <a href="centrosXsubsectord3f9.html?id=Producci%c3%b3n%20Vegetal%20(Agropecuario)" class="card-title btn btn-secondary btn-sm">Centros del Sub-Sector </a>
+
+                        </div>
+                    </div>
+                </div>
+                            <div class="col">
+                    <div class="card">
+                    <h5 class="card-title">    
+                    <img src="img/1659630130_Productos%20L%c3%a1cteos.jpg" width="100" class="card-img-top">
+                    Productos Lácteos (Industria de la Alimentación)                    </h5>
+                        <div class="card-body">
+                            <p class="card-text">Cantidad de Ofertas Formativas : 2</p>
+                            <a href="TrayectosFormativosSubSectordf3a.html?id=Productos%20L%c3%a1cteos%20(Industria%20de%20la%20Alimentaci%c3%b3n)" class="card-title btn btn-primary btn-sm">Trayectos del Sub-Sector</a>
+                            <a href="centrosXsubsectordf3a.html?id=Productos%20L%c3%a1cteos%20(Industria%20de%20la%20Alimentaci%c3%b3n)" class="card-title btn btn-secondary btn-sm">Centros del Sub-Sector </a>
+
+                        </div>
+                    </div>
+                </div>
+                            <div class="col">
+                    <div class="card">
+                    <h5 class="card-title">    
+                    <img src="img/1659249216_administracion-recursos-humanos-810x455%5b1%5d.jpg" width="100" class="card-img-top">
+                    Recursos Humanos (Administración)                    </h5>
+                        <div class="card-body">
+                            <p class="card-text">Cantidad de Ofertas Formativas : 1</p>
+                            <a href="TrayectosFormativosSubSector3a0a.html?id=Recursos%20Humanos%20(Administraci%c3%b3n)" class="card-title btn btn-primary btn-sm">Trayectos del Sub-Sector</a>
+                            <a href="centrosXsubsector3a0a.html?id=Recursos%20Humanos%20(Administraci%c3%b3n)" class="card-title btn btn-secondary btn-sm">Centros del Sub-Sector </a>
+
+                        </div>
+                    </div>
+                </div>
+                            <div class="col">
+                    <div class="card">
+                    <h5 class="card-title">    
+                    <img src="img/1659224474_2d61a1ca6170f10e7889f04a096bfb80fcfa2dfa%5b1%5d.jpg" width="100" class="card-img-top">
+                    Redes Informáticas (Informática)                    </h5>
+                        <div class="card-body">
+                            <p class="card-text">Cantidad de Ofertas Formativas : 6</p>
+                            <a href="TrayectosFormativosSubSector9b96.html?id=Redes%20Inform%c3%a1ticas%20(Inform%c3%a1tica)" class="card-title btn btn-primary btn-sm">Trayectos del Sub-Sector</a>
+                            <a href="centrosXsubsector9b96.html?id=Redes%20Inform%c3%a1ticas%20(Inform%c3%a1tica)" class="card-title btn btn-secondary btn-sm">Centros del Sub-Sector </a>
+
+                        </div>
+                    </div>
+                </div>
+                            <div class="col">
+                    <div class="card">
+                    <h5 class="card-title">    
+                    <img src="img/1659629974_Renovables.jpg" width="100" class="card-img-top">
+                    Renovables (Energía)                    </h5>
+                        <div class="card-body">
+                            <p class="card-text">Cantidad de Ofertas Formativas : 2</p>
+                            <a href="TrayectosFormativosSubSectora0cf.html?id=Renovables%20(Energ%c3%ada)" class="card-title btn btn-primary btn-sm">Trayectos del Sub-Sector</a>
+                            <a href="centrosXsubsectora0cf.html?id=Renovables%20(Energ%c3%ada)" class="card-title btn btn-secondary btn-sm">Centros del Sub-Sector </a>
+
+                        </div>
+                    </div>
+                </div>
+                            <div class="col">
+                    <div class="card">
+                    <h5 class="card-title">    
+                    <img src="img/1659629997_Reparaci%c3%b3n%20y%20Mantenimiento%20de%20M%c3%a1quinas%20y%20Equipos%20El%c3%a9ctricos.jpg" width="100" class="card-img-top">
+                    Reparación y Mantenimiento de Máquinas y Equipos Eléctricos (Energia Eléctrica)                    </h5>
+                        <div class="card-body">
+                            <p class="card-text">Cantidad de Ofertas Formativas : 1</p>
+                            <a href="TrayectosFormativosSubSector5251.html?id=Reparaci%c3%b3n%20y%20Mantenimiento%20de%20M%c3%a1quinas%20y%20Equipos%20El%c3%a9ctricos%20(Energia%20El%c3%a9ctrica)" class="card-title btn btn-primary btn-sm">Trayectos del Sub-Sector</a>
+                            <a href="centrosXsubsector5251.html?id=Reparaci%c3%b3n%20y%20Mantenimiento%20de%20M%c3%a1quinas%20y%20Equipos%20El%c3%a9ctricos%20(Energia%20El%c3%a9ctrica)" class="card-title btn btn-secondary btn-sm">Centros del Sub-Sector </a>
+
+                        </div>
+                    </div>
+                </div>
+                            <div class="col">
+                    <div class="card">
+                    <h5 class="card-title">    
+                    <img src="img/1659630241_Servicios%20Agropecuario.jpg" width="100" class="card-img-top">
+                    Servicios (Agropecuario)                    </h5>
+                        <div class="card-body">
+                            <p class="card-text">Cantidad de Ofertas Formativas : 6</p>
+                            <a href="TrayectosFormativosSubSector81af.html?id=Servicios%20(Agropecuario)" class="card-title btn btn-primary btn-sm">Trayectos del Sub-Sector</a>
+                            <a href="centrosXsubsector81af.html?id=Servicios%20(Agropecuario)" class="card-title btn btn-secondary btn-sm">Centros del Sub-Sector </a>
+
+                        </div>
+                    </div>
+                </div>
+                            <div class="col">
+                    <div class="card">
+                    <h5 class="card-title">    
+                    <img src="img/1659630022_Tapicer%c3%ada.jpg" width="100" class="card-img-top">
+                    Tapicería (Textil e Indumentaria)                    </h5>
+                        <div class="card-body">
+                            <p class="card-text">Cantidad de Ofertas Formativas : 1</p>
+                            <a href="TrayectosFormativosSubSectorf565.html?id=Tapicer%c3%ada%20(Textil%20e%20Indumentaria)" class="card-title btn btn-primary btn-sm">Trayectos del Sub-Sector</a>
+                            <a href="centrosXsubsectorf565.html?id=Tapicer%c3%ada%20(Textil%20e%20Indumentaria)" class="card-title btn btn-secondary btn-sm">Centros del Sub-Sector </a>
+
+                        </div>
+                    </div>
+                </div>
+                            <div class="col">
+                    <div class="card">
+                    <h5 class="card-title">    
+                    <img src="img/1659630040_tejido.jpg" width="100" class="card-img-top">
+                    Tejido (Textil e Indumentaria)                    </h5>
+                        <div class="card-body">
+                            <p class="card-text">Cantidad de Ofertas Formativas : 7</p>
+                            <a href="TrayectosFormativosSubSector6918.html?id=Tejido%20(Textil%20e%20Indumentaria)" class="card-title btn btn-primary btn-sm">Trayectos del Sub-Sector</a>
+                            <a href="centrosXsubsector6918.html?id=Tejido%20(Textil%20e%20Indumentaria)" class="card-title btn btn-secondary btn-sm">Centros del Sub-Sector </a>
+
+                        </div>
+                    </div>
+                </div>
+                            <div class="col">
+                    <div class="card">
+                    <h5 class="card-title">    
+                    <img src="img/1659248568_1_large%5b1%5d.jpg" width="100" class="card-img-top">
+                    Terminaciones Decorativas y Funcionales (Construcción)                    </h5>
+                        <div class="card-body">
+                            <p class="card-text">Cantidad de Ofertas Formativas : 3</p>
+                            <a href="TrayectosFormativosSubSectorfa33.html?id=Terminaciones%20Decorativas%20y%20Funcionales%20(Construcci%c3%b3n)" class="card-title btn btn-primary btn-sm">Trayectos del Sub-Sector</a>
+                            <a href="centrosXsubsectorfa33.html?id=Terminaciones%20Decorativas%20y%20Funcionales%20(Construcci%c3%b3n)" class="card-title btn btn-secondary btn-sm">Centros del Sub-Sector </a>
+
+                        </div>
+                    </div>
+                </div>
+                            <div class="col">
+                    <div class="card">
+                    <h5 class="card-title">    
+                    <img src="img/1659630385_libros-1.jpg" width="100" class="card-img-top">
+                    Transversal                    </h5>
+                        <div class="card-body">
+                            <p class="card-text">Cantidad de Ofertas Formativas : 5</p>
+                            <a href="TrayectosFormativosSubSector03f4.html?id=Transversal" class="card-title btn btn-primary btn-sm">Trayectos del Sub-Sector</a>
+                            <a href="centrosXsubsector03f4.html?id=Transversal" class="card-title btn btn-secondary btn-sm">Centros del Sub-Sector </a>
+
+                        </div>
+                    </div>
+                </div>
+                            <div class="col">
+                    <div class="card">
+                    <h5 class="card-title">    
+                    <img src="img/1659224579_Tecno-ofimatica-paraquesirve%5b1%5d.jpg" width="100" class="card-img-top">
+                    Usuarios (Informática)                    </h5>
+                        <div class="card-body">
+                            <p class="card-text">Cantidad de Ofertas Formativas : 1</p>
+                            <a href="TrayectosFormativosSubSectordc55.html?id=Usuarios%20(Inform%c3%a1tica)" class="card-title btn btn-primary btn-sm">Trayectos del Sub-Sector</a>
+                            <a href="centrosXsubsectordc55.html?id=Usuarios%20(Inform%c3%a1tica)" class="card-title btn btn-secondary btn-sm">Centros del Sub-Sector </a>
+
+                        </div>
+                    </div>
+                </div>
+                            <div class="col">
+                    <div class="card">
+                    <h5 class="card-title">    
+                    <img src="img/1659630060_instalaciones-electricas-domesticas.jpg" width="100" class="card-img-top">
+                    Utilización de la Energía Eléctrica en Inmuebles (Energia Eléctrica)                    </h5>
+                        <div class="card-body">
+                            <p class="card-text">Cantidad de Ofertas Formativas : 5</p>
+                            <a href="TrayectosFormativosSubSectord25c.html?id=Utilizaci%c3%b3n%20de%20la%20Energ%c3%ada%20El%c3%a9ctrica%20en%20Inmuebles%20(Energia%20El%c3%a9ctrica)" class="card-title btn btn-primary btn-sm">Trayectos del Sub-Sector</a>
+                            <a href="centrosXsubsectord25c.html?id=Utilizaci%c3%b3n%20de%20la%20Energ%c3%ada%20El%c3%a9ctrica%20en%20Inmuebles%20(Energia%20El%c3%a9ctrica)" class="card-title btn btn-secondary btn-sm">Centros del Sub-Sector </a>
+
+                        </div>
+                    </div>
+                </div>
+                            <div class="col">
+                    <div class="card">
+                    <h5 class="card-title">    
+                    <img src="img/1659630081_ELECTRICIDAD-INDUSTRIAL-1.jpg" width="100" class="card-img-top">
+                    Utilización de la Energía Eléctrica en la Industria (Energia Eléctrica)                    </h5>
+                        <div class="card-body">
+                            <p class="card-text">Cantidad de Ofertas Formativas : 2</p>
+                            <a href="TrayectosFormativosSubSector8c57.html?id=Utilizaci%c3%b3n%20de%20la%20Energ%c3%ada%20El%c3%a9ctrica%20en%20la%20Industria%20(Energia%20El%c3%a9ctrica)" class="card-title btn btn-primary btn-sm">Trayectos del Sub-Sector</a>
+                            <a href="centrosXsubsector8c57.html?id=Utilizaci%c3%b3n%20de%20la%20Energ%c3%ada%20El%c3%a9ctrica%20en%20la%20Industria%20(Energia%20El%c3%a9ctrica)" class="card-title btn btn-secondary btn-sm">Centros del Sub-Sector </a>
+
+                        </div>
+                    </div>
+                </div>
+                            <div class="col">
+                    <div class="card">
+                    <h5 class="card-title">    
+                    <img src="img/1659248723_0eb3e2viales%5b1%5d.jpg" width="100" class="card-img-top">
+                    Vialidad (Construcción)                    </h5>
+                        <div class="card-body">
+                            <p class="card-text">Cantidad de Ofertas Formativas : 1</p>
+                            <a href="TrayectosFormativosSubSector6787.html?id=Vialidad%20(Construcci%c3%b3n)" class="card-title btn btn-primary btn-sm">Trayectos del Sub-Sector</a>
+                            <a href="centrosXsubsector6787.html?id=Vialidad%20(Construcci%c3%b3n)" class="card-title btn btn-secondary btn-sm">Centros del Sub-Sector </a>
+
+                        </div>
+                    </div>
+                </div>
+                            <div class="col">
+                    <div class="card">
+                    <h5 class="card-title">    
+                    <img src="img/1659630100_espaciosVerdes-paisajismo.jpg" width="100" class="card-img-top">
+                    Vivero y Espacios Verdes (Agropecuario)                    </h5>
+                        <div class="card-body">
+                            <p class="card-text">Cantidad de Ofertas Formativas : 2</p>
+                            <a href="TrayectosFormativosSubSector77d3.html?id=Vivero%20y%20Espacios%20Verdes%20(Agropecuario)" class="card-title btn btn-primary btn-sm">Trayectos del Sub-Sector</a>
+                            <a href="centrosXsubsector77d3.html?id=Vivero%20y%20Espacios%20Verdes%20(Agropecuario)" class="card-title btn btn-secondary btn-sm">Centros del Sub-Sector </a>
+
+                        </div>
+                    </div>
+                </div>
+            
+        </div>
+
+    </div>
+</div>
+
+
+
+
+
+<!-- Google -->
+<script type="text/javascript" src="../www.gstatic.com/charts/loader.js"></script>
+<script src="js/scripts.js"></script>
+<script type="text/javascript" src="js/mysql.js"></script>
+
+        
+        
+                        </main>
+                <footer class="py-4 bg-light mt-auto">
+                    <div class="container-fluid px-4">
+                        <div class="d-flex align-items-center justify-content-between small">
+                            <div class="text-muted">Copyright &copy; ST3 2022</div>
+                            <div>
+                                <a href="#">Privacy Policy</a>
+                                &middot;
+                                <a href="#">Terms &amp; Conditions</a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <script src="../cdn.jsdelivr.net/npm/bootstrap%405.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="js/scripts.js"></script>
+        <script src="../cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+<!--         <script src="assets/demo/chart-area-demo.js"></script> Ejemplo-->
+<!--        <script src="assets/demo/chart-bar-demo.js"></script> Ejemplo--> 
+        <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" crossorigin="anonymous"></script>
+<!--         <script src="js/datatables-simple-demo.js"></script> Ejemplo--> -->
+    </body>
+
+<!-- Mirrored from www.fpneuquen.com.ar/SubSectores.php by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 05 Sep 2024 16:13:00 GMT -->
+</html>
