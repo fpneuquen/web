@@ -1,0 +1,1121 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from www.fpneuquen.com.ar/TrayectosFormativosSector.php?id=Construcci%c3%b3n by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 05 Sep 2024 16:15:08 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-D23TBS0BCN"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-D23TBS0BCN');
+    </script>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Web de consulta de Centros de Formacion Profesional" />
+    <meta name="author" content="Silvio Stenta" />
+    <title>Formacion Profesional WEB</title>
+    <link rel="icon" type="image/png" href="img/logofp.png">
+    <link href="../cdn.jsdelivr.net/npm/simple-datatables%40latest/dist/style.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="../use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+ <!--    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+ --></head>
+
+<body class="sb-nav-fixed">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+        <!-- Navbar Brand-->
+        <button class="btn btn-link btn-sm order-1 order-lg-1 me-4 me-lg-1" id="sidebarToggle" href="index-2.html">
+            <i class="fas fa-bars fa-lg "></i></button>
+        <a class="navbar-brand ps-3" href="index-2.html"><img src="img/logo%20fp%20288x271.png" class="img-fluid" alt="max-width: 30%;height: auto" width="20%"></a>
+        <!-- Sidebar Toggle-->
+
+        <!-- Navbar Search-->
+        <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
+            <div class="input-group">
+                <!-- <input class="form-control" type="text" placeholder="Search for..." aria-label="Search for..." aria-describedby="btnNavbarSearch" />
+                <button class="btn btn-primary" id="btnNavbarSearch" type="button"><i class="fas fa-search"></i></button> -->
+            </div>
+        </form>
+        <!-- Navbar User-->
+        <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="login.html">Login</a></li>
+                    <li><a class="dropdown-item" href="index-2.html">Settings</a></li>
+                    <li><a class="dropdown-item" href="#!">Activity Log</a></li>
+                    <li>
+                        <hr class="dropdown-divider" />
+                    </li>
+                    <li><a class="dropdown-item" href="index-2.html">Cerrar</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <!-- Navbar Lateral -->
+
+    <div id="layoutSidenav">
+        <div id="layoutSidenav_nav">
+            <nav class="sb-sidenav accordion sb-sidenav-primary" id="sidenavAccordion">
+                <div class="sb-sidenav-menu">
+                    <div class="nav">
+                        <div class="sb-sidenav-menu-heading"></div>
+                        <a class="nav-link" href="dashboard.html">
+                            <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                            Todas las Escuelas
+                        </a>
+                        <div class="collapse" id="collapsePages" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">
+                            <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
+                            </nav>
+                        </div>
+                        <!-- <div class="sb-sidenav-menu-heading">Addons</div> -->
+                        <!--                         <a class="nav-link" href="charts.php">
+                            <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
+                            Graficos
+                        </a> -->
+
+
+                        <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseCFP" aria-expanded="false" aria-controls="collapseCFP">
+                            <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                            Centros
+                            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                        </a>
+                        <div class="collapse" id="collapseCFP" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                            <nav class="sb-sidenav-menu-nested nav">
+                                <a class="nav-link" href="table.html"><i class="fa fa-book" aria-hidden="true"></i>Listado por Zona</a>
+                                <a class="nav-link" href="centrosxzonas.html"><i class="fas fa-map-pin" aria-hidden="true"></i>Ubicacion por Zona</a>
+                            </nav>
+                        </div>
+
+
+                        <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseTray" aria-expanded="false" aria-controls="collapseTray">
+                            <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                            Trayectos Formativos
+                            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                        </a>
+                        <div class="collapse" id="collapseTray" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                            <nav class="sb-sidenav-menu-nested nav">
+                                <a class="nav-link" href="Sectores.html">
+                                    <div class="sb-nav-link-icon"> <i class="fa-brands fa-bandcamp"></i></div>
+                                    Sectores Productivos
+                                </a>
+                                <a class="nav-link" href="SubSectores.html">
+                                    <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
+                                    Sub-Sectores
+                                </a>
+                                <a class="nav-link" href="TrayectosFormativos.html">
+                                    <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
+                                    Trayectos Formativos
+                                </a>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <div class="sb-sidenav-footer">
+                    <div class="small">Logged in as:</div>
+
+                    invitado                </div>
+            </nav>
+        </div>
+        <!-- Principal -->
+
+
+
+        <script src="../cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+        <script src="../cdn.datatables.net/buttons/2.2.3/js/buttons.html5.min.js"></script>
+        <script src="../cdn.datatables.net/buttons/2.2.3/js/buttons.print.min.js"></script>
+        <script src="../cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js" crossorigin="anonymous"></script>
+        <script src="../cdn.datatables.net/1.11.5/js/dataTables.bootstrap4.min.js" crossorigin="anonymous"></script>
+        <script src="../cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+        <script src="../cdn.datatables.net/buttons/2.2.3/js/dataTables.buttons.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" crossorigin="anonymous"></script>
+        <script src="js/datatables-simple-demo.js"></script>
+        <script src="js/scripts.js"></script>
+        <link rel="stylesheet" type="text/css" href="../cdn.datatables.net/v/dt/dt-1.11.5/datatables.min.css" />
+        <link rel="stylesheet" type="text/css" href="../cdn.datatables.net/v/dt/dt-1.11.5/fc-4.0.2/r-2.2.9/rr-1.2.8/sc-2.0.5/sl-1.3.4/datatables.min.css" />
+
+        <script type="text/javascript" src="../cdn.datatables.net/v/dt/dt-1.11.5/datatables.min.js"></script>
+        <script type="text/javascript" src="../cdn.datatables.net/v/dt/dt-1.11.5/fc-4.0.2/r-2.2.9/rr-1.2.8/sc-2.0.5/sl-1.3.4/datatables.min.js"></script>
+        <script type="text/javascript" src="../cdn.datatables.net/v/dt/dt-1.12.1/b-2.2.3/b-colvis-2.2.3/b-html5-2.2.3/b-print-2.2.3/datatables.min.js"></script>
+
+
+        <script src="../cdn.jsdelivr.net/npm/bootstrap%405.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+
+        <script src="../code.jquery.com/jquery-3.5.1.js"></script>
+        <script src="../code.jquery.com/jquery-3.5.1.js"></script>
+
+        <script src="../cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+        <script src="../cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+        <script src="../cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+
+        <div id="layoutSidenav_content">
+            <main>
+
+<div class="container-fluid px-4">
+    <h1 class="mt-4">Trayectos Formativos</h1>
+    <ol class="breadcrumb mb-4">
+        <li class="breadcrumb-item"><a href="Sectores.html">Sectores Productivos</a></li>
+        <li class="breadcrumb-item active">Tablas</li>
+    </ol>
+
+
+    <div class="card mb-4">
+        <div class="card-header">
+            <i class="fas fa-table me-1"></i>
+            Listado de Trayectos         </div>
+        <div class="card-body">
+        <table id="datatablesSimple" class="table table-striped table-bordered">
+                <thead>
+                    <tr>
+                        <th>SubSector</th>
+                        <th>Denominacion</th>
+                        <th>Norma Legal</th>
+                        <th>Tipo Cert</th>
+                        <th>Nivel</th>
+                        <th>Duracion</th>
+                        <th>Centros</th>
+                        <th>Trayectos</th>
+                        <th>Descargar</th>
+                    </tr>
+                </thead>
+
+
+                <tbody>
+                                            <tr>
+                            <td>
+                                Vialidad (Construcción)
+                            </td>
+                            <td>
+                                Operador De Máquinas Viales                            </td>
+                            <td>
+                                Disp. 240/2019 Anexo 5                            </td>
+                            <td>
+                                FPI                            </td>
+                            <td>
+                                3                            </td>
+                            <td>240</td>
+                            <td>
+                                <a  type="button" 
+                                    class="btn btn-primary btn-sm" 
+                                    href="centrosXtrayecto2728.html?id=16">Centros</a>
+                            </td>
+                            <td>
+                                <a  type="button" 
+                                    class="btn btn-success btn-sm" 
+                                    href="Trayecto2728.html?id=16">Ver</a>
+                            </td>
+                            <td>
+                                <a href="docs/240-19_05%20Operador%20de%20Maquinas%20viales.pdf" target="_blank" aria-current="true">
+                                    <i class="fa fa-download" aria-hidden="true"></i>
+                                                                    </a>
+                            </td>
+
+                        </tr>
+                                            <tr>
+                            <td>
+                                Instalaciones Sanitarias y de Gas (Construcción)
+                            </td>
+                            <td>
+                                Instalador de Sistemas Solares Térmicos para Agua Caliente y Sanitarias (Reemplazado por 241-19)                            </td>
+                            <td>
+                                Disp. 103/2018 Anexo 6                            </td>
+                            <td>
+                                FPI                            </td>
+                            <td>
+                                3                            </td>
+                            <td>180</td>
+                            <td>
+                                <a  type="button" 
+                                    class="btn btn-primary btn-sm" 
+                                    href="centrosXtrayecto3162.html?id=26">Centros</a>
+                            </td>
+                            <td>
+                                <a  type="button" 
+                                    class="btn btn-success btn-sm" 
+                                    href="Trayecto3162.html?id=26">Ver</a>
+                            </td>
+                            <td>
+                                <a href="docs/https_/drive.google.com/file/d/1JZkle2ruqlO9_0NsE7_sDU1RbP4mb1Lx/view7d09.html?usp=sharing" target="_blank" aria-current="true">
+                                    <i class="fa fa-download" aria-hidden="true"></i>
+                                                                    </a>
+                            </td>
+
+                        </tr>
+                                            <tr>
+                            <td>
+                                Construcciones en Seco Livianas (Construcción)
+                            </td>
+                            <td>
+                                Armador y Montador de Perfileria galvanizada pesada, construccion en seco exteriores.                            </td>
+                            <td>
+                                Disp. 507/2019 Anexo 2                            </td>
+                            <td>
+                                FPI                            </td>
+                            <td>
+                                3                            </td>
+                            <td>180</td>
+                            <td>
+                                <a  type="button" 
+                                    class="btn btn-primary btn-sm" 
+                                    href="centrosXtrayecto850a.html?id=57">Centros</a>
+                            </td>
+                            <td>
+                                <a  type="button" 
+                                    class="btn btn-success btn-sm" 
+                                    href="Trayecto850a.html?id=57">Ver</a>
+                            </td>
+                            <td>
+                                <a href="docs/507-19_02%20ARMADOR%20Y%20MONTADOR%20DE%20PERFILERIA%20GALVANIZADA%20PESADA%20CONSTRUCCION%20EN%20SECO%20EXTERIORES.pdf" target="_blank" aria-current="true">
+                                    <i class="fa fa-download" aria-hidden="true"></i>
+                                                                    </a>
+                            </td>
+
+                        </tr>
+                                            <tr>
+                            <td>
+                                Construcciones en Seco Livianas (Construcción)
+                            </td>
+                            <td>
+                                Armador y Montador de Paneles y Cielorrasos de Placas de Roca de Yeso                            </td>
+                            <td>
+                                Res. CFE N°150/11 Anexo V                            </td>
+                            <td>
+                                FPI                            </td>
+                            <td>
+                                3                            </td>
+                            <td>180</td>
+                            <td>
+                                <a  type="button" 
+                                    class="btn btn-primary btn-sm" 
+                                    href="centrosXtrayectocd7b.html?id=138">Centros</a>
+                            </td>
+                            <td>
+                                <a  type="button" 
+                                    class="btn btn-success btn-sm" 
+                                    href="Trayectocd7b.html?id=138">Ver</a>
+                            </td>
+                            <td>
+                                <a href="docs/150-11_05%20Armador%20y%20montador%20de%20paneles%20y%20cielorrasos%20de%20placas%20de%20roca%20de%20yeso.pdf" target="_blank" aria-current="true">
+                                    <i class="fa fa-download" aria-hidden="true"></i>
+                                                                    </a>
+                            </td>
+
+                        </tr>
+                                            <tr>
+                            <td>
+                                Construcciones en Seco Livianas (Construcción)
+                            </td>
+                            <td>
+                                Auxiliar en Construcciones en Seco con Componentes Livianos                            </td>
+                            <td>
+                                Res. CFE N°150/11 Anexo VI                            </td>
+                            <td>
+                                FPI                            </td>
+                            <td>
+                                1                            </td>
+                            <td>70</td>
+                            <td>
+                                <a  type="button" 
+                                    class="btn btn-primary btn-sm" 
+                                    href="centrosXtrayectoa2ea.html?id=139">Centros</a>
+                            </td>
+                            <td>
+                                <a  type="button" 
+                                    class="btn btn-success btn-sm" 
+                                    href="Trayectoa2ea.html?id=139">Ver</a>
+                            </td>
+                            <td>
+                                <a href="docs/150-11_06%20Auxiliar%20en%20construcciones%20en%20seco%20con%20componentes%20livianos.pdf" target="_blank" aria-current="true">
+                                    <i class="fa fa-download" aria-hidden="true"></i>
+                                                                    </a>
+                            </td>
+
+                        </tr>
+                                            <tr>
+                            <td>
+                                Construcciones en Seco Livianas (Construcción)
+                            </td>
+                            <td>
+                                Armador y Montador de Componentes Metálicos Livianos                            </td>
+                            <td>
+                                Res. CFE N°150/11 Anexo IV                            </td>
+                            <td>
+                                FPI                            </td>
+                            <td>
+                                3                            </td>
+                            <td>240</td>
+                            <td>
+                                <a  type="button" 
+                                    class="btn btn-primary btn-sm" 
+                                    href="centrosXtrayecto37bf.html?id=140">Centros</a>
+                            </td>
+                            <td>
+                                <a  type="button" 
+                                    class="btn btn-success btn-sm" 
+                                    href="Trayecto37bf.html?id=140">Ver</a>
+                            </td>
+                            <td>
+                                <a href="docs/150-11_04%20Armador%20y%20montador%20de%20componentes%20metalicos%20livianos.pdf" target="_blank" aria-current="true">
+                                    <i class="fa fa-download" aria-hidden="true"></i>
+                                                                    </a>
+                            </td>
+
+                        </tr>
+                                            <tr>
+                            <td>
+                                Instalaciones Sanitarias y de Gas (Construcción)
+                            </td>
+                            <td>
+                                Montador de Instalaciones Sanitarias Domiciliarias                            </td>
+                            <td>
+                                Res. CFE N°108/10 Anexo 10                            </td>
+                            <td>
+                                FPI                            </td>
+                            <td>
+                                3                            </td>
+                            <td>240</td>
+                            <td>
+                                <a  type="button" 
+                                    class="btn btn-primary btn-sm" 
+                                    href="centrosXtrayecto374c.html?id=141">Centros</a>
+                            </td>
+                            <td>
+                                <a  type="button" 
+                                    class="btn btn-success btn-sm" 
+                                    href="Trayecto374c.html?id=141">Ver</a>
+                            </td>
+                            <td>
+                                <a href="docs/108-10_10%20Montador%20de%20Instalaciones%20Sanitarias%20Domiciliarias.pdf" target="_blank" aria-current="true">
+                                    <i class="fa fa-download" aria-hidden="true"></i>
+                                                                    </a>
+                            </td>
+
+                        </tr>
+                                            <tr>
+                            <td>
+                                Construcción de Obra Civil (Construcción)
+                            </td>
+                            <td>
+                                Albañil                            </td>
+                            <td>
+                                Res. CFE N°108/10 Anexo 1                            </td>
+                            <td>
+                                FPI                            </td>
+                            <td>
+                                3                            </td>
+                            <td>240</td>
+                            <td>
+                                <a  type="button" 
+                                    class="btn btn-primary btn-sm" 
+                                    href="centrosXtrayecto5c8d.html?id=149">Centros</a>
+                            </td>
+                            <td>
+                                <a  type="button" 
+                                    class="btn btn-success btn-sm" 
+                                    href="Trayecto5c8d.html?id=149">Ver</a>
+                            </td>
+                            <td>
+                                <a href="docs/108-10_01%20Alba%c3%b1il.pdf" target="_blank" aria-current="true">
+                                    <i class="fa fa-download" aria-hidden="true"></i>
+                                                                    </a>
+                            </td>
+
+                        </tr>
+                                            <tr>
+                            <td>
+                                Construcción de Obra Civil (Construcción)
+                            </td>
+                            <td>
+                                Armador de Hierros para Hormigón Armado                            </td>
+                            <td>
+                                Res. CFE N°108/10 Anexo 2                            </td>
+                            <td>
+                                FPI                            </td>
+                            <td>
+                                3                            </td>
+                            <td>110</td>
+                            <td>
+                                <a  type="button" 
+                                    class="btn btn-primary btn-sm" 
+                                    href="centrosXtrayecto9537.html?id=150">Centros</a>
+                            </td>
+                            <td>
+                                <a  type="button" 
+                                    class="btn btn-success btn-sm" 
+                                    href="Trayecto9537.html?id=150">Ver</a>
+                            </td>
+                            <td>
+                                <a href="docs/108-10_02%20Armador%20de%20Hierros%20para%20Hormig%c3%b3n%20Armado.pdf" target="_blank" aria-current="true">
+                                    <i class="fa fa-download" aria-hidden="true"></i>
+                                                                    </a>
+                            </td>
+
+                        </tr>
+                                            <tr>
+                            <td>
+                                Construcción de Obra Civil (Construcción)
+                            </td>
+                            <td>
+                                Auxiliar en Construcciones                            </td>
+                            <td>
+                                Res. CFE N°108/10 Anexo 3                            </td>
+                            <td>
+                                FPI                            </td>
+                            <td>
+                                1                            </td>
+                            <td>70</td>
+                            <td>
+                                <a  type="button" 
+                                    class="btn btn-primary btn-sm" 
+                                    href="centrosXtrayecto4133.html?id=151">Centros</a>
+                            </td>
+                            <td>
+                                <a  type="button" 
+                                    class="btn btn-success btn-sm" 
+                                    href="Trayecto4133.html?id=151">Ver</a>
+                            </td>
+                            <td>
+                                <a href="docs/108-10_03%20Auxiliar%20en%20Construcciones.pdf" target="_blank" aria-current="true">
+                                    <i class="fa fa-download" aria-hidden="true"></i>
+                                                                    </a>
+                            </td>
+
+                        </tr>
+                                            <tr>
+                            <td>
+                                Terminaciones Decorativas y Funcionales (Construcción)
+                            </td>
+                            <td>
+                                Carpintero de Obra Fina                            </td>
+                            <td>
+                                Res. CFE N°108/10 Anexo 6                            </td>
+                            <td>
+                                FPI                            </td>
+                            <td>
+                                3                            </td>
+                            <td>240</td>
+                            <td>
+                                <a  type="button" 
+                                    class="btn btn-primary btn-sm" 
+                                    href="centrosXtrayecto4893.html?id=153">Centros</a>
+                            </td>
+                            <td>
+                                <a  type="button" 
+                                    class="btn btn-success btn-sm" 
+                                    href="Trayecto4893.html?id=153">Ver</a>
+                            </td>
+                            <td>
+                                <a href="docs/108-10_06%20Carpintero%20de%20Obra%20Fina.pdf" target="_blank" aria-current="true">
+                                    <i class="fa fa-download" aria-hidden="true"></i>
+                                                                    </a>
+                            </td>
+
+                        </tr>
+                                            <tr>
+                            <td>
+                                Construcciones de Base Húmeda (Construcción)
+                            </td>
+                            <td>
+                                Carpintero para Hormigón Armado                            </td>
+                            <td>
+                                Res. CFE N°108/10 Anexo 7                            </td>
+                            <td>
+                                FPI                            </td>
+                            <td>
+                                3                            </td>
+                            <td>110</td>
+                            <td>
+                                <a  type="button" 
+                                    class="btn btn-primary btn-sm" 
+                                    href="centrosXtrayecto367a.html?id=154">Centros</a>
+                            </td>
+                            <td>
+                                <a  type="button" 
+                                    class="btn btn-success btn-sm" 
+                                    href="Trayecto367a.html?id=154">Ver</a>
+                            </td>
+                            <td>
+                                <a href="docs/108-10_07%20Carpintero%20para%20Hormig%c3%b3n%20Armado.pdf" target="_blank" aria-current="true">
+                                    <i class="fa fa-download" aria-hidden="true"></i>
+                                                                    </a>
+                            </td>
+
+                        </tr>
+                                            <tr>
+                            <td>
+                                Construcciones de Base Húmeda (Construcción)
+                            </td>
+                            <td>
+                                Colocador de Revestimientos con Base Húmeda                            </td>
+                            <td>
+                                Res. CFE N°108/10 Anexo 8                            </td>
+                            <td>
+                                FPI                            </td>
+                            <td>
+                                3                            </td>
+                            <td>220</td>
+                            <td>
+                                <a  type="button" 
+                                    class="btn btn-primary btn-sm" 
+                                    href="centrosXtrayectoa9d2.html?id=155">Centros</a>
+                            </td>
+                            <td>
+                                <a  type="button" 
+                                    class="btn btn-success btn-sm" 
+                                    href="Trayectoa9d2.html?id=155">Ver</a>
+                            </td>
+                            <td>
+                                <a href="docs/108-10_08%20Colocador%20de%20Revestimientos%20de%20Base%20H%c3%bameda.pdf" target="_blank" aria-current="true">
+                                    <i class="fa fa-download" aria-hidden="true"></i>
+                                                                    </a>
+                            </td>
+
+                        </tr>
+                                            <tr>
+                            <td>
+                                Construcción de Obra Civil (Construcción)
+                            </td>
+                            <td>
+                                Techista de Faldones Inclinados                            </td>
+                            <td>
+                                Res. CFE N°108/10 Anexo 11                            </td>
+                            <td>
+                                FPI                            </td>
+                            <td>
+                                3                            </td>
+                            <td>240</td>
+                            <td>
+                                <a  type="button" 
+                                    class="btn btn-primary btn-sm" 
+                                    href="centrosXtrayecto3f91.html?id=157">Centros</a>
+                            </td>
+                            <td>
+                                <a  type="button" 
+                                    class="btn btn-success btn-sm" 
+                                    href="Trayecto3f91.html?id=157">Ver</a>
+                            </td>
+                            <td>
+                                <a href="docs/108-10_11%20Techista%20de%20Faldones%20Inclinados.pdf" target="_blank" aria-current="true">
+                                    <i class="fa fa-download" aria-hidden="true"></i>
+                                                                    </a>
+                            </td>
+
+                        </tr>
+                                            <tr>
+                            <td>
+                                Instalaciones Sanitarias y de Gas (Construcción)
+                            </td>
+                            <td>
+                                Auxiliar en Instalaciones Sanitarias y de Gas Domiciliarias                            </td>
+                            <td>
+                                Res. CFE N°204 /13 Anexo II                            </td>
+                            <td>
+                                FPI                            </td>
+                            <td>
+                                1                            </td>
+                            <td>70</td>
+                            <td>
+                                <a  type="button" 
+                                    class="btn btn-primary btn-sm" 
+                                    href="centrosXtrayecto1258.html?id=165">Centros</a>
+                            </td>
+                            <td>
+                                <a  type="button" 
+                                    class="btn btn-success btn-sm" 
+                                    href="Trayecto1258.html?id=165">Ver</a>
+                            </td>
+                            <td>
+                                <a href="docs/204-13%20Gasista%20Completo%20-%20Auxiliar-Montador-Unifuncionales%20y%20Domiciliario.pdf" target="_blank" aria-current="true">
+                                    <i class="fa fa-download" aria-hidden="true"></i>
+                                                                    </a>
+                            </td>
+
+                        </tr>
+                                            <tr>
+                            <td>
+                                Instalaciones Sanitarias y de Gas (Construcción)
+                            </td>
+                            <td>
+                                Montador de Instalaciones Domiciliarias de Gas                            </td>
+                            <td>
+                                Res. CFE N°204 /13 Anexo III                            </td>
+                            <td>
+                                FPI                            </td>
+                            <td>
+                                3                            </td>
+                            <td>240</td>
+                            <td>
+                                <a  type="button" 
+                                    class="btn btn-primary btn-sm" 
+                                    href="centrosXtrayecto73ca.html?id=166">Centros</a>
+                            </td>
+                            <td>
+                                <a  type="button" 
+                                    class="btn btn-success btn-sm" 
+                                    href="Trayecto73ca.html?id=166">Ver</a>
+                            </td>
+                            <td>
+                                <a href="docs/204-13%20Gasista%20Completo%20-%20Auxiliar-Montador-Unifuncionales%20y%20Domiciliario.pdf" target="_blank" aria-current="true">
+                                    <i class="fa fa-download" aria-hidden="true"></i>
+                                                                    </a>
+                            </td>
+
+                        </tr>
+                                            <tr>
+                            <td>
+                                Instalaciones Sanitarias y de Gas (Construcción)
+                            </td>
+                            <td>
+                                Gasista de Unidades Unifuncionales                            </td>
+                            <td>
+                                Res. CFE N°204 /13 Anexo IV                            </td>
+                            <td>
+                                FPI                            </td>
+                            <td>
+                                3                            </td>
+                            <td>360</td>
+                            <td>
+                                <a  type="button" 
+                                    class="btn btn-primary btn-sm" 
+                                    href="centrosXtrayecto03ea.html?id=167">Centros</a>
+                            </td>
+                            <td>
+                                <a  type="button" 
+                                    class="btn btn-success btn-sm" 
+                                    href="Trayecto03ea.html?id=167">Ver</a>
+                            </td>
+                            <td>
+                                <a href="docs/204-13%20Gasista%20Completo%20-%20Auxiliar-Montador-Unifuncionales%20y%20Domiciliario.pdf" target="_blank" aria-current="true">
+                                    <i class="fa fa-download" aria-hidden="true"></i>
+                                                                    </a>
+                            </td>
+
+                        </tr>
+                                            <tr>
+                            <td>
+                                Instalaciones Sanitarias y de Gas (Construcción)
+                            </td>
+                            <td>
+                                Gasista Domiciliario                            </td>
+                            <td>
+                                Res. CFE N°204/13 Anexo V                            </td>
+                            <td>
+                                FPI                            </td>
+                            <td>
+                                3                            </td>
+                            <td>540</td>
+                            <td>
+                                <a  type="button" 
+                                    class="btn btn-primary btn-sm" 
+                                    href="centrosXtrayecto67cd.html?id=168">Centros</a>
+                            </td>
+                            <td>
+                                <a  type="button" 
+                                    class="btn btn-success btn-sm" 
+                                    href="Trayecto67cd.html?id=168">Ver</a>
+                            </td>
+                            <td>
+                                <a href="docs/204-13%20Gasista%20Completo%20-%20Auxiliar-Montador-Unifuncionales%20y%20Domiciliario.pdf" target="_blank" aria-current="true">
+                                    <i class="fa fa-download" aria-hidden="true"></i>
+                                                                    </a>
+                            </td>
+
+                        </tr>
+                                            <tr>
+                            <td>
+                                Instalaciones de Energía Eléctrica en Inmuebles (Construcción)
+                            </td>
+                            <td>
+                                Auxiliar en Instalaciones Eléctricas Domiciliarias                            </td>
+                            <td>
+                                Res. CFE N°108 /10 Anexo IV                            </td>
+                            <td>
+                                FPI                            </td>
+                            <td>
+                                1                            </td>
+                            <td>70</td>
+                            <td>
+                                <a  type="button" 
+                                    class="btn btn-primary btn-sm" 
+                                    href="centrosXtrayectoc572.html?id=169">Centros</a>
+                            </td>
+                            <td>
+                                <a  type="button" 
+                                    class="btn btn-success btn-sm" 
+                                    href="Trayectoc572.html?id=169">Ver</a>
+                            </td>
+                            <td>
+                                <a href="docs/108-10_04%20Auxiliar%20en%20Instalaciones%20El%c3%a9ctricas%20Domiciliarias.pdf" target="_blank" aria-current="true">
+                                    <i class="fa fa-download" aria-hidden="true"></i>
+                                                                    </a>
+                            </td>
+
+                        </tr>
+                                            <tr>
+                            <td>
+                                Instalaciones de Energía Eléctrica en Inmuebles (Construcción)
+                            </td>
+                            <td>
+                                Montador Electricista Domiciliario                            </td>
+                            <td>
+                                Res. CFE N°108 /10 Anexo XII                            </td>
+                            <td>
+                                FPI                            </td>
+                            <td>
+                                3                            </td>
+                            <td>240</td>
+                            <td>
+                                <a  type="button" 
+                                    class="btn btn-primary btn-sm" 
+                                    href="centrosXtrayecto8562.html?id=170">Centros</a>
+                            </td>
+                            <td>
+                                <a  type="button" 
+                                    class="btn btn-success btn-sm" 
+                                    href="Trayecto8562.html?id=170">Ver</a>
+                            </td>
+                            <td>
+                                <a href="docs/108-10_12%20Montador%20Electricista%20Domiciliario.pdf" target="_blank" aria-current="true">
+                                    <i class="fa fa-download" aria-hidden="true"></i>
+                                                                    </a>
+                            </td>
+
+                        </tr>
+                                            <tr>
+                            <td>
+                                Instalaciones de Energía Eléctrica en Inmuebles (Construcción)
+                            </td>
+                            <td>
+                                Electricista en Inmuebles                            </td>
+                            <td>
+                                Res. CFE N°149/11 Anexo VI                            </td>
+                            <td>
+                                FPI                            </td>
+                            <td>
+                                3                            </td>
+                            <td>540</td>
+                            <td>
+                                <a  type="button" 
+                                    class="btn btn-primary btn-sm" 
+                                    href="centrosXtrayectoe3cf.html?id=171">Centros</a>
+                            </td>
+                            <td>
+                                <a  type="button" 
+                                    class="btn btn-success btn-sm" 
+                                    href="Trayectoe3cf.html?id=171">Ver</a>
+                            </td>
+                            <td>
+                                <a href="docs/149-11_06%20Electricista%20en%20Inmuebles.pdf" target="_blank" aria-current="true">
+                                    <i class="fa fa-download" aria-hidden="true"></i>
+                                                                    </a>
+                            </td>
+
+                        </tr>
+                                            <tr>
+                            <td>
+                                Construcción de Obra Civil (Construcción)
+                            </td>
+                            <td>
+                                Armador y montador de andamios para obras civiles                            </td>
+                            <td>
+                                Res. CFE Nro. 150/11 Anexo III                            </td>
+                            <td>
+                                FPI                            </td>
+                            <td>
+                                3                            </td>
+                            <td>180</td>
+                            <td>
+                                <a  type="button" 
+                                    class="btn btn-primary btn-sm" 
+                                    href="centrosXtrayecto2999.html?id=202">Centros</a>
+                            </td>
+                            <td>
+                                <a  type="button" 
+                                    class="btn btn-success btn-sm" 
+                                    href="Trayecto2999.html?id=202">Ver</a>
+                            </td>
+                            <td>
+                                <a href="docs/150-11_03%20Armador%20y%20montador%20de%20andamios%20para%20obras%20civiles.pdf" target="_blank" aria-current="true">
+                                    <i class="fa fa-download" aria-hidden="true"></i>
+                                                                    </a>
+                            </td>
+
+                        </tr>
+                                            <tr>
+                            <td>
+                                Terminaciones Decorativas y Funcionales (Construcción)
+                            </td>
+                            <td>
+                                Colocador de Revestimientos Decorativos y Funcionales                            </td>
+                            <td>
+                                Res. CFE Nro. 150/11 Anexo VII                            </td>
+                            <td>
+                                FPI                            </td>
+                            <td>
+                                3                            </td>
+                            <td>240</td>
+                            <td>
+                                <a  type="button" 
+                                    class="btn btn-primary btn-sm" 
+                                    href="centrosXtrayectoed21.html?id=203">Centros</a>
+                            </td>
+                            <td>
+                                <a  type="button" 
+                                    class="btn btn-success btn-sm" 
+                                    href="Trayectoed21.html?id=203">Ver</a>
+                            </td>
+                            <td>
+                                <a href="docs/150-11_07%20Colocador%20de%20revestimientos%20decorativos%20y%20funcionales.pdf" target="_blank" aria-current="true">
+                                    <i class="fa fa-download" aria-hidden="true"></i>
+                                                                    </a>
+                            </td>
+
+                        </tr>
+                                            <tr>
+                            <td>
+                                Construcciones de Base Húmeda (Construcción)
+                            </td>
+                            <td>
+                                Pintor de Obra                            </td>
+                            <td>
+                                Res. CFE N°150/11 Anexo VIII                            </td>
+                            <td>
+                                FPI                            </td>
+                            <td>
+                                3                            </td>
+                            <td>180</td>
+                            <td>
+                                <a  type="button" 
+                                    class="btn btn-primary btn-sm" 
+                                    href="centrosXtrayectob7b8.html?id=204">Centros</a>
+                            </td>
+                            <td>
+                                <a  type="button" 
+                                    class="btn btn-success btn-sm" 
+                                    href="Trayectob7b8.html?id=204">Ver</a>
+                            </td>
+                            <td>
+                                <a href="docs/150-11_08%20Pintor%20de%20obra.pdf" target="_blank" aria-current="true">
+                                    <i class="fa fa-download" aria-hidden="true"></i>
+                                                                    </a>
+                            </td>
+
+                        </tr>
+                                            <tr>
+                            <td>
+                                Construcciones de Base Húmeda (Construcción)
+                            </td>
+                            <td>
+                                Yesero                            </td>
+                            <td>
+                                Res. CFE N°150/11 Anexo IX                            </td>
+                            <td>
+                                FPI                            </td>
+                            <td>
+                                3                            </td>
+                            <td>240</td>
+                            <td>
+                                <a  type="button" 
+                                    class="btn btn-primary btn-sm" 
+                                    href="centrosXtrayecto7251.html?id=205">Centros</a>
+                            </td>
+                            <td>
+                                <a  type="button" 
+                                    class="btn btn-success btn-sm" 
+                                    href="Trayecto7251.html?id=205">Ver</a>
+                            </td>
+                            <td>
+                                <a href="docs/150-11_09%20Yesero.pdf" target="_blank" aria-current="true">
+                                    <i class="fa fa-download" aria-hidden="true"></i>
+                                                                    </a>
+                            </td>
+
+                        </tr>
+                                            <tr>
+                            <td>
+                                Construcciones de Base Húmeda (Construcción)
+                            </td>
+                            <td>
+                                Albañil en Tierra Cruda                            </td>
+                            <td>
+                                Disp. 104/2018 Anexo 10                            </td>
+                            <td>
+                                FPI                            </td>
+                            <td>
+                                3                            </td>
+                            <td>240</td>
+                            <td>
+                                <a  type="button" 
+                                    class="btn btn-primary btn-sm" 
+                                    href="centrosXtrayecto357b.html?id=261">Centros</a>
+                            </td>
+                            <td>
+                                <a  type="button" 
+                                    class="btn btn-success btn-sm" 
+                                    href="Trayecto357b.html?id=261">Ver</a>
+                            </td>
+                            <td>
+                                <a href="docs/104-18_10%20ALBA%c3%91IL%20EN%20TIERRA%20CRUDA.pdf" target="_blank" aria-current="true">
+                                    <i class="fa fa-download" aria-hidden="true"></i>
+                                                                    </a>
+                            </td>
+
+                        </tr>
+                                            <tr>
+                            <td>
+                                Terminaciones Decorativas y Funcionales (Construcción)
+                            </td>
+                            <td>
+                                Mosaiquista                            </td>
+                            <td>
+                                Disp. 0178/2022 - Anexo XI                            </td>
+                            <td>
+                                FPI                            </td>
+                            <td>
+                                2                            </td>
+                            <td>240</td>
+                            <td>
+                                <a  type="button" 
+                                    class="btn btn-primary btn-sm" 
+                                    href="centrosXtrayecto67d3.html?id=288">Centros</a>
+                            </td>
+                            <td>
+                                <a  type="button" 
+                                    class="btn btn-success btn-sm" 
+                                    href="Trayecto67d3.html?id=288">Ver</a>
+                            </td>
+                            <td>
+                                <a href="docs/Anexo%2011%20-%20MR%20MOSAIQUISTA.pdf" target="_blank" aria-current="true">
+                                    <i class="fa fa-download" aria-hidden="true"></i>
+                                                                    </a>
+                            </td>
+
+                        </tr>
+                                            <tr>
+                            <td>
+                                Instalaciones Sanitarias y de Gas (Construcción)
+                            </td>
+                            <td>
+                                Actualización Profesional en Dibujo Técnico Asistido por Computadora en 2D para Gasistas                            </td>
+                            <td>
+                                Disp. 076/2023 - Anexo XIII                            </td>
+                            <td>
+                                FPC                            </td>
+                            <td>
+                                2                            </td>
+                            <td>60</td>
+                            <td>
+                                <a  type="button" 
+                                    class="btn btn-primary btn-sm" 
+                                    href="centrosXtrayecto9c3a.html?id=312">Centros</a>
+                            </td>
+                            <td>
+                                <a  type="button" 
+                                    class="btn btn-success btn-sm" 
+                                    href="Trayecto9c3a.html?id=312">Ver</a>
+                            </td>
+                            <td>
+                                <a href="docs/DI_076_23_13%20FPC%20ACTUALIZACION%20CAD%20GASISTA.pdf" target="_blank" aria-current="true">
+                                    <i class="fa fa-download" aria-hidden="true"></i>
+                                                                    </a>
+                            </td>
+
+                        </tr>
+                                            <tr>
+                            <td>
+                                Instalaciones Sanitarias y de Gas (Construcción)
+                            </td>
+                            <td>
+                                Especialización en Calderas de calefacción por agua y Equipos Centrales de Calefacción a Gas                            </td>
+                            <td>
+                                Disp. 233/2023 - Anexo IV                            </td>
+                            <td>
+                                FPC                            </td>
+                            <td>
+                                0                            </td>
+                            <td>100</td>
+                            <td>
+                                <a  type="button" 
+                                    class="btn btn-primary btn-sm" 
+                                    href="centrosXtrayectodd61.html?id=316">Centros</a>
+                            </td>
+                            <td>
+                                <a  type="button" 
+                                    class="btn btn-success btn-sm" 
+                                    href="Trayectodd61.html?id=316">Ver</a>
+                            </td>
+                            <td>
+                                <a href="docs/233-23_04.pdf" target="_blank" aria-current="true">
+                                    <i class="fa fa-download" aria-hidden="true"></i>
+                                                                    </a>
+                            </td>
+
+                        </tr>
+                                    </tbody>
+
+                <tfoot>
+                    <tr>
+                        <th>SubSector</th>
+                        <th>Denominacion</th>
+                        <th>Norma Legal</th>
+                        <th>Tip oCert</th>
+                        <th>Nivel</th>
+                        <th>Duracion</th>
+                        <th>Centros</th>
+                        <th>Trayectos</th>
+                        <th>Descargar</th>
+                    </tr>
+                </tfoot>
+            </table>        </div>
+    </div>
+</div>
+
+
+
+<!-- Google -->
+<script type="text/javascript" src="../www.gstatic.com/charts/loader.js"></script>
+<script src="js/scripts.js"></script>
+<script type="text/javascript" src="js/mysql.js"></script>
+
+        
+        
+                        </main>
+                <footer class="py-4 bg-light mt-auto">
+                    <div class="container-fluid px-4">
+                        <div class="d-flex align-items-center justify-content-between small">
+                            <div class="text-muted">Copyright &copy; ST3 2022</div>
+                            <div>
+                                <a href="#">Privacy Policy</a>
+                                &middot;
+                                <a href="#">Terms &amp; Conditions</a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <script src="../cdn.jsdelivr.net/npm/bootstrap%405.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="js/scripts.js"></script>
+        <script src="../cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+<!--         <script src="assets/demo/chart-area-demo.js"></script> Ejemplo-->
+<!--        <script src="assets/demo/chart-bar-demo.js"></script> Ejemplo--> 
+        <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" crossorigin="anonymous"></script>
+<!--         <script src="js/datatables-simple-demo.js"></script> Ejemplo--> -->
+    </body>
+
+<!-- Mirrored from www.fpneuquen.com.ar/TrayectosFormativosSector.php?id=Construcci%c3%b3n by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 05 Sep 2024 16:15:08 GMT -->
+</html>
